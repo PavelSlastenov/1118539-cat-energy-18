@@ -37,22 +37,22 @@
         <p class="form-program__description">Заполните анкету и мы подберем
           программу питания для вашего кота</p>
 
-        <section class="form-program-data">
+        <div class="form-program-data">
           <div class="form-program__wrapper">
             <label class="form-program__label" for="name">Имя:*</label>
-            <input class="form-program__input" id="name" type="text" placeholder="Барсик" aria-label="Имя">
+            <input class="form-program__input" type="text" placeholder="Барсик" aria-label="Имя">
           </div>
           <div class="form-program__wrapper">
             <label class="form-program__label" for="name">Вес (кг):*</label>
-            <input class="form-program__input" id="name" type="text" placeholder="7" aria-label="Вес">
+            <input class="form-program__input" type="text" placeholder="7" aria-label="Вес">
           </div>
           <div class="form-program__wrapper">
             <label class="form-program__label" for="name">Возраст (лет):</label>
             <input class="form-program__input" id="name" type="text" placeholder="7" aria-label="Возраст">
           </div>
-        </section>
+        </div>
 
-        <section class="form-program__options form-program_options--radio">
+        <div class="form-program__options form-program_options--radio">
           <div class="form-program__wrapper form-program__wrapper--radio">
             <input class="visually-hidden  form-program__input" id="slim" type="radio" name="program" value="slim" aria-label="Похудение" checked>
             <label class="form-program__label  form-program__label--radio" for="slim">Похудение</label>
@@ -65,19 +65,19 @@
             <input class="visually-hidden  form-program__input" id="uncertain" type="radio" name="program" value="uncertain" aria-label="Не знаю (Нужен ваш совет)">
             <label class="form-program__label  form-program__label--radio" for="slim">Не знаю (Нужен ваш совет)</label>
           </div>
-        </section>
+        </div>
 
-        <section class="form-program__wrapper form-program__wrapper--contacts">
+        <div class="form-program__wrapper form-program__wrapper--contacts">
           <label class="form-program__label" for="tel">Телефон:*</label>
           <input class="form-program__input" id="tel" type="tel" placeholder="8 (960) 900-60-90" aria-label="Телефон">
-        </section>
+        </div>
 
-        <section class="form-program__wrapper form-program__wrapper--comments">
+        <div class="form-program__wrapper form-program__wrapper--comments">
           <h2 class="form-program__wrapper-title">Комментарий</h2>
           <textarea class="form-program__textarea" name="comment" placeholder="Расскажите обо всех повадках кота" aria-label="Комментарии"></textarea>
-        </section>
+        </div>
 
-        <section class="form-program__wrapper form-program__wrapper--checkbox">
+        <div class="form-program__wrapper form-program__wrapper--checkbox">
           <h2 class="form-program__wrapper-title">Дополнительно</h2>
           <div class="form-program__checkbox-wrap">
             <div class="form-program__wrapper  form-program__wrapper--checkbox">
@@ -97,17 +97,19 @@
               <label class="form-program__label  form-program__label--checkbox" for="vitamins">Витамины</label>
             </div>
             <div class="form-program__wrapper">
-              <button class="button" type="button"><a href="">Отправить заявку</a></button>
+              <button class="button" type="button">Отправить заявку</button>
               <small class="form-program__legend">
               <sup>*</sup> — Обязательные поля
               </small>
            </div>
-        </section>
+          </div>
+        </div>
         </form>
     </main>
 
     <section class="map-contacts">
-      <div class="map-contacts__wrapper map-contacts__wrapper--index">
+      <h2 class="visually-hidden">Адрес</h2>
+      <div class="map-contacts__wrapper map-contacts__wrapper">
         <p class="map-contacts__invitation">приглашаем к сотрудничеству дилеров!</p>
         <p class="map-contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
@@ -121,6 +123,7 @@
         <img class="page-header__logo-image" src="https://via.placeholder.com/128x24" width="128" height="24" alt="Логотип">
       </a>
       <section class="page-footer__social-network">
+        <h2 class="visually-hidden">Социальные сети</h2>
         <ul>
           <li><a class="page-footer__social-network--vk" href="" aria-label="Вконтакте">Вконтакте</a></li>
           <li><a class="page-footer__social-network--insta" href="" aria-label="Инстаграм">Инстаграм</a></li>
@@ -128,6 +131,7 @@
         </ul>
       </section>
       <section class="page-footer__feedback">
+        <h2 class="visually-hidden">Обратная связь</h2>
         <a class="page-footer__feedback-link" href="https://htmlacademy.ru/intensive/adaptive">
           <p class="page-footer__feedback-description">HTML Academy</p>
           <img class="page-footer__feedback-link-icon" src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип Академии">
