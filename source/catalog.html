@@ -7,9 +7,8 @@
   <body>
 
   <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/33x38" width="33" height="38" alt="Кот">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/101x18" width="101" height="18" alt="Логотип">
+    <a class="page-header__logo" href="index.html">
+      <img class="page-header__logo-image" src="https://via.placeholder.com/191x38" width="191" height="38" alt="Кот">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -41,15 +40,15 @@
           <h2 class="goods__title">Cat Energy PRO 500 г</h2>
         <table class="goods__table"> <!--Сделаю flex контейнером, задам flex-direction: column, для 3 строк таблицы-->
           <tr class="goods__table goods__table--first-row"> <!--1 строка таблицы (Решил не называть top,center или bottom, вдруг еще добавятся строки и столбцы)-->
-            <td class="goods__table goods__table--front-column">Объем</td> <!-- 1 столбец-->
+            <td class="goods__table goods__table--front-column">Объем</td> <!--1 столбец-->
             <td class="goods__table goods__table--second-column">500 г</td> <!--2 столбец-->
           </tr>
           <tr class="goods__table goods__table--second-row"> <!--2 строка таблицы-->
-            <td class="goods__table goods__table--front-column">Вкус</td> <!-- 1 столбец-->
+            <td class="goods__table goods__table--front-column">Вкус</td> <!--1 столбец-->
             <td class="goods__table goods__table--second-column">Курица</td> <!--2 столбец-->
           </tr>
           <tr class="goods__table goods__table--third-row"> <!--3 строка таблицы-->
-            <td class="goods__table goods__table--front-column">Цена</td> <!-- 1 столбец-->
+            <td class="goods__table goods__table--front-column">Цена</td> <!--1 столбец-->
             <td class="goods__table goods__table--second-column">700 Р.</td> <!--2 столбец-->
           </tr>
         </table>
@@ -227,7 +226,7 @@
             <a class="goods__order" href="">Заказать</a>
           </div>
            <div class="goods-card">
-            <h3 class="goods-card__title">Молоко</h3>
+             <h3 class="goods-card__title">Молоко</h3>
             <table class="goods__table">
               <tr class="goods__row">
                 <td class="goods__table goods__table--front-column">1 литр</td>
@@ -273,19 +272,22 @@
     <section class="page-footer__social-network">
       <h2 class="visually-hidden">Социальные сети</h2>
       <ul>
-        <li><a class="page-footer__social-network--vk" href="" aria-label="Вконтакте">Вконтакте</a></li>
-        <li><a class="page-footer__social-network--insta" href="" aria-label="Инстаграм">Инстаграм</a></li>
-        <li><a class="page-footer__social-network--fb" href="" aria-label="Фейсбук">Фейсбук</a></li>
+        <li><a class="social-network social-network--vk" href="" aria-label="Вконтакте"></a></li>
+        <li><a class="social-network social-network--insta" href="" aria-label="Инстаграм"></a></li>
+        <li><a class="social-network social-network--fb" href="" aria-label="Фейсбук"></a></li>
       </ul>
     </section>
-    <section class="page-footer__feedback">
-      <h2 class="visually-hidden">Обратная связь</h2>
-      <a class="page-footer__feedback-link" href="https://htmlacademy.ru/intensive/adaptive">
-        <p class="page-footer__feedback-description">HTML Academy</p>
-        <img class="page-footer__feedback-link-icon" src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип Академии">
+
+    <section class="page-footer__developers">
+      <h2 class="visually-hidden">Разработчики</h2>
+      <a class="page-footer__developers-link" href="https://htmlacademy.ru/intensive/adaptive">
+        <p class="page-footer__developers-description">HTML Academy</p>
+        <img class="page-footer__developers-link-icon" src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип Академии">
       </a>
     </section>
+
   </footer>
   </body>
 </html>
+
 

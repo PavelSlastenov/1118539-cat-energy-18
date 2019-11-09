@@ -8,13 +8,12 @@
 
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="https://via.placeholder.com/33x38" width="33" height="38" alt="Кот">
-        <img class="page-header__logo-image" src="https://via.placeholder.com/101x18" width="101" height="18" alt="Логотип">
+        <img class="page-header__logo-image" src="https://via.placeholder.com/191x38" width="191" height="38" alt="Кот">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list"> <!--Все margin и padding в main-nav_list, а site-list всегда можно будет переиспользовать-->
+          <ul class="main-nav__list site-list"> 
             <li class="site-list__item">
               <a href="index.html">Главная</a>
             </li>
@@ -40,24 +39,18 @@
       </section>
 
       <section class="programs">
-        <div class="programs__item programs-item--slim">
-          <div class="programs__wrapper"><!--добавил обертку для логотипа и заголовка, что бы потом в сетке задать им flex-direction: row; Или на данном этапе это будет выглядеть лишним?-->
-            <div class="programs__logo">
-              <img src="https://via.placeholder.com/35x49" width="35" height="49" alt="Кот">
-            </div>
+        <div class="programs__item programs__item--slim">
+          <div class="programs__wrapper">
             <h2 class="programs__title">Похудение</h2>
           </div>
           <p class="programs__description">
             Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
             Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
           </p>
-          <a class="programs_link" href="catalog-slim.html">Каталог Slim</a>
+          <a class="programs_link" href="catalog-slim.html">Каталог Slim</a> <!--Если правилно понял ссылку нужно было дать на конкретный раздел в каталоге, да же если верстать его не будем-->
           </div>
-        <div class="programs__item programs-item--pro">
+        <div class="programs__item programs__item--pro">
           <div class="programs__wrapper">
-            <div class="programs__logo">
-              <img src="https://via.placeholder.com/67x28" width="67" height="28" alt="Кот">
-            </div>
             <h2 class="programs__title">Набор массы</h2>
           </div>
           <p class="programs__description">
@@ -72,27 +65,15 @@
         <h2 class="features__title">Как это работает</h2>
           <ul class="features__list">
             <li class="features__item features__item--useful">
-              <div class="features__logo">
-                <img src="https://via.placeholder.com/26x29" width="26" height="29" alt="Лист">
-              </div>
               <p class="features__description">Функциональное питание содержит только полезные питательные вещества.</p>
             </li>
             <li class="features__item features__item--powder">
-              <div class="features__logo">
-                <img src="https://via.placeholder.com/29x31" width="29" height="31" alt="Порошок">
-              </div>
               <p class="features__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
             </li>
             <li class="features__item features__item--powder--meal">
-              <div class="features__logo">
-                <img src="https://via.placeholder.com/23x30" width="23" height="30" alt="Столовые приборы">
-              </div>
               <p class="features__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
             </li>
             <li class="features__item features__item--powder--time">
-              <div class="features__logo">
-                <img src="https://via.placeholder.com/26x31" width="26" height="31" alt="Часы">
-              </div>
               <p class="features__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
             </li>
           </ul>
@@ -143,25 +124,20 @@
       <section class="page-footer__social-network">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul>
-          <li><a class="page-footer__social-network--vk" href="">Вконтакте</a></li>
-          <li><a class="page-footer__social-network--insta" href="">Инстаграм</a></li>
-          <li><a class="page-footer__social-network--fb" href="">Фейсбук</a></li>
+          <li><a class="social-network social-network--vk" href="" aria-label="Вконтакте"></a></li>
+          <li><a class="social-network social-network--insta" href="" aria-label="Инстаграм"></a></li>
+          <li><a class="social-network social-network--fb" href="" aria-label="Фейсбук"></a></li>
         </ul>
       </section>
-      <!--Или правильнее вот такой вариант? Слишком длинный получается, тогда стоит переименовать все короче)
-      <ul>
-          <li><a class="page-footer__social-network page-footer__social-network- -vk" href="" aria-label="Вконтакте"></a></li>
-          <li><a class="page-footer__social-network page-footer__social-network- -insta" href="" aria-label="Инстаграм"></a></li>
-          <li><a class="page-footer__social-network page-footer__social-network- -fb" href="" aria-label="Фейсбук"></a></li>
-        </ul>
-      -->
-      <section class="page-footer__feedback">
-        <h2 class="visually-hidden">Обратная связь</h2>
-        <a class="page-footer__feedback-link" href="https://htmlacademy.ru/intensive/adaptive">
-          <p class="page-footer__feedback-description">HTML Academy</p>
-          <img class="page-footer__feedback-link-icon" src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип Академии">
+
+      <section class="page-footer__developers">
+        <h2 class="visually-hidden">Разработчики</h2>
+        <a class="page-footer__developers-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <p class="page-footer__developers-description">HTML Academy</p>
+          <img class="page-footer__developers-link-icon" src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип Академии">
         </a>
       </section>
+
     </footer>
   </body>
 </html>
