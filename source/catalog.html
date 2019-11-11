@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+  <body>
+  <header class="page-header">
+    <a class="page-header__logo" href="index.html">
+      <img class="page-header__logo-image" src="https://via.placeholder.com/191x38" width="191" height="38" alt="Кот">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Подбор прогрммы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Каталог функционального питания для котов «Кэт энерджи»</h1>
+    <section class="goods">
+      <div class="goods__card">
+        <div class="goods__wrapper"> <!--Обертка: Логотип слева, остальное содержимое справа, задам flex-direction: row;-->
+          <a class="goods__image goods__image--small"><img src="https://via.placeholder.com/140x144" width="140" height="144" alt="Кэт энерджи маленький"></a>
+        </div>
+        <div class="goods__wrapper goods__wrapper--right"> <!--Правая обертка для названия товара, что бы таблица оказалась внизу-->
+          <h2 class="goods__title">Cat Energy PRO 500 г</h2>
+        <table class="goods__table"> <!--Сделаю flex контейнером, задам flex-direction: column, для 3 строк таблицы-->
+          <tr class="goods__table goods__table--first-row"> <!--1 строка таблицы (Решил не называть top,center или bottom, вдруг еще добавятся строки и столбцы)-->
+            <td class="goods__table goods__table--front-column">Объем</td> <!--1 столбец-->
+            <td class="goods__table goods__table--second-column">500 г</td> <!--2 столбец-->
+          </tr>
+          <tr class="goods__table goods__table--second-row"> <!--2 строка таблицы-->
+            <td class="goods__table goods__table--front-column">Вкус</td> <!--1 столбец-->
+            <td class="goods__table goods__table--second-column">Курица</td> <!--2 столбец-->
+          </tr>
+          <tr class="goods__table goods__table--third-row"> <!--3 строка таблицы-->
+            <td class="goods__table goods__table--front-column">Цена</td> <!--1 столбец-->
+            <td class="goods__table goods__table--second-column">700 Р.</td> <!--2 столбец-->
+          </tr>
+        </table>
+        </div> <!--Конец право обертки для названия товара, что бы таблица оказалась внизу-->
+        <a class="goods__order" href="">Заказать</a>
+        </div>
+      <div class="goods__card">
+        <div class="goods__wrapper">
+          <a class="goods__image goods__image--big"><img src="https://via.placeholder.com/140x144" width="140" height="144" alt="Кэт энерджи большой"></a>
+        </div>
+        <div class="goods__wrapper goods__wrapper--right">
+          <h2 class="goods__title">Cat Energy PRO 1000 г</h2>
+          <table class="goods__table">
+            <tr class="goods__table goods__table--first-row">
+              <td class="goods__table goods__table--front-column">Объем</td>
+              <td class="goods__table goods__table--second-column">1000 г</td>
+            </tr>
+            <tr class="goods__table goods__table--second-row">
+              <td class="goods__table goods__table--front-column">Вкус</td>
+              <td class="goods__table goods__table--second-column">Курица</td>
+            </tr>
+            <tr class="goods__table goods__table--third-row">
+              <td class="goods__table goods__table--front-column">Цена</td>
+              <td class="goods__table goods__table--second-column">1000 Р.</td>
+            </tr>
+          </table>
+        </div>
+        <a class="goods__order" href="">Заказать</a>
+      </div>
+      <div class="goods__card">
+        <div class="goods__wrapper">
+          <a class="goods__image goods__image--small"><img src="https://via.placeholder.com/140x144" width="140" height="144" alt="Кэт энерджи маленький"></a>
+        </div>
+        <div class="goods__wrapper goods__wrapper--right">
+          <h2 class="goods__title">Cat Energy PRO 500 г</h2>
+          <table class="goods__table">
+            <tr class="goods__table goods__table--first-row">
+              <td class="goods__table goods__table--front-column">Объем</td>
+              <td class="goods__table goods__table--second-column">500 г</td>
+            </tr>
+            <tr class="goods__table goods__table--second-row">
+              <td class="goods__table goods__table--front-column">Вкус</td>
+              <td class="goods__table goods__table--second-column">Рыба</td>
+            </tr>
+            <tr class="goods__table goods__table--third-row">
+              <td class="goods__table goods__table--front-column">Цена</td>
+              <td class="goods__table goods__table--second-column">700 Р.</td>
+            </tr>
+          </table>
+        </div>
+        <a class="goods__order" href="">Заказать</a>
+      </div>
+      <div class="goods__card">
+        <div class="goods__wrapper">
+          <a class="goods__image goods__image--big"><img src="https://via.placeholder.com/140x144" width="140" height="144" alt="Кэт энерджи большой"></a>
+        </div>
+        <div class="goods__wrapper goods__wrapper--right">
+          <h2 class="goods__title">Cat Energy PRO 1000 г</h2>
+          <table class="goods__table">
+            <tr class="goods__table goods__table--first-row">
+              <td class="goods__table goods__table--front-column">Объем</td>
+              <td class="goods__table goods__table--second-column">1000 г</td>
+            </tr>
+            <tr class="goods__table goods__table--second-row">
+              <td class="goods__table goods__table--front-column">Вкус</td>
+              <td class="goods__table goods__table--second-column">Рыба</td>
+            </tr>
+            <tr class="goods__table goods__table--third-row">
+              <td class="goods__table goods__table--front-column">Цена</td>
+              <td class="goods__table goods__table--second-column">1000 Р.</td>
+            </tr>
+          </table>
+        </div>
+        <a class="goods__order" href="">Заказать</a>
+      </div>
+      <div class="goods__card">
+        <div class="goods__wrapper">
+          <a class="goods__image goods__image--small"><img src="https://via.placeholder.com/140x144" width="140" height="144" alt="Кэт энерджи маленький"></a>
+        </div>
+        <div class="goods__wrapper goods__wrapper--right">
+          <h2 class="goods__title">Cat Energy PRO 500 г</h2>
+          <table class="goods__table">
+            <tr class="goods__table goods__table--first-row">
+              <td class="goods__table goods__table--front-column">Объем</td>
+              <td class="goods__table goods__table--second-column">500 г</td>
+            </tr>
+            <tr class="goods__table goods__table--second-row">
+              <td class="goods__table goods__table--front-column">Вкус</td>
+              <td class="goods__table goods__table--second-column">Гречка</td>
+            </tr>
+            <tr class="goods__table goods__table--third-row">
+              <td class="goods__table goods__table--front-column">Цена</td>
+              <td class="goods__table goods__table--second-column">400 Р.</td>
+            </tr>
+          </table>
+        </div>
+        <a class="goods__order" href="">Заказать</a>
+      </div>
+      <div class="goods__card">
+        <div class="goods__wrapper">
+          <a class="goods__image goods__image--big"><img src="https://via.placeholder.com/140x144" width="140" height="144" alt="Кэт энерджи большой"></a>
+        </div>
+        <div class="goods__wrapper goods__wrapper--right">
+          <h2 class="goods__title">Cat Energy PRO 1000 г</h2>
+          <table class="goods__table">
+            <tr class="goods__table goods__table--first-row">
+              <td class="goods__table goods__table--front-column">Объем</td>
+              <td class="goods__table goods__table--second-column">1000 г</td>
+            </tr>
+            <tr class="goods__table goods__table--second-row">
+              <td class="goods__table goods__table--front-column">Вкус</td>
+              <td class="goods__table goods__table--second-column">Гречка</td>
+            </tr>
+            <tr class="goods__table goods__table--third-row">
+              <td class="goods__table goods__table--front-column">Цена</td>
+              <td class="goods__table goods__table--second-column">700 Р.</td>
+            </tr>
+          </table>
+        </div>
+        <a class="goods__order" href="">Заказать</a>
+      </div>
+      <div class="goods__card">
+        <div class="goods__wrapper">
+          <a class="goods__image goods__image--small"><img src="https://via.placeholder.com/140x144" width="140" height="144" alt="Кэт энерджи маленький"></a>
+        </div>
+        <div class="goods__wrapper goods__wrapper--right">
+          <h2 class="goods__title">Cat Energy PRO 500 г</h2>
+          <table class="goods__table">
+            <tr class="goods__table goods__table--first-row">
+              <td class="goods__table goods__table--front-column">Объем</td>
+              <td class="goods__table goods__table--second-column">500 г</td>
+            </tr>
+            <tr class="goods__table goods__table--second-row">
+              <td class="goods__table goods__table--front-column">Вкус</td>
+              <td class="goods__table goods__table--second-column">Рис</td>
+            </tr>
+            <tr class="goods__table goods__table--third-row">
+              <td class="goods__table goods__table--front-column">Цена</td>
+              <td class="goods__table goods__table--second-column">500 Р.</td>
+            </tr>
+          </table>
+        </div>
+        <a class="goods__order" href="">Заказать</a>
+      </div>
+      <div class="goods-all">
+        <img class="goods-all__image" src="https://via.placeholder.com/55x60" width="30" height="30" alt="Плюс">
+        <b class="goods-all__description">Показать еще 100500 товаров</b>
+        <p class="goods-all__intro">На самом деле вкусов гораздо больше!</p>
+        <a class="goods__show" href="">Показать все</a>
+      </div>
+    </section>
+    <section class="goods">
+      <h2 class="goods__title">Дополнительные товары</h2>
+          <div class="goods-card">
+            <h3 class="goods-card__title">Сахарозаменитель</h3>
+            <table class="goods__table">
+              <tr class="goods__row">
+                <td class="goods__table goods__table--front-column">1 упаковка (100 г)</td>
+                <td class="goods__table goods__table--second-column">200 Р.</td>
+              </tr>
+            </table>
+            <a class="goods__order" href="">Заказать</a>
+          </div>
+          <div class="goods-card">
+            <h3 class="goods-card__title">Питьевая вода</h3>
+            <table class="goods__table">
+              <tr class="goods__row">
+                <td class="goods__table goods__table--front-column">5 литров</td>
+                <td class="goods__table goods__table--second-column">50 Р.</td>
+              </tr>
+            </table>
+            <a class="goods__order" href="">Заказать</a>
+          </div>
+            <div class="goods-card">
+              <h3 class="goods-card__title">Молоко</h3>
+            <table class="goods__table">
+              <tr class="goods__row">
+                <td class="goods__table goods__table--front-column">1 литр</td>
+                <td class="goods__table goods__table--second-column">100 Р..</td>
+              </tr>
+            </table>
+            <a class="goods__order" href="">Заказать</a>
+            </div>
+          <div class="goods-card">
+            <h3 class="goods-card__title">Витамины</h3>
+            <table class="goods__table">
+              <tr class="goods__row">
+                <td class="goods__table goods__table--front-column">1 упаковка (30 г)</td>
+                <td class="goods__table goods__table--second-column">300 Р.</td>
+              </tr>
+            </table>
+            <a class="goods__order" href="">Заказать</a>
+          </div>
+        <div class="goods-promo">
+          <img class="goods-promo__image" src="https://via.placeholder.com/55x60" width="55" height="60" alt="Подарок">
+          <div class="goods-promo__item">
+            <p class="goods-promo__description">Закажите все и получите чехол для кота в подарок!</p>
+          </div>
+        </div>
+    </section>
+    <section class="map-contacts">
+      <h2 class="visually-hidden">Адрес</h2>
+      <div class="map-contacts__wrapper map-contacts__wrapper">
+        <p class="map-contacts__invitation">приглашаем к сотрудничеству дилеров!</p>
+        <p class="map-contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+      <div class="map">
+        <img src="https://via.placeholder.com/320x400" width="320" height="400" alt="Карта">
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <a class="page-footer__logo-link">
+      <img class="page-footer__logo-image" src="https://via.placeholder.com/128x24" width="128" height="24" alt="Логотип">
+    </a>
+    <section class="page-footer__social-network">
+      <h2 class="visually-hidden">Социальные сети</h2>
+      <ul>
+        <li><a class="social-network social-network--vk" href="" aria-label="Вконтакте"></a></li>
+        <li><a class="social-network social-network--insta" href="" aria-label="Инстаграм"></a></li>
+        <li><a class="social-network social-network--fb" href="" aria-label="Фейсбук"></a></li>
+      </ul>
+    </section>
+    <section class="page-footer__developers">
+      <h2 class="visually-hidden">Разработчики</h2>
+      <a class="page-footer__developers-link" href="https://htmlacademy.ru/intensive/adaptive">
+        <p class="page-footer__developers-description">HTML Academy</p>
+        <img class="page-footer__developers-link-icon" src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип Академии">
+      </a>
+    </section>
+  </footer>
+  </body>
+</html>

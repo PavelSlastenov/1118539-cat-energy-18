@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="https://via.placeholder.com/191x38" width="191" height="38" alt="Кот">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Подбор прогрммы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Подбор функционального питания для котов «Кэт энерджи»</h1>
+      <form method="get" class="form-program" action="https://echo.htmlacademy.ru">
+        <h2 class="form-program__title">Подбор программы</h2>
+        <p class="form-program__description">Заполните анкету и мы подберем
+          программу питания для вашего кота</p>
+        <div class="form-program-data">
+          <div class="form-program__wrapper">
+            <label class="form-program__label" for="name">Имя:*</label>
+            <input class="form-program__input" type="text" placeholder="Барсик" aria-label="Имя">
+          </div>
+          <div class="form-program__wrapper">
+            <label class="form-program__label" for="name">Вес (кг):*</label>
+            <input class="form-program__input" type="text" placeholder="7" aria-label="Вес">
+          </div>
+          <div class="form-program__wrapper">
+            <label class="form-program__label" for="name">Возраст (лет):</label>
+            <input class="form-program__input" id="name" type="text" placeholder="7" aria-label="Возраст">
+          </div>
+        </div>
+        <div class="form-program__options form-program__options--radio">
+          <div class="form-program__wrapper form-program__wrapper--radio">
+            <input class="visually-hidden  form-program__input" id="slim" type="radio" name="program" value="slim" aria-label="Похудение" checked>
+            <label class="form-program__label  form-program__label--radio" for="slim">Похудение</label>
+          </div>
+          <div class="form-program__wrapper form-program__wrapper--radio">
+            <input class="visually-hidden  form-program__input" id="pro" type="radio" name="program" value="pro" aria-label="Набор массы">
+            <label class="form-program__label  form-program__label--radio" for="slim">Похудение</label>
+          </div>
+          <div class="form-program__wrapper form-program__wrapper--radio">
+            <input class="visually-hidden  form-program__input" id="uncertain" type="radio" name="program" value="uncertain" aria-label="Не знаю (Нужен ваш совет)">
+            <label class="form-program__label  form-program__label--radio" for="slim">Не знаю (Нужен ваш совет)</label>
+          </div>
+        </div>
+        <div class="form-program__wrapper form-program__wrapper--contacts">
+          <label class="form-program__label" for="tel">Телефон:*</label>
+          <input class="form-program__input" id="tel" type="tel" placeholder="8 (960) 900-60-90" aria-label="Телефон">
+        </div>
+        <div class="form-program__wrapper form-program__wrapper--comments">
+          <h2 class="form-program__wrapper-title">Комментарий</h2>
+          <textarea class="form-program__textarea" name="comment" placeholder="Расскажите обо всех повадках кота" aria-label="Комментарии"></textarea>
+        </div>
+        <div class="form-program__wrapper form-program__wrapper--checkbox">
+          <h2 class="form-program__wrapper-title">Дополнительно</h2>
+          <div class="form-program__checkbox-wrap">
+            <div class="form-program__wrapper  form-program__wrapper--checkbox">
+              <input class="visually-hidden  form-program__input" id="sweetener" type="checkbox" name="sweetener" checked>
+              <label class="form-program__label  form-program__label--checkbox" for="sweetener">Сахарозаменитель</label>
+            </div>
+            <div class="form-program__wrapper  form-program__wrapper--checkbox">
+              <input class="visually-hidden  form-program__input" id="water" type="checkbox" name="water">
+              <label class="form-program__label  form-program__label--checkbox" for="water">Питьевая вода</label>
+            </div>
+            <div class="form-program__wrapper  form-program__wrapper--checkbox">
+              <input class="visually-hidden  form-program__input" id="milk" type="checkbox" name="milk">
+              <label class="form-program__label  form-program__label--checkbox" for="milk">Молоко</label>
+            </div>
+            <div class="form-program__wrapper  form-program__wrapper--checkbox">
+              <input class="visually-hidden  form-program__input" id="vitamins" type="checkbox" name="vitamins">
+              <label class="form-program__label  form-program__label--checkbox" for="vitamins">Витамины</label>
+            </div>
+            <div class="form-program__wrapper">
+              <button class="button" type="button">Отправить заявку</button>
+              <small class="form-program__legend">
+              <sup>*</sup> — Обязательные поля
+              </small>
+            </div>
+            </div>
+        </div>
+        </form>
+      <section class="map-contacts">
+        <h2 class="visually-hidden">Адрес</h2>
+        <div class="map-contacts__wrapper map-contacts__wrapper">
+          <p class="map-contacts__invitation">приглашаем к сотрудничеству дилеров!</p>
+          <p class="map-contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+        <div class="map">
+          <img src="https://via.placeholder.com/320x400" width="320" height="400" alt="Карта">
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <a class="page-footer__logo-link">
+        <img class="page-footer__logo-image" src="https://via.placeholder.com/128x24" width="128" height="24" alt="Логотип">
+      </a>
+      <section class="page-footer__social-network">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul>
+          <li><a class="social-network social-network--vk" href="" aria-label="Вконтакте"></a></li>
+          <li><a class="social-network social-network--insta" href="" aria-label="Инстаграм"></a></li>
+          <li><a class="social-network social-network--fb" href="" aria-label="Фейсбук"></a></li>
+        </ul>
+      </section>
+      <section class="page-footer__developers">
+        <h2 class="visually-hidden">Разработчики</h2>
+        <a class="page-footer__developers-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <p class="page-footer__developers-description">HTML Academy</p>
+          <img class="page-footer__developers-link-icon" src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип Академии">
+        </a>
+      </section>
+    </footer>
+  </body>
+</html>
