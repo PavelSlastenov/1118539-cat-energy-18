@@ -9,10 +9,9 @@
   <body>
 
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="https://via.placeholder.com/191x38" width="191" height="38" alt="Кот">
-      </a>
-
+      <div class="page-header__logo">
+      <a><img class="page-header__logo-image" src="https://via.placeholder.com/191x38" width="191" height="38" alt="Кот"></a>
+      </div>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
@@ -29,7 +28,6 @@
           </ul>
         </div>
       </nav>
-
     </header>
 
     <main class="page-main">
@@ -97,15 +95,19 @@
         <p class="slider__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
           Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и
           по-прежнему спит по 16 часов в день.</p>
-        <h3 class="visually-hidden>">Результат</h3>
+        <h3 class="visually-hidden">Результат</h3>
         <ul class="slider__list">
-          <li class="slider__item">
+          <li class="slider__item slider__item--left">
             <p>5 кг</p>
+            <div class="slider__item-wrapper">
             <small class="slider__category">снижение веса</small>
+            </div>
           </li>
-          <li class="slider__item">
+          <li class="slider__item slider__item--right">
             <p>60 дней</p>
+            <div class="slider__item-wrapper">
             <small class="slider__category">затрачено времени</small>
+            </div>
           </li>
         </ul>
         <h3 class="slider__title slider__title--bottom">Затраты на питание: 15 000 руб.</h3>
