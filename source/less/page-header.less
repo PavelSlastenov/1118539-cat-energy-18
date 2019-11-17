@@ -1,0 +1,35 @@
+.page-header__logo {
+  margin-top: 11px;
+  margin-bottom: 16px;
+  margin-left: 20px;
+}
+
+.page-header__close {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  bottom: 10px;
+  left: 68px;
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+}
+
+.page-header__close:before,
+.page-header__close:after {
+  position: absolute;
+  top: 0;
+  left: 8px;
+  content: ' ';
+  height: 18px;
+  width: 2px;
+  background-color: #000000;
+}
+
+.page-header__close:before {
+  transform: rotate(45deg);
+}
+
+.page-header__close:after {
+  transform: rotate(-45deg);
+}
