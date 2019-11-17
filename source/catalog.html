@@ -8,11 +8,13 @@
   <body>
 
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/191x38" width="191" height="38" alt="Кот">
-    </a>
+    <div class="page-header__logo">
+      <a><img class="page-header__logo-image" src="https://via.placeholder.com/191x38" width="191" height="38" alt="Кот"></a>
+      <button class="page-header__open visually-hidden" type="button" aria-label="Открыть меню"></button>
+      <button class="page-header__close" type="button" aria-label="Закрыть меню"></button>
+    </div>
+
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
