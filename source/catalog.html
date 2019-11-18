@@ -16,7 +16,7 @@
 
     <nav class="main-nav">
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list site-list visually-hidden">
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">Главная</a>
           </li>
@@ -35,7 +35,9 @@
     <h1 class="visually-hidden">Каталог функционального питания для котов «Кэт энерджи»</h1>
 
     <section class="goods">
+      <div class="goods__line"></div>
       <h2 class="goods__title">Каталог продукции</h2>
+
       <div class="goods__card">
         <div class="goods__wrapper"> <!--Обертка: Картинка слева, остальное содержимое справа, задам flex-direction: row;-->
           <a class="goods__image goods__image--small"><img src="https://via.placeholder.com/140x144" width="140" height="144" alt="Кэт энерджи маленький"></a>
@@ -55,9 +57,9 @@
             <td class="goods__table goods__table--second-column">700 Р.</td> <!--2 столбец-->
           </tr>
         </table>
-        </div> <!--Конец право обертки для названия товара, что бы таблица оказалась внизу-->
+        </div> <!--Конец правой обертки для названия товара, что бы таблица оказалась внизу-->
         </div>
-        <a class="goods__order" href="">Заказать</a>
+        <div class="goods__order-wrapper"><a class="goods__order" href="">Заказать</a></div>
         </div>
 
       <div class="goods__card">
@@ -81,7 +83,7 @@
           </table>
         </div>
         </div>
-        <a class="goods__order" href="">Заказать</a>
+        <div class="goods__order-wrapper"><a class="goods__order" href="">Заказать</a></div>
       </div>
 
       <div class="goods__card">
@@ -105,7 +107,7 @@
           </table>
         </div>
         </div>
-        <a class="goods__order" href="">Заказать</a>
+        <div class="goods__order-wrapper"><a class="goods__order" href="">Заказать</a></div>
       </div>
 
       <div class="goods__card">
@@ -129,7 +131,7 @@
           </table>
         </div>
         </div>
-        <a class="goods__order" href="">Заказать</a>
+        <div class="goods__order-wrapper"><a class="goods__order" href="">Заказать</a></div>
       </div>
 
       <div class="goods__card">
@@ -153,7 +155,7 @@
           </table>
         </div>
         </div>
-        <a class="goods__order" href="">Заказать</a>
+        <div class="goods__order-wrapper"><a class="goods__order" href="">Заказать</a></div>
       </div>
 
       <div class="goods__card">
@@ -177,7 +179,7 @@
           </table>
         </div>
         </div>
-        <a class="goods__order" href="">Заказать</a>
+        <div class="goods__order-wrapper"><a class="goods__order" href="">Заказать</a></div>
       </div>
 
       <div class="goods__card">
@@ -201,11 +203,11 @@
           </table>
         </div>
         </div>
-        <a class="goods__order" href="">Заказать</a>
+        <div class="goods__order-wrapper"><a class="goods__order" href="">Заказать</a></div>
       </div>
 
       <div class="goods-all">
-        <img class="goods-all__image container" src="https://via.placeholder.com/55x60" width="30" height="30" alt="Плюс">
+        <div class="goods-all__plus"></div>
         <b class="goods-all__description container">Показать еще 100500 товаров</b>
         <p class="goods-all__intro container">На самом деле вкусов гораздо больше!</p>
         <a class="goods__show container" href="">Показать все</a>
@@ -214,66 +216,80 @@
 
     <section class="goods-add">
       <h2 class="goods-add__title">Дополнительные товары</h2>
-          <div class="goods-add-card">
-            <h3 class="goods-add-card__title">Сахарозаменитель</h3>
+      <div class="goods-add-line"></div>
+
+      <div class="goods-add-card">
+            <h3 class="goods-add-card__title goods-add-card__title--one">Сахарозаменитель</h3>
             <table class="goods-add__table">
               <tr class="goods-add__row">
                 <td class="goods-add__table goods-add__table--front-column">1 упаковка (100 г)</td>
-                <td class="goods-add__table goods-add__table--second-column">200 Р.</td>
+                <td class="goods-add__table goods-add__table--second-column-one">200 Р.</td>
               </tr>
             </table>
-            <a class="goods-add__order" href="">Заказать</a>
+            <div class="goods-add__order-wrapper goods-add__order-wrapper--one">
+              <a class="goods-add__order" href="">Заказать</a>
+            </div>
           </div>
 
           <div class="goods-add-card">
-            <h3 class="goods-add-card__title">Питьевая вода</h3>
+            <h3 class="goods-add-card__title goods-add-card__title--two">Питьевая вода</h3>
             <table class="goods-add__table">
               <tr class="goods-add__row">
-                <td class="goods-add__table goods__table--front-column">5 литров</td>
-                <td class="goods-add__table goods__table--second-column">50 Р.</td>
+                <td class="goods-add__table goods-add__table--front-column">5 литров</td>
+                <td class="goods-add__table goods-add__table--second-column-two">50 Р.</td>
               </tr>
             </table>
-            <a class="goods-add__order" href="">Заказать</a>
+              <div class="goods-add__order-wrapper goods-add__order-wrapper--two">
+                <a class="goods-add__order" href="">Заказать</a>
+              </div>
           </div>
 
             <div class="goods-add-card">
-              <h3 class="goods-add-card__title">Молоко</h3>
+              <h3 class="goods-add-card__title goods-add-card__title--three">Молоко</h3>
             <table class="goods-add__table">
               <tr class="goods-add__row">
-                <td class="goods-add__table goods__table--front-column">1 литр</td>
-                <td class="goods-add__table goods__table--second-column">100 Р..</td>
+                <td class="goods-add__table goods-add__table--front-column">1 литр</td>
+                <td class="goods-add__table goods-add__table--second-column-three">100 Р.</td>
               </tr>
             </table>
-            <a class="goods-add__order" href="">Заказать</a>
+              <div class="goods-add__order-wrapper goods-add__order-wrapper--three">
+                <a class="goods-add__order" href="">Заказать</a>
+              </div>
             </div>
 
           <div class="goods-add-card">
-            <h3 class="goods-add-card__title">Витамины</h3>
+            <h3 class="goods-add-card__title goods-add-card__title--four">Витамины</h3>
             <table class="goods-add__table">
               <tr class="goods-add__row">
-                <td class="goods-add__table goods__table--front-column">1 упаковка (30 г)</td>
-                <td class="goods-add__table goods__table--second-column">300 Р.</td>
+                <td class="goods-add__table goods-add__table--front-column">1 упаковка (30 г)</td>
+                <td class="goods-add__table goods-add__table--second-column-four">300 Р.</td>
               </tr>
             </table>
-            <a class="goods-add__order" href="">Заказать</a>
+              <div class="goods-add__order-wrapper goods-add__order-wrapper--four">
+                <a class="goods-add__order" href="">Заказать</a>
+              </div>
           </div>
 
         <div class="goods-promo">
-          <img class="goods-promo__image" src="https://via.placeholder.com/280x289" width="280" height="289" alt="Подарок">
+          <div class="goods-promo__wrapper">
           <div class="goods-promo__item">
-            <p class="goods-promo__description">Закажите все и получите чехол для кота в подарок!</p>
+            <div class="goods-promo__description-wrapper">
+              <p class="goods-promo__description">Закажите все и получите чехол для кота в подарок!</p>
+            </div>
+            <img class="goods-promo__image" src="https://via.placeholder.com/55x60" width="55" height="60" alt="Подарок">
+          </div>
           </div>
         </div>
     </section>
 
     <section class="map-contacts">
       <h2 class="visually-hidden">Адрес</h2>
-      <div class="map-contacts__wrapper">
-        <p class="map-contacts__invitation">приглашаем к сотрудничеству дилеров!</p>
-        <p class="map-contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="map-contacts__wrapper-catalog">
+        <p class="map-contacts__invitation">Приглашаем<br>к сотрудничеству дилеров!</p>
+        <p class="map-contacts__address">ул. Большая<br>Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
-      <div class="map">
-        <img src="https://via.placeholder.com/320x400" width="320" height="400" alt="Карта">
+      <div class="map-contacts__map">
+        <img src="https://via.placeholder.com/320x365" width="320" height="365" alt="Карта">
       </div>
     </section>
 
