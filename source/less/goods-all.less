@@ -5,7 +5,7 @@
 }
 
 .goods-all__image {
-  margin-top: 27px;
+  margin-top: 25px;
 }
 
 .goods-all__description {
@@ -15,7 +15,38 @@
   line-height: 20px;
   text-transform: uppercase;
 
+  margin-top: 49px;
+}
+
+.goods-all__plus {
+  position: relative;
+
+  width: 30px;
+  height: 30px;
+  opacity: 0.2;
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+}
+
+.goods-all__plus:before,
+.goods-all__plus:after {
+  position: absolute;
+
   margin-top: 26px;
+  margin-left: 158px;
+  content: ' ';
+  height: 30px;
+  width: 2px;
+  background-color: #222222;
+}
+
+.goods-all__plus:before {
+  transform: rotate(50deg);
+}
+
+.goods-all__plus:before {
+  transform: rotate(90deg);
 }
 
 .goods-all__intro { /*Сделать шире чем description*/
@@ -26,7 +57,7 @@
   text-transform: none;
   font-family: "Arial MT";
 
-  margin-top: 11px;
+  margin-top: 9px;
 }
 
 .goods__show {
@@ -37,12 +68,11 @@
   line-height: 20px;
   text-transform: uppercase;
 
-  margin-top: 22px;
+  padding-top: 11px;
+  padding-right: 93px;
+  padding-bottom: 9px;
+  padding-left: 96px;
 
-  padding-top: 13px;
-  padding-right: 94px;
-  padding-bottom: 12px;
-  padding-left: 97px;
-
-  margin-bottom: 37px;
+  margin-top: 20px;
+  margin-bottom: 24px;
 }
