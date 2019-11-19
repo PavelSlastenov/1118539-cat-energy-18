@@ -1,5 +1,8 @@
-.form-program {
-  margin-left: 20px;
+.page-form {
+  border: 1px solid #ededed;
+  border-right: none;
+  border-left: none;
+  margin-top: 14px;
 }
 
 .form-program__title {
@@ -9,7 +12,8 @@
   line-height: 60px;
   text-transform: none;
 
-  margin-top: 30px;
+  margin-top: 15px;
+  margin-left: 20px;
 }
 
 .form-program__description {
@@ -21,7 +25,7 @@
 
   margin-top: 26px;
   margin-bottom: 39px;
-  margin-left: px;
+  margin-left: 20px;
 }
 
 .form-program__input {
@@ -54,10 +58,12 @@
 
 .form-program__input--fourth {
   width: 219px;
+  padding-left: 15px;
 }
 
 .form-program__input--fifth {
   width: 204px;
+  padding-left: 15px;
 }
 
 .form-program__label {
@@ -68,7 +74,7 @@
   text-transform: uppercase;
 }
 
-.form-program__label--first {
+.form-program__label--first { /*Почему то здесь не работает ":nth-child(2n)" пришлось задавать разные имена классам для pixel-perfect*/
   margin-right: 10px;
 }
 
@@ -81,35 +87,94 @@
 }
 
 .form-program__label--fourth {
-  margin-right: 12px;
+  margin-right: 8px;
 }
 
 .form-program__label--fifth {
-  margin-right: 10px;
+  margin-right: 6px;
+}
+
+.form-program__wrapper--e-mail {
+  padding-top: 5px;
+}
+
+.form-program__wrapper--tel {
+  padding-top: 0;
 }
 
 .form-program__wrapper {
   margin-bottom: 14px;
+  margin-left: 19px;
 }
 
 .form-program__title-contacts {
+  position: relative;
+
   color: #111111;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
+  text-transform: none;
 
-  margin-top: 31px;
+  margin-top: 28px;
   margin-bottom: 30px;
+  margin-left: 19px;
 }
 
-.form-program__title-add {
+.form-program__title-contacts-line {
+  position: absolute;
+
+  top: 627px;
+  left: 221px;
+  width: 99px;
+  height: 3px;
+  background-color: #68b738;
+}
+
+.form-program__title-add-top {
+  position: relative;
+
   color: #111111;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
+  text-transform: none;
 
-  margin-top: 31px;
-  margin-bottom: 31px;
+  margin-top: 27px;
+}
+
+.form-program__title-add-top-line {
+  position: absolute;
+
+  top: 841px;
+  left: 162px;
+
+  width: 158px;
+  height: 3px;
+  background-color: #68b738;
+}
+
+.form-program__title-add-bottom {
+  position: relative;
+
+  color: #111111;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: none;
+
+  margin-top: 27px;
+}
+
+.form-program__title-add-bottom-line {
+  position: absolute;
+
+  top: 1078px;
+  left: 184px;
+
+  width: 136px;
+  height: 3px;
+  background-color: #68b738;
 }
 
 .form-program__textarea {
@@ -121,6 +186,15 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+
+  margin-top: 35px;
+  padding-top: 13px;
+  padding-left: 15px;
+}
+
+.form-program__button-wrapper {
+  margin-top: 40px;
+  margin-left: 2px;
 }
 
 .form-program__button {
@@ -132,79 +206,110 @@
   text-transform: uppercase;
   border: none;
 
-  padding-top: 13px;
-  padding-right: 77px;
-  padding-bottom: 11px;
-  padding-left: 80px;
+  padding-top: 11px;
+  padding-right: 76px;
+  padding-bottom: 9px;
+  padding-left: 79px;
+}
+
+.form-program__legend-wrapper {
+  margin-top: 18px;
+  margin-right: 70px;
+  margin-left: 64px;
+
 }
 
 .form-program__legend {
   color: #444444;
-  font-family: "Arial MT";
+  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
   text-transform: none;
-
-  margin-right: 70px;
-  margin-left: 70px;
 }
 
-.form-program__input + label::before {
-  position: absolute;
+/*------------Радио кнопки-------------*/
 
-  top: 0;
+.form-program__radio-wrapper {
+  border: 1px solid #ededed;
+  width: 320px;
+  margin-top: 22px;
+}
+
+.form-program__radio {
+  margin-top: 20px;
+  margin-left: 54px;
+  border: none;
+}
+
+.form-program__pro-wrapper {
+  margin-top: 25px;
+}
+
+.form-program__unknown-wrapper {
+  margin-top: 25px;
+  padding-bottom: 16px;
+}
+
+.form-program__label--slim::before {
+  position: absolute;
+  top: 448px;
+  left: 20px;
   width: 30px;
   height: 30px;
-
-  border-radius: 50%;
   border: 1px solid #cdcdcd;
-  background-color: #000000;
-}
-
-.form-program__input:checked::after {
-  position: absolute;
-
-  top: 0;
-  left: 0;
-
-  width: 9px;
-  height: 9px;
-
-  background-color: #c5c5c5;
   border-radius: 50%;
-}
-
-
-
-
-
-.filter-power-radio + label::before {
   content: "";
-
-  position: absolute;
-
-  top: 2px;
-  left: -35px;
-
-  width: 25px;
-  height: 25px;
-
-  border: 4px solid #c5c5c5;
-  border-radius: 50%;
 }
 
-.filter-power-radio:checked::after {
-  content: "";
-
+.form-program__label--pro::before {
   position: absolute;
-
-  top: 10px;
-  left: -27px;
-
-  width: 9px;
-  height: 9px;
-
-  background-color: #c5c5c5;
+  top: 491px;
+  left: 20px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
   border-radius: 50%;
+  content: "";
+}
+
+.form-program__label--unknown::before {
+  position: absolute;
+  top: 533px;
+  left: 20px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+  content: "";
+}
+
+.form-program__input--radio:checked + .form-program__label--radio::after { /*Не работает (зелёный круг внутри)*/
+  position: absolute;
+  top: 85px;
+  left: 20px;
+  width: 12px;
+  height: 12px;
+  background-color: #68b738;
+  border-radius: 50%;
+  content: "";
+}
+/*---------------------------------*/
+
+/*-----------Чекбокс---------------*/
+.form-program__wrapper--checkbox {
+  margin-top: 39px;
+  padding-left: 27px;
+}
+
+.form-program__wrapper--checkbox:nth-child(2n) {
+  margin-top: 26px;
+}
+
+.form-program__wrapper--checkbox:nth-child(3n) {
+  margin-top: 24px;
+}
+
+.form-program__wrapper--checkbox:nth-child(4n) {
+  margin-top: 24px;
 }
