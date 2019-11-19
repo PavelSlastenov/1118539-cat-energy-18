@@ -215,8 +215,8 @@
 .form-program__legend-wrapper {
   margin-top: 18px;
   margin-right: 70px;
+  margin-bottom: 32px;
   margin-left: 64px;
-
 }
 
 .form-program__legend {
@@ -313,3 +313,31 @@
 .form-program__wrapper--checkbox:nth-child(4n) {
   margin-top: 24px;
 }
+
+.form-program__input--checkbox + label::before {
+  content: "";
+
+  position: absolute;
+  top: 1123px;
+  left: 20px;
+  width: 30px;
+  height: 30px;
+
+  border: 2px solid #c5c5c5;
+}
+
+.form-program__input--checkbox:checked + label::after {
+  content: "";
+
+  position: absolute;
+  top: 1126px;
+  left: 23px;
+  width: 27px;
+  height: 23px;
+  fill: lime;
+
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+/*-----------------------------------------*/
