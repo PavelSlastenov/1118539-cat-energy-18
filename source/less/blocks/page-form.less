@@ -1,12 +1,12 @@
 .page-form {
-  border: 1px solid #ededed;
+  border: 1px solid @gray93;
   border-right: none;
   border-left: none;
   margin-top: 14px;
 }
 
 .form-program__title {
-  color: #111111;
+  color: @light-black;
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
@@ -17,7 +17,7 @@
 }
 
 .form-program__description {
-  color: #111111;
+  color: @light-black;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -30,9 +30,9 @@
 
 .form-program__input {
   height: 45px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid @grey80;
   text-transform: uppercase;
-  color: #444444;
+  color: @grey-dark;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -67,7 +67,7 @@
 }
 
 .form-program__label {
-  color: #222222;
+  color: @graphite;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -110,7 +110,7 @@
 .form-program__title-contacts {
   position: relative;
 
-  color: #111111;
+  color: @light-black;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
@@ -128,13 +128,13 @@
   left: 221px;
   width: 99px;
   height: 3px;
-  background-color: #68b738;
+  background-color: @green;
 }
 
 .form-program__title-add-top {
   position: relative;
 
-  color: #111111;
+  color: @light-black;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
@@ -151,13 +151,13 @@
 
   width: 158px;
   height: 3px;
-  background-color: #68b738;
+  background-color: @green;
 }
 
 .form-program__title-add-bottom {
   position: relative;
 
-  color: #111111;
+  color: @light-black;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
@@ -174,14 +174,14 @@
 
   width: 136px;
   height: 3px;
-  background-color: #68b738;
+  background-color: @green;
 }
 
 .form-program__textarea {
   width: 280px;
   height: 150px;
-  border: 1px solid #cdcdcd;
-  color: #444444;
+  border: 1px solid @grey80;
+  color: @grey-dark;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -198,8 +198,8 @@
 }
 
 .form-program__button {
-  color: #ffffff;
-  background-color: #68b738;
+  color: @white;
+  background-color: @green;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -220,8 +220,8 @@
 }
 
 .form-program__legend {
-  color: #444444;
-  font-family: "Arial", "Helvetica", sans-serif;
+  color: @grey-dark;
+  font-family: @font-family-secondary;
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
@@ -231,7 +231,7 @@
 /*------------Радио кнопки-------------*/
 
 .form-program__radio-wrapper {
-  border: 1px solid #ededed;
+  border: 1px solid @gray93;
   width: 320px;
   margin-top: 22px;
 }
@@ -257,7 +257,7 @@
   left: 20px;
   width: 30px;
   height: 30px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid @grey80;
   border-radius: 50%;
   content: "";
 }
@@ -268,7 +268,7 @@
   left: 20px;
   width: 30px;
   height: 30px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid @grey80;
   border-radius: 50%;
   content: "";
 }
@@ -279,18 +279,18 @@
   left: 20px;
   width: 30px;
   height: 30px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid @grey80;
   border-radius: 50%;
   content: "";
 }
 
-.form-program__input--radio:checked + .form-program__label--radio::after { /*Не работает (зелёный круг внутри)*/
+.form-program__input--radio:checked + .form-program__label--radio::after {
   position: absolute;
   top: 85px;
   left: 20px;
   width: 12px;
   height: 12px;
-  background-color: #68b738;
+  background-color: @green;
   border-radius: 50%;
   content: "";
 }
@@ -322,7 +322,7 @@
   width: 30px;
   height: 30px;
 
-  border: 2px solid #c5c5c5;
+  border: 2px solid @grey81;
 }
 
 .form-program__input--checkbox:checked + label::after {

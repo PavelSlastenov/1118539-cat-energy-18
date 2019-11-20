@@ -1,7 +1,7 @@
 .goods-all {
   display: flex;
   flex-direction: column;
-  border: 1px solid #ededed;
+  border: 1px solid @gray93;
 }
 
 .goods-all__image {
@@ -9,7 +9,7 @@
 }
 
 .goods-all__description {
-  color: #111111;
+  color: @light-black;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -38,7 +38,7 @@
   content: ' ';
   height: 30px;
   width: 2px;
-  background-color: #222222;
+  background-color: @graphite;
 }
 
 .goods-all__plus:before {
@@ -49,20 +49,20 @@
   transform: rotate(90deg);
 }
 
-.goods-all__intro { /*Сделать шире чем description*/
-  color: #444444;
+.goods-all__intro {
+  color: @grey-dark;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
   text-transform: none;
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: @font-family-secondary;
 
   margin-top: 9px;
 }
 
 .goods__show {
-  color: #444444;
-  background-color: #f2f2f2;
+  color: @grey-dark;
+  background-color: @gray95;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
