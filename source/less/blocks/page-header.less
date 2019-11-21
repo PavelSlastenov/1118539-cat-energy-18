@@ -14,8 +14,8 @@
   background: transparent;
 }
 
-.page-header__menu:before,
-.page-header__menu:after {
+.page-header__menu::before,
+.page-header__menu::after {
   position: absolute;
 
   content: "";
@@ -25,10 +25,10 @@
   background-color: @black;
 }
 
-.page-header__menu:before {
+.page-header__menu::before {
   transform: rotate(45deg);
 }
 
-.page-header__menu:after {
+.page-header__menu::after {
   transform: rotate(-45deg);
 }
