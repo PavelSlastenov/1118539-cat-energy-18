@@ -3,16 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="https://via.placeholder.com/191x38" width="191" height="38" alt="Кот">
-      </a>
+
+  <header class="page-header">
+    <div class="page-header__logo">
+      <a><img class="page-header__logo-image" src="https://via.placeholder.com/191x38" width="191" height="38" alt="Кот"></a>
+      <button class="page-header__menu" type="button" aria-label="Меню"></button>
+    </div>
+
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list site-list visually-hidden">
             <li class="site-list__item">
               <a class="site-list__link" href="index.html">Главная</a>
             </li>
@@ -26,69 +29,86 @@
         </div>
       </nav>
     </header>
-    <main class="page-main">
+
+    <main class="page-form">
       <h1 class="visually-hidden">Подбор функционального питания для котов «Кэт энерджи»</h1>
-      <form method="get" class="form-program" action="https://echo.htmlacademy.ru">
+
+      <form class="form-program" method="get" action="https://echo.htmlacademy.ru">
         <h2 class="form-program__title">Подбор программы</h2>
-        <p class="form-program__description">Заполните анкету и мы подберем
-          программу питания для вашего кота</p>
-        <div class="form-program-data">
+        <p class="form-program__description">Заполните анкету и мы подберем<br>программу питания для вашего кота</p>
+
           <div class="form-program__wrapper">
-            <label class="form-program__label" for="name">Имя:*</label>
-            <input class="form-program__input" type="text" placeholder="Барсик" aria-label="Имя">
+            <label class="form-program__label form-program__label--first" for="name">Имя:*</label>
+            <input class="form-program__input form-program__input--first" type="text" placeholder="Барсик" aria-label="Имя">
           </div>
           <div class="form-program__wrapper">
-            <label class="form-program__label" for="name">Вес (кг):*</label>
-            <input class="form-program__input" type="text" placeholder="7" aria-label="Вес">
+            <label class="form-program__label form-program__label--second" for="name">Вес (кг):*</label>
+            <input class="form-program__input form-program__input--second" type="text" placeholder="7" aria-label="Вес">
           </div>
           <div class="form-program__wrapper">
-            <label class="form-program__label" for="name">Возраст (лет):</label>
-            <input class="form-program__input" id="name" type="text" placeholder="7" aria-label="Возраст">
+            <label class="form-program__label form-program__label--third" for="name">Возраст (лет):</label>
+            <input class="form-program__input form-program__input--third" id="name" type="text" placeholder="7" aria-label="Возраст">
           </div>
+
+          <div class="form-program__radio-wrapper">
+            <fieldset class="form-program__radio">
+              <div class="form-program__slim-wrapper">
+                <input class="visually-hidden form-program__input form-program__input--radio" type="radio" name="program" id="slim" value="1">
+                <label for="slim" class="form-program__label form-program__label--slim">Похудение</label>
+              </div>
+              <div class="form-program__pro-wrapper">
+                <input class="visually-hidden form-program__input form-program__input--radio" type="radio" name="program" id="pro" value="2">
+                <label for="pro" class="form-program__label form-program__label--pro">Набор массы</label>
+              </div>
+              <div class="form-program__unknown-wrapper">
+                <input class="visually-hidden form-program__input form-program__input--radio" type="radio" name="program" id="unknown" value="3">
+                <label for="unknown" class="form-program__label form-program__label--unknown">Не знаю (нужен ваш совет)</label>
+              </div>
+            </fieldset>
+          </div>
+
+        <h2 class="form-program__title-contacts">Контактные данные<br>(владельца кота)</h2>
+        <div class="form-program__title-contacts-line"></div>
+        <div class="form-program__wrapper form-program__wrapper--e-mail">
+          <label class="form-program__label form-program__label--fourth" for="e-mail">E-mail:*</label>
+          <input class="form-program__input form-program__input--fourth" id="e-mail" type="tel" placeholder="kuklachev@gmail.com" aria-label="Телефон">
         </div>
-        <div class="form-program__options form-program__options--radio">
-          <div class="form-program__wrapper form-program__wrapper--radio">
-            <input class="visually-hidden  form-program__input" id="slim" type="radio" name="program" value="slim" aria-label="Похудение" checked>
-            <label class="form-program__label  form-program__label--radio" for="slim">Похудение</label>
-          </div>
-          <div class="form-program__wrapper form-program__wrapper--radio">
-            <input class="visually-hidden  form-program__input" id="pro" type="radio" name="program" value="pro" aria-label="Набор массы">
-            <label class="form-program__label  form-program__label--radio" for="slim">Похудение</label>
-          </div>
-          <div class="form-program__wrapper form-program__wrapper--radio">
-            <input class="visually-hidden  form-program__input" id="uncertain" type="radio" name="program" value="uncertain" aria-label="Не знаю (Нужен ваш совет)">
-            <label class="form-program__label  form-program__label--radio" for="slim">Не знаю (Нужен ваш совет)</label>
-          </div>
-        </div>
-        <div class="form-program__wrapper form-program__wrapper--contacts">
-          <label class="form-program__label" for="tel">Телефон:*</label>
-          <input class="form-program__input" id="tel" type="tel" placeholder="8 (960) 900-60-90" aria-label="Телефон">
+        <div class="form-program__wrapper form-program__wrapper--tel">
+          <label class="form-program__label form-program__label--fifth" for="tel">Телефон:*</label>
+          <input class="form-program__input form-program__input--fifth" id="tel" type="tel" placeholder="8 (960) 900-60-90" aria-label="Телефон">
         </div>
         <div class="form-program__wrapper form-program__wrapper--comments">
-          <h2 class="form-program__wrapper-title">Комментарий</h2>
+
+          <h2 class="form-program__title-add-top">Комментарий</h2>
+          <div class="form-program__title-add-top-line"></div>
           <textarea class="form-program__textarea" name="comment" placeholder="Расскажите обо всех повадках кота" aria-label="Комментарии"></textarea>
         </div>
-        <div class="form-program__wrapper form-program__wrapper--checkbox">
-          <h2 class="form-program__wrapper-title">Дополнительно</h2>
+        <div class="form-program__wrapper">
+          <h2 class="form-program__title-add-bottom">Дополнительно</h2>
+          <div class="form-program__title-add-bottom-line"></div>
+
           <div class="form-program__checkbox-wrap">
-            <div class="form-program__wrapper  form-program__wrapper--checkbox">
-              <input class="visually-hidden  form-program__input" id="sweetener" type="checkbox" name="sweetener" checked>
-              <label class="form-program__label  form-program__label--checkbox" for="sweetener">Сахарозаменитель</label>
+            <div class="form-program__wrapper form-program__wrapper--checkbox">
+              <input class="visually-hidden form-program__input form-program__input--checkbox" id="sweetener" type="checkbox" name="sweetener" checked>
+              <label class="form-program__label" for="sweetener">Сахарозаменитель</label>
             </div>
-            <div class="form-program__wrapper  form-program__wrapper--checkbox">
-              <input class="visually-hidden  form-program__input" id="water" type="checkbox" name="water">
-              <label class="form-program__label  form-program__label--checkbox" for="water">Питьевая вода</label>
+            <div class="form-program__wrapper form-program__wrapper--checkbox">
+              <input class="visually-hidden form-program__input form-program__input--checkbox" id="water" type="checkbox" name="water">
+              <label class="form-program__label" for="water">Питьевая вода</label>
             </div>
-            <div class="form-program__wrapper  form-program__wrapper--checkbox">
-              <input class="visually-hidden  form-program__input" id="milk" type="checkbox" name="milk">
-              <label class="form-program__label  form-program__label--checkbox" for="milk">Молоко</label>
+            <div class="form-program__wrapper form-program__wrapper--checkbox">
+              <input class="visually-hidden form-program__input form-program__input--checkbox" id="milk" type="checkbox" name="milk">
+              <label class="form-program__label" for="milk">Молоко</label>
             </div>
-            <div class="form-program__wrapper  form-program__wrapper--checkbox">
-              <input class="visually-hidden  form-program__input" id="vitamins" type="checkbox" name="vitamins">
-              <label class="form-program__label  form-program__label--checkbox" for="vitamins">Витамины</label>
+            <div class="form-program__wrapper form-program__wrapper--checkbox">
+              <input class="visually-hidden form-program__input form-program__input--checkbox" id="vitamins" type="checkbox" name="vitamins">
+              <label class="form-program__label" for="vitamins">Витамины</label>
             </div>
-            <div class="form-program__wrapper">
-              <button class="button" type="button">Отправить заявку</button>
+            <div class="form-program__button-wrapper">
+              <button class="form-program__button" type="button">Отправить заявку</button>
+            </div>
+
+            <div class="form-program__legend-wrapper">
               <small class="form-program__legend">
               <sup>*</sup> — Обязательные поля
               </small>
@@ -96,36 +116,46 @@
             </div>
         </div>
         </form>
+
       <section class="map-contacts">
         <h2 class="visually-hidden">Адрес</h2>
-        <div class="map-contacts__wrapper map-contacts__wrapper">
-          <p class="map-contacts__invitation">приглашаем к сотрудничеству дилеров!</p>
-          <p class="map-contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="map-contacts__wrapper map-contacts__wrapper--form">
+          <p class="map-contacts__invitation">Приглашаем<br>к&nbsp;сотрудничеству дилеров!</p>
+          <p class="map-contacts__address">ул. Большая<br>Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
-        <div class="map">
-          <img src="https://via.placeholder.com/320x400" width="320" height="400" alt="Карта">
+        <div class="map-contacts__map">
+          <img src="https://via.placeholder.com/320x365" width="320" height="365" alt="Карта">
         </div>
       </section>
+
     </main>
+
     <footer class="page-footer">
       <a class="page-footer__logo-link">
-        <img class="page-footer__logo-image" src="https://via.placeholder.com/128x24" width="128" height="24" alt="Логотип">
+        <img class="page-footer__logo-image page-footer__logo-image--form" src="https://via.placeholder.com/128x24" width="128" height="24" alt="Логотип">
       </a>
-      <section class="page-footer__social-network">
+
+      <section class="social-network">
         <h2 class="visually-hidden">Социальные сети</h2>
-        <ul>
-          <li><a class="social-network social-network--vk" href="" aria-label="Вконтакте"></a></li>
-          <li><a class="social-network social-network--insta" href="" aria-label="Инстаграм"></a></li>
-          <li><a class="social-network social-network--fb" href="" aria-label="Фейсбук"></a></li>
+        <ul class="social-network__list">
+          <li><a class="social-network__vk" href="" aria-label="Вконтакте"></a></li>
+          <li><a class="social-network__insta" href="" aria-label="Инстаграм"></a></li>
+          <li><a class="social-network__fb" href="" aria-label="Фейсбук"></a></li>
         </ul>
       </section>
-      <section class="page-footer__developers">
+
+      <section class="developers">
         <h2 class="visually-hidden">Разработчики</h2>
-        <a class="page-footer__developers-link" href="https://htmlacademy.ru/intensive/adaptive">
-          <p class="page-footer__developers-description">HTML Academy</p>
-          <img class="page-footer__developers-link-icon" src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип Академии">
+        <a class="developers__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <div class="developers__description-wrapper">
+            <p class="developers__description">HTML&nbsp;Academy</p>
+          </div>
+          <div class="developers__link-icon-wrapper">
+            <img class="developers__link-icon" src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип Академии">
+          </div>
         </a>
       </section>
+
     </footer>
   </body>
 </html>

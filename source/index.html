@@ -3,16 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="https://via.placeholder.com/191x38" width="191" height="38" alt="Кот">
-      </a>
+
+  <header class="page-header">
+    <div class="page-header__logo">
+      <a><img class="page-header__logo-image" src="https://via.placeholder.com/191x38" width="191" height="38" alt="Кот"></a>
+      <button class="page-header__menu" type="button" aria-label="Меню"></button>
+    </div>
+
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list site-list visually-hidden">
             <li class="site-list__item">
               <a class="site-list__link" href="index.html">Главная</a>
             </li>
@@ -20,115 +23,154 @@
               <a class="site-list__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Подбор прогрммы</a>
+              <a class="site-list__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
+
     <main class="page-main">
       <h1 class="visually-hidden">Магазин функционального питания для котов «Кэт энерджи»</h1>
+
       <section class="nutrition-promo">
-          <h2 class="visually-hidden">Программы питания</h2>
-          <b class="nutrition-promo__slogan">Функциональное питание для котов</b>
+        <h2 class="visually-hidden">Программы питания</h2>
+        <div class="nutrition-promo__wrapper">
+          <div class="nutrition-promo__slogan-wrapper">
+            <b class="nutrition-promo__slogan">Функциональное питание для котов</b>
+          </div>
+          <div class="nutrition-promo__intro-wrapper">
           <p class="nutrition-promo__intro">Занялся собой? Займись котом!</p>
-          <img src="https://via.placeholder.com/280x270" width="280" height="270" alt="Кэт энерджи">
+          </div>
+        </div>
+        <img class="nutrition-promo__image" src="https://via.placeholder.com/280x270" width="280" height="270" alt="Кэт энерджи">
+        <div class="nutrition-promo__link-wrapper">
           <a class="nutrition-promo__link" href="form.html">Подобрать программу</a>
+        </div>
       </section>
+
       <section class="programs">
         <div class="programs__item programs__item--slim">
           <div class="programs__wrapper">
             <h2 class="programs__title">Похудение</h2>
+            <div class="programs__title-icon"></div>
           </div>
-          <p class="programs__description">
-            Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
+          <p class="programs__description programs__description--slim">
+            Ваш кот весит больше собаки и почти&nbsp;утратил&nbsp;способность&nbsp;лазить по деревьям?
             Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
           </p>
-          <a class="programs__link" href="catalog-slim.html">Каталог Slim</a> <!--Если правилно понял ссылку нужно было дать на конкретный раздел в каталоге, да же если верстать его не будем-->
+          <div class="programs__line"></div>
+          <div class="programs__link-wrapper">
+            <a class="programs__link" href="catalog-slim.html">Каталог Slim</a>
           </div>
+        </div>
         <div class="programs__item programs__item--pro">
           <div class="programs__wrapper">
             <h2 class="programs__title">Набор массы</h2>
+            <div class="programs__title-icon"></div>
           </div>
-          <p class="programs__description">
+          <p class="programs__description programs__description--pro">
             Заработать авторитет среди дворовых котов и даже собак?
             Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
           </p>
-          <a class="programs__link" href="catalog-pro.html">Каталог Slim</a>
+          <div class="programs__line"></div>
+          <div class="programs__link-wrapper">
+            <a class="programs__link" href="catalog-pro.html">Каталог Pro</a>
+          </div>
         </div>
       </section>
+
       <section class="features">
         <h2 class="features__title">Как это работает</h2>
           <ul class="features__list">
             <li class="features__item features__item--useful">
-              <p class="features__description">Функциональное питание содержит только полезные питательные вещества.</p>
+              <p class="features__description">Функциональное питание<br>содержит только полезные питательные вещества.</p>
             </li>
             <li class="features__item features__item--powder">
               <p class="features__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
             </li>
             <li class="features__item features__item--powder--meal">
-              <p class="features__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
+              <p class="features__description">Замените один-два приема<br>обычной еды на наше функциональное питание.</p>
             </li>
             <li class="features__item features__item--powder--time">
-              <p class="features__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+              <p class="features__description">Уже через месяц<br>наслаждайтесь изменениями<br>к лучшему вашего питомца!</p>
             </li>
           </ul>
       </section>
+
       <section class="slider">
         <h2 class="slider__title slider__title--top">Живой пример</h2>
-        <p class="slider__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-          Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и
-          по-прежнему спит по 16 часов в день.</p>
-        <h3 class="visually-hidden>">Результат</h3>
+        <p class="slider__description">Борис сбросил 5 кг за 2 месяца, просто<br>заменив свой обычный корм на Cat<br>Energy Slim.
+          Отличный результат без изнуряющих тренировок! При этом он не<br>менял своих привычек и
+          по-прежнему<br>спит по 16 часов в день.</p>
+        <h3 class="visually-hidden">Результат</h3>
         <ul class="slider__list">
-          <li class="slider__item">
-            <p>5 кг</p>
-            <small class="slider__category">снижение веса</small>
+          <li class="slider__item slider__item--left">
+            <p class="slider__item-weight">5 кг</p>
+            <div class="slider__item-wrapper">
+              <div class="slider__category-background"></div>
+              <p class="slider__category">снижение веса</p>
+            </div>
           </li>
-          <li class="slider__item">
-            <p>60 дней</p>
-            <small class="slider__category">затрачено времени</small>
+          <li class="slider__item slider__item--right">
+            <p class="slider__item-days">60 дней</p>
+            <div class="slider__item-wrapper">
+              <div class="slider__category-background"></div>
+              <p class="slider__category">затрачено времени</p>
+            </div>
           </li>
         </ul>
         <h3 class="slider__title slider__title--bottom">Затраты на питание: 15 000 руб.</h3>
-        <img class="slider__image-1" src="https://via.placeholder.com/26x31" width="26" height="31" alt="Толстый кот">
-        <img class="slider__image-2 visually-hidden" src="https://via.placeholder.com/311x232" width="311" height="232" alt="Худой кот">
+        <img class="slider__image-1" src="https://via.placeholder.com/311x232" width="311" height="232" alt="Толстый кот">
+        <img class="slider__image-2 visually-hidden" src="https://via.placeholder.com/251x240" width="251" height="240" alt="Худой кот">
         <h3 class="visually-hidden">Прогресс</h3>
-        <div class="slider__progress">
-          <button class="slider__progress-btn slider__progress-btn--before" type="button">Было</button>
-          <button class="slider__progress-btn slider__progress-btn--after" type="button">Стало</button>
+        <div class="slider__bar">
+          <button class="slider__bar-btn slider__bar-btn--before" type="button">Было</button>
+          <div class="slider__bar-main"></div>
+          <div class="slider__bar-two"></div>
+          <button class="slider__bar-btn slider__bar-btn--after" type="button">Стало</button>
         </div>
       </section>
-      <section class="map-contacts">
+
+      <section class="map-contacts map-contacts--index">
         <h2 class="visually-hidden">Адрес</h2>
-        <div class="map-contacts__wrapper map-contacts__wrapper--index">
-          <p class="map-contacts__invitation">приглашаем к сотрудничеству дилеров!</p>
-          <p class="map-contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="map-contacts__wrapper">
+          <p class="map-contacts__invitation">Приглашаем<br>к&nbsp;сотрудничеству дилеров!</p>
+          <p class="map-contacts__address">ул. Большая<br>Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
-        <div class="map">
-        <img src="https://via.placeholder.com/320x400" width="320" height="400" alt="Карта">
+        <div class="map-contacts__map">
+        <img src="https://via.placeholder.com/320x365" width="320" height="365" alt="Карта">
         </div>
       </section>
+
     </main>
+
     <footer class="page-footer">
       <a class="page-footer__logo-link">
         <img class="page-footer__logo-image" src="https://via.placeholder.com/128x24" width="128" height="24" alt="Логотип">
       </a>
-      <section class="page-footer__social-network">
+
+      <section class="social-network">
         <h2 class="visually-hidden">Социальные сети</h2>
-        <ul>
-          <li><a class="social-network social-network--vk" href="" aria-label="Вконтакте"></a></li>
-          <li><a class="social-network social-network--insta" href="" aria-label="Инстаграм"></a></li>
-          <li><a class="social-network social-network--fb" href="" aria-label="Фейсбук"></a></li>
+        <ul class="social-network__list">
+          <li><a class="social-network__vk" href="" aria-label="Вконтакте"></a></li>
+          <li><a class="social-network__insta" href="" aria-label="Инстаграм"></a></li>
+          <li><a class="social-network__fb" href="" aria-label="Фейсбук"></a></li>
         </ul>
       </section>
-      <section class="page-footer__developers">
+
+      <section class="developers">
         <h2 class="visually-hidden">Разработчики</h2>
-        <a class="page-footer__developers-link" href="https://htmlacademy.ru/intensive/adaptive">
-          <p class="page-footer__developers-description">HTML Academy</p>
-          <img class="page-footer__developers-link-icon" src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип Академии">
+        <a class="developers__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <div class="developers__description-wrapper">
+          <p class="developers__description">HTML&nbsp;Academy</p>
+          </div>
+          <div class="developers__link-icon-wrapper">
+          <img class="developers__link-icon" src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип Академии">
+          </div>
         </a>
       </section>
+
     </footer>
   </body>
 </html>
