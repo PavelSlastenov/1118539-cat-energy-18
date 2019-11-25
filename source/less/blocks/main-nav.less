@@ -3,7 +3,14 @@
   flex-direction: column;
 }
 
+@media (min-width: @tablet-width) {
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+
 .main-nav__list {
-  list-style: none;
-  padding: 0;
+  .list-reset ();
 }
