@@ -45,6 +45,11 @@
   text-transform: uppercase;
 }
 
+.nutrition-promo__link-wrapper {
+  margin-top: 11px;
+  margin-left: 20px;
+}
+
 .nutrition-promo__link {
   color: @white;
   background-color: @green;
@@ -59,7 +64,130 @@
   padding-left: 73px;
 }
 
-.nutrition-promo__link-wrapper {
-  margin-top: 11px;
-  margin-left: 20px;
+@media (min-width: @tablet-width) {
+  .nutrition-promo__wrapper {
+    min-width: 768px;
+    background-image: none;
+  }
+
+  .nutrition-promo__slogan-wrapper {
+    width: 414px;
+    text-align: left;
+    margin-top: 36px;
+    margin-left: 117px;
+  }
+
+  .nutrition-promo__slogan {
+    color: @light-black;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    text-transform: none;
+  }
+
+  .nutrition-promo__intro-wrapper {
+    margin-top: 41px;
+    margin-right: 62px;
+    margin-left: 118px;
+  }
+
+  .nutrition-promo__intro {
+    color: @light-black;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  .nutrition-promo__image {
+    position: relative;
+
+    width: 709px;
+    height: 609px; //Временно
+
+    margin-top: 250px;
+    margin-right: 20px;
+    margin-left: 150px;
+
+    z-index: 2;
+  }
+
+  .nutrition-promo__link-wrapper {
+    margin-top: -582px;
+    margin-left: 119px;
+  }
+
+  .nutrition-promo__link {
+    position: absolute;
+
+    content: "";
+    color: @white;
+    background-color: @green;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    padding-top: 16px;
+    padding-right: 29px;
+    padding-bottom: 16px;
+    padding-left: 25px;
+
+    z-index: 3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .nutrition-promo__slogan-wrapper {
+    width: 414px;
+    text-align: left;
+    margin-top: -488px;
+    margin-left: 118px;
+  }
+
+  .nutrition-promo__slogan {
+    position: relative;
+
+    color: @light-black;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    text-transform: none;
+  }
+
+  .nutrition-promo__image {
+    position: absolute;
+
+    content: "";
+    width: 552px;
+    height: 499px; //Временно
+
+    top: -107px;
+    margin-right: 20px;
+    margin-left: 598px;
+
+    z-index: 2;
+  }
+
+  .nutrition-promo__link-wrapper {
+    margin-top: -240px;
+    margin-left: 119px;
+  }
+
+  .nutrition-promo__link {
+    color: @white;
+    background-color: @green;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    padding-top: 16px;
+    padding-right: 29px;
+    padding-bottom: 16px;
+    padding-left: 25px;
+
+    z-index: 3;
+  }
+
 }

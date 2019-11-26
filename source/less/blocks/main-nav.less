@@ -3,6 +3,10 @@
   flex-direction: column;
 }
 
+.main-nav__list {
+  .list-reset ();
+}
+
 @media (min-width: @tablet-width) {
   .main-nav {
     display: flex;
@@ -10,7 +14,12 @@
   }
 }
 
-
-.main-nav__list {
-  .list-reset ();
+@media (min-width: @desktop-width) {
+  .main-nav {
+    width: 720px;
+    height: 696px;
+    background-image: url("../../img/index-background-desktop@1x.jpg");
+    margin-top: -50px;
+    margin-left: 419px;
+  }
 }
