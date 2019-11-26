@@ -12,7 +12,9 @@
   line-height: 37.02px;
   text-transform: uppercase;
   font-weight: 400;
+}
 
+.programs__title--wrapper {
   margin-top: 6px;
   margin-left: 91px;
 }
@@ -24,7 +26,9 @@
   height: 51px;
   background-color: @green;
   border-radius: 50%;
+}
 
+.programs__title-icon--wrapper {
   margin-top: 24px;
   margin-left: 22px;
 }
@@ -36,17 +40,20 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: none;
+}
+
+.programs__description--slim {
+  width: 234px;
 
   margin-top: 22px;
   margin-left: 20px;
 }
 
-.programs__description--slim {
-  width: 223px;
-}
-
 .programs__description--pro {
   width: 201px;
+
+  margin-top: 22px;
+  margin-left: 20px;
 }
 
 .programs__item {
@@ -90,4 +97,90 @@
   .programs__item--slim {
     margin-top: 581px;
   }
+
+  .programs__item--pro {
+    margin-top: 30px;
+  }
+
+  .programs__item {
+    min-width: 708px;
+    max-height: 372px;
+    background-color: @gray95;
+    margin-left: 30px;
+  }
+
+  .programs__title {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 37.02px;
+    text-transform: uppercase;
+  }
+
+  .programs__title--wrapper {
+    margin-top: 75px;
+    margin-left: 53px;
+  }
+
+  .programs__title-icon {
+    position: absolute;
+
+    width: 200px;
+    height: 200px;
+    background-color: @green;
+    border-radius: 50%;
+  }
+
+  .programs__title-icon--wrapper {
+    margin-top: 92px;
+    margin-left: 446px;
+  }
+
+  .programs__description {
+      font-size: 16px;
+      line-height: 24px;
+      text-transform: none;
+  }
+
+  .programs__description--slim {
+    width: 372px;
+
+    margin-top: 138px;
+    margin-left: 50px;
+  }
+
+  .programs__description--pro {
+    width: 340px;
+
+    margin-top: 138px;
+    margin-left: 50px;
+  }
+
+  .programs__link-wrapper {
+    margin-top: 35px;
+    margin-left: 54px;
+    margin-bottom: 20px;
+  }
+
+  .programs__link {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .programs {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .programs__item--slim {
+    margin-top: 80px;
+  }
+
+  .programs__item--pro {
+    margin-top: 80px;
+  }
+
+
 }
