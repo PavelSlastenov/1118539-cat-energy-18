@@ -3,26 +3,28 @@
   flex-direction: column;
 }
 
+.features__title-wrapper {
+  margin-top: 17px;
+  margin-bottom: 0;
+  margin-left: 20px;
+}
+
 .features__title {
   color: @light-black;
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
   text-transform: none;
-
-  margin-top: 17px;
-  margin-bottom: 0;
-  margin-left: 20px;
 }
 
 .features__list {
   list-style: none;
-  margin-top: 30px;
   padding: 0;
 }
 
 .features__item {
   margin-bottom: 26px;
+  margin-left: 100px;
 }
 
 .features__description {
@@ -35,9 +37,6 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: none;
-
-  margin-top: 0;
-  margin-left: 100px;
 }
 
 .features__description::before {
@@ -55,6 +54,109 @@
   background-position: 0 0;
 }
 
-.features__item--powder--time {
+.features__item--time {
+  width: 192px;
   margin-bottom: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .features__title-wrapper {
+    margin-top: 45px;
+    margin-bottom: 0;
+    margin-left: 30px;
+  }
+
+  .features__title {
+    font-size: 60px;
+    line-height: 60px;
+    text-transform: none;
+  }
+
+  .features__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    //width: 432px;
+  }
+
+  .features__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .features__description::before {
+    top: -113px;
+    left: 1px;
+
+    width: 80px;
+    height: 80px;
+  }
+
+  .features__item--useful {
+    width: 201px;
+
+    margin-top: 153px;
+    margin-left: 29px;
+  }
+
+  .features__item--powder {
+    width: 222px;
+
+    margin-top: 153px;
+    margin-left: 183px;
+  }
+
+  .features__item--meal {
+    width: 205px;
+
+    margin-top: 187px;
+    margin-left: 29px;
+  }
+
+  .features__item--time { //Не соответствует макету последнее слово
+    width: 230px;
+
+    margin-top: 187px;
+    margin-left: 179px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features__title-wrapper {
+    margin-top: 73px;
+    margin-bottom: 0;
+    margin-left: 38px;
+  }
+
+  .features__description::before {
+    left: 0;
+  }
+
+  .features__item--useful {
+    width: 201px;
+
+    margin-top: 153px;
+    margin-left: 38px;
+  }
+
+  .features__item--powder {
+    width: 222px;
+
+    margin-top: 153px;
+    margin-left: 124px;
+  }
+
+  .features__item--meal {
+    width: 205px;
+
+    margin-top: 153px;
+    margin-left: 103px;
+  }
+
+  .features__item--time { //Не соответствует макету последнее слово
+    width: 245px;
+
+    margin-top: 153px;
+    margin-left: 120px;
+  }
 }
