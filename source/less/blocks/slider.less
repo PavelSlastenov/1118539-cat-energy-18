@@ -16,16 +16,19 @@
   margin-left: 20px;
 }
 
+.slider__description-wrapper {
+  margin-top: 23px;
+  margin-left: 20px;
+}
+
 .slider__description {
+  width: 266px;
   color: @grey-dark;
   font-family: @font-family-secondary;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   text-transform: none;
-
-  margin-top: 23px;
-  margin-left: 20px;
 }
 
 .slider__list {
@@ -77,7 +80,7 @@
   padding-left: 21px;
 }
 
-.slider__category-background {
+.slider__category-background--left {
   position: absolute;
 
   content: "";
@@ -94,7 +97,24 @@
   background-color: @gray95;
 }
 
-.slider__category {
+.slider__category-background--right {
+  position: absolute;
+
+  content: "";
+  top: 45px;
+  left: 17px;
+
+  color: @grey-dark;
+  width: 87px;
+  height: 21px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  text-transform: none;
+  background-color: @gray95;
+}
+
+.slider__category--left {
   position: absolute;
 
   content: "";
@@ -113,16 +133,37 @@
   margin: 0;
 }
 
+.slider__category--right {
+  position: absolute;
+
+  content: "";
+  top: 45px;
+  left: 33px;
+
+  color: @grey-dark;
+  width: 54px;
+  height: 19px;
+  font-family: @font-family-secondary;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  text-transform: none;
+  background-color: @gray95;
+  margin: 0;
+}
+
+.slider__title--bottom-wrapper {
+  margin-top: 34px;
+  margin-bottom: 43px;
+  margin-left: 67px;
+}
+
 .slider__title--bottom {
   color: @light-black;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
-
-  margin-top: 34px;
-  margin-bottom: 43px;
-  margin-left: 67px;
 }
 
 .slider__bar {
@@ -147,12 +188,15 @@
   margin-left: 54px;
 }
 
+.slider__bar-main--wrapper {
+  margin-top: 31px;
+  margin-left: 120px;
+}
+
 .slider__bar-main {
   position: absolute;
 
   content: "";
-  margin-top: 31px;
-  margin-left: 120px;
 
   width: 84px;
   height: 14px;
@@ -161,14 +205,222 @@
   background-color: @white;
 }
 
-.slider__bar-two {
-  position: relative;
-
+.slider__bar-two--wrapper {
   margin-top: 35px;
   margin-left: 19px;
+}
+
+.slider__bar-two {
+  position: relative;
 
   width: 35px;
   height: 6px;
   border-radius: 3px;
   background-color: @green;
 }
+
+@media (min-width: @tablet-width) {
+  .slider {
+    background-color: @white;
+  }
+
+  .slider__title--top {
+    font-size: 60px;
+  }
+
+  .slider__title {
+    margin-top: 83px;
+    margin-bottom: 0;
+    margin-left: 30px;
+  }
+
+  .slider__description-wrapper {
+    margin-top: 64px;
+    margin-left: 31px;
+  }
+
+  .slider__description {
+    width: 676px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .slider__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .slider__item-wrapper {
+    width: 125px;
+  }
+
+  .slider__item {
+    background-color: @white;
+    font-size: 30px;
+    line-height: 37.02px;
+    width: 162px;
+    height: 72px;
+  }
+
+  .slider__item--left {
+    margin-top: 21px;
+    margin-left: 30px;
+  }
+
+  .slider__item--right {
+    margin-top: 21px;
+    margin-left: 42px;
+  }
+
+  .slider__item-weight {
+    padding-top: 14px;
+    padding-left: 55px;
+  }
+
+  .slider__item-days {
+    padding-top: 14px;
+    padding-left: 29px;
+  }
+
+  .slider__category-background--left {
+    top: 55px;
+    left: 23px;
+
+    color: @grey-dark;
+    width: 114px;
+    height: 32px;
+    background-color: @white;
+  }
+
+  .slider__category-background--right {
+    top: 55px;
+    left: 9px;
+
+    color: @grey-dark;
+    width: 142px;
+    height: 32px;
+    background-color: @white;
+  }
+
+  .slider__category--left {
+    background-color: @white;
+    top: 62px;
+    left: 32px;
+
+    width: 97px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .slider__category--right {
+    background-color: @white;
+    top: 62px;
+    left: 17px;
+
+    width: 127px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .slider__title--bottom-wrapper {
+    text-align: right;
+    margin-top: 43px;
+    margin-bottom: 43px;
+    margin-left: 167px;
+  }
+
+  .slider__title--bottom {
+    width: 174px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .slider__image-1 {
+    width: 677px;
+    height: 499px;
+
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+
+  .slider__bar {
+    background-color: @gray95;
+    min-height: 462px;
+    margin-top: -333px;
+    margin-bottom: 36px;
+  }
+
+  .slider__bar-btn {
+    font-size: 20px;
+    line-height: 20px;
+    border-bottom: 1px dotted @grey82; //Разобраться что за отступ мешает сверху
+  }
+
+  .slider__bar-btn--before {
+    margin-top: 292px;
+    margin-left: 92px;
+  }
+
+  .slider__bar-btn--after {
+    margin-top: 292px;
+    margin-left: 211px;
+  }
+
+  .slider__bar-main--wrapper {
+    margin-top: 375px;
+    margin-left: 169px;
+  }
+
+  .slider__bar-main {
+    position: absolute;
+
+    content: "";
+
+    width: 428px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: @gainsboro;
+  }
+
+  .slider__bar-two--wrapper {
+    margin-top: 361px;
+    margin-left: 216px;
+  }
+
+  .slider__bar-two {
+    position: relative;
+
+    width: 34px;
+    height: 34px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    border: 1px solid @grey80;
+    background-color: @white;
+  }
+
+  .slider__bar-three--wrapper {
+    margin-top: 374px;
+    margin-left: 380px;
+  }
+
+  .slider__bar-three {
+    position: absolute;
+
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: @green;
+  }
+
+  .slider__bar--background-wrapper {
+    margin-top: -498px;
+    margin-left: 384px;
+  }
+
+  .slider__bar--background {
+    width: 384px;
+    height: 462px;
+    background-color: @gray94;
+  }
+}
+
