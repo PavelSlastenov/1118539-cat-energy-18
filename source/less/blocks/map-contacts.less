@@ -6,26 +6,31 @@
   background-color: @white;
 }
 
+.map-contacts__invitation--wrapper {
+  margin-top: 0;
+}
+
 .map-contacts__invitation {
   color: @light-black;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+}
 
+.map-contacts__address--wrapper {
   margin-top: 0;
+  margin-left: -45px;
 }
 
 .map-contacts__address {
+  width: 156px;
   color: @grey-dark;
   font-family: @font-family-secondary;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   text-transform: none;
-
-  margin-top: 0;
-  margin-left: 19px;
 }
 
 .map-contacts__wrapper {
@@ -44,4 +49,92 @@
   padding-top: 29px;
   margin-bottom: 24px;
   margin-left: 19px;
+}
+
+.map-contacts__address--wrapper-two {
+  margin-top: 40px;
+  margin-left: -155px;
+}
+
+@media (min-width: @tablet-width) {
+  .map-contacts__invitation--wrapper {
+    margin-top: 36px;
+    margin-left: 50px;
+  }
+
+  .map-contacts__invitation {
+    width: 154px;
+    height: 70px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .map-contacts__address--wrapper {
+    margin-top: 35px;
+    margin-left: 318px;
+  }
+
+  .map-contacts__address {
+    width: 155px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  .map-contacts__address--wrapper-two {
+    margin-top: 95px;
+    margin-left: -155px;
+  }
+
+  .map-contacts__map {
+    width: 768px;
+    height: 396px;
+
+    margin-top: 33px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map-contacts__invitation--wrapper {
+    margin-top: 66px;
+    margin-left: 77px;
+  }
+
+  .map-contacts__address--wrapper {
+    margin-top: 64px;
+    margin-left: 95px;
+  }
+
+  .map-contacts__address--wrapper-two {
+    margin-top: 123px;
+    margin-left: -155px;
+  }
+
+  .map-contacts__address {
+    text-align: left;
+  }
+
+  .map-contacts__wrapper {
+    position: absolute;
+
+    width: 570px;
+    height: 201px;
+    background-color: @white;
+
+    margin-top: 95px;
+    margin-left: 110px;
+
+    z-index: 2;
+  }
+
+  .map-contacts__map-wrapper {
+    margin-top: 0;
+  }
+
+  .map-contacts__map {
+    position: relative;
+
+    width: 1440px;
+    height: 400px;
+  }
 }
