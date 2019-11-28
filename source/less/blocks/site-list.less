@@ -59,8 +59,21 @@
     color: @graphite;
     width: 62px;
     height: 2px;
-    background-color: #68b738;
+    background-color: @green;
   }
+
+  .site-list__link-line-catalog {
+    position: absolute;
+
+    margin-top: 8px;
+
+    color: @graphite;
+    width: 152px;
+    height: 2px;
+    background-color: @green;
+  }
+
+
 }
 
 @media (min-width: @desktop-width) {
@@ -96,5 +109,13 @@
     width: 68px;
     height: 2px;
     background-color: @white;
+  }
+
+  .site-list__link--catalog {
+    color: @light-black;
+  }
+
+  .site-list__link-line-catalog {
+    width: 168px;
   }
 }

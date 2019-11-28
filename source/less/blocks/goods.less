@@ -1,13 +1,19 @@
+.goods__title-wrapper {
+  margin-top: 15px;
+  margin-bottom: 28px;
+  margin-left: 20px;
+}
+
 .goods__title {
   color: @light-black;
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
   text-transform: none;
+}
 
-  margin-top: 15px;
-  margin-bottom: 28px;
-  margin-left: 20px;
+.goods__line-wrapper {
+  margin-top: 14px;
 }
 
 .goods__line {
@@ -16,7 +22,6 @@
   color: @gray92;
   border: 1px solid;
   border-top: none;
-  margin-top: 14px;
 }
 
 .goods__card {
@@ -34,16 +39,24 @@
   flex-direction: column;
 }
 
+.goods__card-title-wrapper {
+  margin-top: 22px;
+  margin-bottom: 0;
+  margin-left: -1px;
+}
+
 .goods__card-title {
-  width: 72px;
+  width: 74px;
   color: @light-black;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
-  margin-top: 22px;
-  margin-bottom: 0;
-  margin-left: -1px;
+}
+
+.goods__table-wrapper {
+  margin-top: 10px;
+  margin-left: -3px;
 }
 
 .goods__table {
@@ -53,9 +66,6 @@
   font-weight: 400;
   line-height: 110%;
   text-transform: none;
-
-  margin-top: 10px;
-  margin-left: -3px;
 }
 
 .goods__table--second-column {
@@ -90,4 +100,136 @@
 .goods__image {
   margin-top: 1px;
   margin-left: 20px;
+}
+
+@media (min-width: @tablet-width) {
+
+  .goods {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .goods__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .goods__title-wrapper {
+    margin-top: 35px;
+    margin-bottom: 28px;
+    margin-left: 29px;
+  }
+
+  .goods__line {
+    border: none;
+  }
+
+  .goods__card-wrapper {
+    margin-top: 140px;
+    margin-left: 30px;
+  }
+
+  .goods__card-wrapper:nth-child(2n) {
+    margin-left: 60px;
+  }
+
+  .goods__card-wrapper--indent {
+    margin-top: 137px;
+  }
+
+  .goods__card {
+    border: none;
+    width: 324px;
+    min-height: 431px;
+    background-color: @gray95;
+  }
+
+  .goods__card-title-wrapper {
+    margin-top: 164px;
+    margin-left: -134px;
+  }
+
+  .goods__image {
+    margin-top: -32px;
+    margin-left: 93px;
+  }
+
+  .goods__card-title {
+    width: 130px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .goods__table-wrapper {
+    margin-top: 18px;
+    margin-left: -198px;
+  }
+
+  .goods__table {
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  .goods__table--front-column {
+    border-bottom: 1px solid @grey80;
+  }
+
+  .goods__table--second-column {
+    padding-top: 3px;
+    padding-left: 141px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid @grey80;
+  }
+
+  .goods__order-wrapper {
+    margin-top: 40px;
+    margin-bottom: 34px;
+    margin-left: 38px;
+  }
+
+  .goods__order {
+    padding-top: 8px;
+    padding-right: 94px;
+    padding-bottom: 8px;
+    padding-left: 94px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .goods__title-wrapper {
+    margin-top: -508px;
+    margin-bottom: 0;
+    margin-left: -210px;
+  }
+
+  .goods__card-wrapper {
+    margin-top: 121px; //задает высоту второго ряда
+    margin-left: 110px; //задает левый отступ второго ряда
+  }
+
+  .goods__card-wrapper--indent {
+    margin-top: -256px; //задавать вместе с значением ниже поднимает 1 и 2 элемент
+    margin-left: -429px; //задает левый отступ первого ряда
+  }
+
+  .goods__card-wrapper--indent-two {
+    margin-top: -256px; //задавать вместе с значением выше поднимает 3 и 4 элемент
+    margin-left: 80px; //задает левый отступ между элементами (не всеми)
+  }
+
+  .goods__card-wrapper:nth-child(2n) {
+    margin-left: 80px;
+  }
+
+  .goods__card {
+    border: none;
+    width: 245px;
+    min-height: 431px;
+    background-color: @gray95;
+  }
+
+
+
 }
