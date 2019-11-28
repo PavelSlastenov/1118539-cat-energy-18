@@ -13,17 +13,18 @@
       <button class="page-header__menu" type="button" aria-label="Меню"></button>
     </div>
 
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--catalog">
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list visually-hidden">
+        <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Главная</a>
+            <a class="site-list__link site-list__link--catalog" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+            <a class="site-list__link site-list__link--catalog" href="catalog.html">Каталог продукции</a>
+            <div class="site-list__link-line-catalog"></div>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Подбор прогрммы</a>
+            <a class="site-list__link site-list__link--catalog" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -34,15 +35,15 @@
     <h1 class="visually-hidden">Каталог функционального питания для котов «Кэт энерджи»</h1>
 
     <section class="goods">
-      <div class="goods__line"></div>
-      <h2 class="goods__title">Каталог продукции</h2>
+      <div class="goods__line goods__line-wrapper"></div>
+      <h2 class="goods__title goods__title-wrapper">Каталог продукции</h2>
 
-      <div class="goods__card">
+      <div class="goods__card goods__card-wrapper goods__card-wrapper--indent">
         <div class="goods__wrapper"> <!--Обертка: Картинка слева, остальное содержимое справа, задам flex-direction: row;-->
           <a class="goods__image goods__image--small"><img src="https://via.placeholder.com/140x144" width="140" height="144" alt="Кэт энерджи маленький"></a>
         <div class="goods__wrapper goods__wrapper--right"> <!--Правая обертка для названия товара, что бы таблица оказалась внизу-->
-          <h2 class="goods__card-title">Cat Energy PRO 500 г</h2>
-        <table class="goods__table"> <!--Сделаю flex контейнером, задам flex-direction: column, для 3 строк таблицы-->
+          <h2 class="goods__card-title goods__card-title-wrapper">Cat Energy PRO 500 г</h2>
+        <table class="goods__table goods__table-wrapper"> <!--Сделаю flex контейнером, задам flex-direction: column, для 3 строк таблицы-->
           <tr class="goods__table goods__table--first-row"> <!--1 строка таблицы (Решил не называть top,center или bottom, вдруг еще добавятся строки и столбцы)-->
             <td class="goods__table goods__table--front-column">Объем</td> <!--1 столбец-->
             <td class="goods__table goods__table--second-column">500 г</td> <!--2 столбец-->
@@ -61,12 +62,12 @@
         <div class="goods__order-wrapper"><a class="goods__order" href="">Заказать</a></div>
         </div>
 
-      <div class="goods__card">
+      <div class="goods__card goods__card-wrapper goods__card-wrapper--indent">
         <div class="goods__wrapper">
           <a class="goods__image goods__image--big"><img src="https://via.placeholder.com/140x144" width="140" height="144" alt="Кэт энерджи большой"></a>
         <div class="goods__wrapper goods__wrapper--right">
-          <h2 class="goods__card-title">Cat Energy PRO 1000 г</h2>
-          <table class="goods__table">
+          <h2 class="goods__card-title goods__card-title-wrapper">Cat Energy PRO 1000 г</h2>
+          <table class="goods__table goods__table-wrapper">
             <tr class="goods__table goods__table--first-row">
               <td class="goods__table goods__table--front-column">Объем</td>
               <td class="goods__table goods__table--second-column">1000 г</td>
@@ -85,12 +86,12 @@
         <div class="goods__order-wrapper"><a class="goods__order" href="">Заказать</a></div>
       </div>
 
-      <div class="goods__card">
+      <div class="goods__card goods__card-wrapper goods__card-wrapper--indent-two">
         <div class="goods__wrapper">
           <a class="goods__image goods__image--small"><img src="https://via.placeholder.com/140x144" width="140" height="144" alt="Кэт энерджи маленький"></a>
         <div class="goods__wrapper goods__wrapper--right">
-          <h2 class="goods__card-title">Cat Energy PRO 500 г</h2>
-          <table class="goods__table">
+          <h2 class="goods__card-title goods__card-title-wrapper">Cat Energy PRO 500 г</h2>
+          <table class="goods__table goods__table-wrapper">
             <tr class="goods__table goods__table--first-row">
               <td class="goods__table goods__table--front-column">Объем</td>
               <td class="goods__table goods__table--second-column">500 г</td>
@@ -109,12 +110,12 @@
         <div class="goods__order-wrapper"><a class="goods__order" href="">Заказать</a></div>
       </div>
 
-      <div class="goods__card">
+      <div class="goods__card goods__card-wrapper goods__card-wrapper--indent-two">
         <div class="goods__wrapper">
           <a class="goods__image goods__image--big"><img src="https://via.placeholder.com/140x144" width="140" height="144" alt="Кэт энерджи большой"></a>
         <div class="goods__wrapper goods__wrapper--right">
-          <h2 class="goods__card-title">Cat Energy PRO 1000 г</h2>
-          <table class="goods__table">
+          <h2 class="goods__card-title goods__card-title-wrapper">Cat Energy PRO 1000 г</h2>
+          <table class="goods__table goods__table-wrapper">
             <tr class="goods__table goods__table--first-row">
               <td class="goods__table goods__table--front-column">Объем</td>
               <td class="goods__table goods__table--second-column">1000 г</td>
@@ -133,12 +134,12 @@
         <div class="goods__order-wrapper"><a class="goods__order" href="">Заказать</a></div>
       </div>
 
-      <div class="goods__card">
+      <div class="goods__card goods__card-wrapper">
         <div class="goods__wrapper">
           <a class="goods__image goods__image--small"><img src="https://via.placeholder.com/140x144" width="140" height="144" alt="Кэт энерджи маленький"></a>
         <div class="goods__wrapper goods__wrapper--right">
-          <h2 class="goods__card-title">Cat Energy SLIM 500 г</h2>
-          <table class="goods__table">
+          <h2 class="goods__card-title goods__card-title-wrapper">Cat Energy SLIM 500 г</h2>
+          <table class="goods__table goods__table-wrapper">
             <tr class="goods__table goods__table--first-row">
               <td class="goods__table goods__table--front-column">Объем</td>
               <td class="goods__table goods__table--second-column">500 г</td>
@@ -157,12 +158,12 @@
         <div class="goods__order-wrapper"><a class="goods__order" href="">Заказать</a></div>
       </div>
 
-      <div class="goods__card">
+      <div class="goods__card goods__card-wrapper">
         <div class="goods__wrapper">
           <a class="goods__image goods__image--big"><img src="https://via.placeholder.com/140x144" width="140" height="144" alt="Кэт энерджи большой"></a>
         <div class="goods__wrapper goods__wrapper--right">
-          <h2 class="goods__card-title">Cat Energy SLIM&nbsp;1000&nbsp;г</h2>
-          <table class="goods__table">
+          <h2 class="goods__card-title goods__card-title-wrapper">Cat Energy SLIM 1000 г</h2>
+          <table class="goods__table goods__table-wrapper">
             <tr class="goods__table goods__table--first-row">
               <td class="goods__table goods__table--front-column">Объем</td>
               <td class="goods__table goods__table--second-column">1000 г</td>
@@ -181,12 +182,12 @@
         <div class="goods__order-wrapper"><a class="goods__order" href="">Заказать</a></div>
       </div>
 
-      <div class="goods__card">
+      <div class="goods__card goods__card-wrapper">
         <div class="goods__wrapper">
           <a class="goods__image goods__image--small"><img src="https://via.placeholder.com/140x144" width="140" height="144" alt="Кэт энерджи маленький"></a>
         <div class="goods__wrapper goods__wrapper--right">
-          <h2 class="goods__card-title">Cat Energy SLIM 500 г</h2>
-          <table class="goods__table">
+          <h2 class="goods__card-title goods__card-title-wrapper">Cat Energy SLIM 500 г</h2>
+          <table class="goods__table goods__table-wrapper">
             <tr class="goods__table goods__table--first-row">
               <td class="goods__table goods__table--front-column">Объем</td>
               <td class="goods__table goods__table--second-column">500 г</td>
@@ -205,11 +206,11 @@
         <div class="goods__order-wrapper"><a class="goods__order" href="">Заказать</a></div>
       </div>
 
-      <div class="goods-all">
+      <div class="goods-all goods-all-wrapper">
         <div class="goods-all__plus"></div>
-        <b class="goods-all__description container">Показать еще 100500 товаров</b>
-        <p class="goods-all__intro container">На самом деле вкусов гораздо больше!</p>
-        <a class="goods-all__show container" href="">Показать все</a>
+        <b class="goods-all__description goods-all__description-wrapper container">Показать еще 100500 товаров</b>
+        <p class="goods-all__intro goods-all__intro-wrapper container">На самом деле вкусов гораздо больше!</p>
+        <a class="goods-all__show goods-all__show-wrapper container" href="">Показать все</a>
       </div>
     </section>
 
