@@ -11,7 +11,7 @@ html {
 body {
   margin: 0 auto;
   padding: 0;
-  width: 320px;
+  min-width: @mobile-width;
   color: @black;
   text-transform: uppercase;
   font-family: @font-family-prime;
@@ -20,16 +20,15 @@ body {
   background-repeat: no-repeat;
 }
 
-@media (min-width: @tablet-width) {
-  body {
-    width: 768px;
-  }
+@media (min-width: @mobile-width) {
 }
 
+
+@media (min-width: @tablet-width) {
+}
+
+
 @media (min-width: @desktop-width) {
-  body {
-    width: 1440px;
-  }
 }
 
 a {
