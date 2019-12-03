@@ -15,8 +15,8 @@
 
     <nav class="main-nav main-nav--catalog">
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list visually-hidden">
-          <li class="site-list__item">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item">
             <a class="site-list__link site-list__link--catalog" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
@@ -40,25 +40,25 @@
       <div class="goods__card-wrapper">
 
       <div class="goods__card">
-        <div class="goods__wrapper"> <!--Обертка: Картинка слева, остальное содержимое справа, задам flex-direction: row;-->
-          <a class="goods__image goods__image--small"><img src="https://via.placeholder.com/140x144" width="140" height="144" alt="Кэт энерджи маленький"></a>
-        <div class="goods__wrapper goods__wrapper--right"> <!--Правая обертка для названия товара, что бы таблица оказалась внизу-->
+        <div class="goods__wrapper">
+          <a class="goods__image"><img src="https://via.placeholder.com/140x144" width="140" height="144" alt="Кэт энерджи маленький"></a>
+        <div class="goods__wrapper goods__wrapper--right">
           <h2 class="goods__card-title goods__card-title-wrapper">Cat Energy PRO 500 г</h2>
-        <table class="goods__table goods__table-wrapper"> <!--Сделаю flex контейнером, задам flex-direction: column, для 3 строк таблицы-->
+        <table class="goods__table goods__table-wrapper">
           <tr>
-            <td class="goods__table goods__table--front-column">Объем</td> <!--1 столбец-->
-            <td class="goods__table goods__table--second-column">500 г</td> <!--2 столбец-->
+            <td class="goods__table goods__table--front-column">Объем</td>
+            <td class="goods__table goods__table--second-column">500 г</td>
           </tr>
-          <tr class="goods__table goods__table--second-row"> <!--2 строка таблицы-->
-            <td class="goods__table goods__table--front-column">Вкус</td> <!--1 столбец-->
-            <td class="goods__table goods__table--second-column">Курица</td> <!--2 столбец-->
+          <tr class="goods__table">
+            <td class="goods__table goods__table--front-column">Вкус</td>
+            <td class="goods__table goods__table--second-column">Курица</td>
           </tr>
-          <tr class="goods__table goods__table--third-row"> <!--3 строка таблицы-->
-            <td class="goods__table goods__table--front-column">Цена</td> <!--1 столбец-->
-            <td class="goods__table goods__table--second-column">700 Р.</td> <!--2 столбец-->
+          <tr class="goods__table">
+            <td class="goods__table goods__table--front-column">Цена</td>
+            <td class="goods__table goods__table--second-column">700 Р.</td>
           </tr>
         </table>
-        </div> <!--Конец правой обертки для названия товара, что бы таблица оказалась внизу-->
+        </div>
         </div>
         <div class="goods__order-wrapper"><a class="goods__order" href="">Заказать</a></div>
         </div>
@@ -73,11 +73,11 @@
               <td class="goods__table goods__table--front-column">Объем</td>
               <td class="goods__table goods__table--second-column">1000 г</td>
             </tr>
-            <tr class="goods__table goods__table--second-row">
+            <tr class="goods__table">
               <td class="goods__table goods__table--front-column">Вкус</td>
               <td class="goods__table goods__table--second-column">Курица</td>
             </tr>
-            <tr class="goods__table goods__table--third-row">
+            <tr class="goods__table">
               <td class="goods__table goods__table--front-column">Цена</td>
               <td class="goods__table goods__table--second-column">1000 Р.</td>
             </tr>
@@ -97,11 +97,11 @@
               <td class="goods__table goods__table--front-column">Объем</td>
               <td class="goods__table goods__table--second-column">500 г</td>
             </tr>
-            <tr class="goods__table goods__table--second-row">
+            <tr class="goods__table">
               <td class="goods__table goods__table--front-column">Вкус</td>
               <td class="goods__table goods__table--second-column">Рыба</td>
             </tr>
-            <tr class="goods__table goods__table--third-row">
+            <tr class="goods__table">
               <td class="goods__table goods__table--front-column">Цена</td>
               <td class="goods__table goods__table--second-column">700 Р.</td>
             </tr>
@@ -121,11 +121,11 @@
               <td class="goods__table goods__table--front-column">Объем</td>
               <td class="goods__table goods__table--second-column">1000 г</td>
             </tr>
-            <tr class="goods__table goods__table--second-row">
+            <tr class="goods__table">
               <td class="goods__table goods__table--front-column">Вкус</td>
               <td class="goods__table goods__table--second-column">Рыба</td>
             </tr>
-            <tr class="goods__table goods__table--third-row">
+            <tr class="goods__table">
               <td class="goods__table goods__table--front-column">Цена</td>
               <td class="goods__table goods__table--second-column">1000 Р.</td>
             </tr>
@@ -145,11 +145,11 @@
               <td class="goods__table goods__table--front-column">Объем</td>
               <td class="goods__table goods__table--second-column">500 г</td>
             </tr>
-            <tr class="goods__table goods__table--second-row">
+            <tr class="goods__table">
               <td class="goods__table goods__table--front-column">Вкус</td>
               <td class="goods__table goods__table--second-column">Гречка</td>
             </tr>
-            <tr class="goods__table goods__table--third-row">
+            <tr class="goods__table">
               <td class="goods__table goods__table--front-column">Цена</td>
               <td class="goods__table goods__table--second-column">400 Р.</td>
             </tr>
@@ -169,11 +169,11 @@
               <td class="goods__table goods__table--front-column">Объем</td>
               <td class="goods__table goods__table--second-column">1000 г</td>
             </tr>
-            <tr class="goods__table goods__table--second-row">
+            <tr class="goods__table">
               <td class="goods__table goods__table--front-column">Вкус</td>
               <td class="goods__table goods__table--second-column">Гречка</td>
             </tr>
-            <tr class="goods__table goods__table--third-row">
+            <tr class="goods__table">
               <td class="goods__table goods__table--front-column">Цена</td>
               <td class="goods__table goods__table--second-column">700 Р.</td>
             </tr>
@@ -193,11 +193,11 @@
               <td class="goods__table goods__table--front-column">Объем</td>
               <td class="goods__table goods__table--second-column">500 г</td>
             </tr>
-            <tr class="goods__table goods__table--second-row">
+            <tr class="goods__table">
               <td class="goods__table goods__table--front-column">Вкус</td>
               <td class="goods__table goods__table--second-column">Рис</td>
             </tr>
-            <tr class="goods__table goods__table--third-row">
+            <tr class="goods__table">
               <td class="goods__table goods__table--front-column">Цена</td>
               <td class="goods__table goods__table--second-column">500 Р.</td>
             </tr>
@@ -223,9 +223,9 @@
       <div class="goods-add__line goods-add__line-wrapper"></div>
       <div class="goods-add__line-two goods-add__line-wrapper-two"></div>
 
-      <div class="goods-add-card-wrapper">
+      <div class="goods-add goods-add__card-wrapper">
 
-        <div class="goods-add-card-wrapper-two">
+        <div class="goods-add goods-add__card-wrapper-two">
       <div class="goods-add-card">
             <h3 class="goods-add-card__title goods-add-card__title-wrapper">Сахарозаменитель</h3>
             <table class="goods-add-card__table goods-add-card__table-wrapper">
