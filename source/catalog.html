@@ -15,7 +15,7 @@
 
     <nav class="main-nav main-nav--catalog">
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list site-list visually-hidden">
           <li class="site-list__item">
             <a class="site-list__link site-list__link--catalog" href="index.html">Главная</a>
           </li>
@@ -35,10 +35,9 @@
     <h1 class="visually-hidden">Каталог функционального питания для котов «Кэт энерджи»</h1>
 
     <section class="goods">
-      <div class="goods__line goods__line-wrapper"></div>
       <h2 class="goods__title goods__title-wrapper">Каталог продукции</h2>
 
-      <div class="goods-card-wrapper">
+      <div class="goods__card-wrapper">
 
       <div class="goods__card">
         <div class="goods__wrapper"> <!--Обертка: Картинка слева, остальное содержимое справа, задам flex-direction: row;-->
@@ -46,7 +45,7 @@
         <div class="goods__wrapper goods__wrapper--right"> <!--Правая обертка для названия товара, что бы таблица оказалась внизу-->
           <h2 class="goods__card-title goods__card-title-wrapper">Cat Energy PRO 500 г</h2>
         <table class="goods__table goods__table-wrapper"> <!--Сделаю flex контейнером, задам flex-direction: column, для 3 строк таблицы-->
-          <tr class="goods__table goods__table--first-row"> <!--1 строка таблицы (Решил не называть top,center или bottom, вдруг еще добавятся строки и столбцы)-->
+          <tr>
             <td class="goods__table goods__table--front-column">Объем</td> <!--1 столбец-->
             <td class="goods__table goods__table--second-column">500 г</td> <!--2 столбец-->
           </tr>
@@ -64,14 +63,13 @@
         <div class="goods__order-wrapper"><a class="goods__order" href="">Заказать</a></div>
         </div>
 
-
       <div class="goods__card">
         <div class="goods__wrapper">
           <a class="goods__image goods__image--big"><img src="https://via.placeholder.com/140x144" width="140" height="144" alt="Кэт энерджи большой"></a>
         <div class="goods__wrapper goods__wrapper--right">
           <h2 class="goods__card-title goods__card-title-wrapper">Cat Energy PRO 1000 г</h2>
           <table class="goods__table goods__table-wrapper">
-            <tr class="goods__table goods__table--first-row">
+            <tr>
               <td class="goods__table goods__table--front-column">Объем</td>
               <td class="goods__table goods__table--second-column">1000 г</td>
             </tr>
@@ -95,7 +93,7 @@
         <div class="goods__wrapper goods__wrapper--right">
           <h2 class="goods__card-title goods__card-title-wrapper">Cat Energy PRO 500 г</h2>
           <table class="goods__table goods__table-wrapper">
-            <tr class="goods__table goods__table--first-row">
+            <tr>
               <td class="goods__table goods__table--front-column">Объем</td>
               <td class="goods__table goods__table--second-column">500 г</td>
             </tr>
@@ -119,7 +117,7 @@
         <div class="goods__wrapper goods__wrapper--right">
           <h2 class="goods__card-title goods__card-title-wrapper">Cat Energy PRO 1000 г</h2>
           <table class="goods__table goods__table-wrapper">
-            <tr class="goods__table goods__table--first-row">
+            <tr>
               <td class="goods__table goods__table--front-column">Объем</td>
               <td class="goods__table goods__table--second-column">1000 г</td>
             </tr>
@@ -143,7 +141,7 @@
         <div class="goods__wrapper goods__wrapper--right">
           <h2 class="goods__card-title goods__card-title-wrapper">Cat Energy SLIM 500 г</h2>
           <table class="goods__table goods__table-wrapper">
-            <tr class="goods__table goods__table--first-row">
+            <tr>
               <td class="goods__table goods__table--front-column">Объем</td>
               <td class="goods__table goods__table--second-column">500 г</td>
             </tr>
@@ -167,7 +165,7 @@
         <div class="goods__wrapper goods__wrapper--right">
           <h2 class="goods__card-title goods__card-title-wrapper">Cat Energy SLIM 1000 г</h2>
           <table class="goods__table goods__table-wrapper">
-            <tr class="goods__table goods__table--first-row">
+            <tr>
               <td class="goods__table goods__table--front-column">Объем</td>
               <td class="goods__table goods__table--second-column">1000 г</td>
             </tr>
@@ -191,7 +189,7 @@
         <div class="goods__wrapper goods__wrapper--right">
           <h2 class="goods__card-title goods__card-title-wrapper">Cat Energy SLIM 500 г</h2>
           <table class="goods__table goods__table-wrapper">
-            <tr class="goods__table goods__table--first-row">
+            <tr>
               <td class="goods__table goods__table--front-column">Объем</td>
               <td class="goods__table goods__table--second-column">500 г</td>
             </tr>
@@ -209,17 +207,16 @@
         <div class="goods__order-wrapper"><a class="goods__order" href="">Заказать</a></div>
       </div>
 
-      <div class="goods-all goods-all-wrapper">
-        <div class="goods-all__plus"></div>
-        <b class="goods-all__description goods-all__description-wrapper container">Показать еще 100500 товаров</b>
-        <p class="goods-all__intro goods-all__intro-wrapper container">На самом деле вкусов гораздо больше!</p>
-        <a class="goods-all__show goods-all__show-wrapper container" href="">Показать все</a>
+      <div class="goods__all goods__all-wrapper">
+
+        <b class="goods__all-description goods__all-description-wrapper container">Показать еще 100500 товаров</b>
+        <p class="goods__all-intro goods__all-intro-wrapper container">На самом деле вкусов гораздо больше!</p>
+        <a class="goods__all-show goods__all-show-wrapper container" href="">Показать все</a>
       </div>
 
       </div>
 
     </section>
-
 
     <section class="goods-add goods-add-wrapper">
       <h2 class="goods-add__title goods-add__title-wrapper">Дополнительные товары</h2>
@@ -230,53 +227,53 @@
 
         <div class="goods-add-card-wrapper-two">
       <div class="goods-add-card">
-            <h3 class="goods-add-card__title goods-add-card__title--one">Сахарозаменитель</h3>
-            <table class="goods-add-card__table goods-add-card__table--one">
+            <h3 class="goods-add-card__title goods-add-card__title-wrapper">Сахарозаменитель</h3>
+            <table class="goods-add-card__table goods-add-card__table-wrapper">
               <tr class="goods-add-card__row">
-                <td class="goods-add-card__table goods-add-card__table--front-column">1 упаковка (100 г)</td>
+                <td class="goods-add-card__table goods-add-card__table--front-column-one">1 упаковка (100 г)</td>
                 <td class="goods-add-card__table goods-add-card__table--second-column-one">200 Р.</td>
               </tr>
             </table>
-            <div class="goods-add-card__order-wrapper goods-add-card__order-wrapper--one">
+            <div class="goods-add-card__order-wrapper goods-add-card__order-wrapper">
               <a class="goods-add-card__order" href="">Заказать</a>
             </div>
           </div>
 
           <div class="goods-add-card">
-            <h3 class="goods-add-card__title goods-add-card__title--two">Питьевая вода</h3>
-            <table class="goods-add-card__table goods-add-card__table-two">
+            <h3 class="goods-add-card__title goods-add-card__title-wrapper">Питьевая вода</h3>
+            <table class="goods-add-card__table goods-add-card__table-wrapper">
               <tr class="goods-add-card__row">
-                <td class="goods-add-card__table goods-add-card__table--front-column">5&nbsp;литров</td>
+                <td class="goods-add-card__table goods-add-card__table--front-column-two">5&nbsp;литров</td>
                 <td class="goods-add-card__table goods-add-card__table--second-column-two">50 Р.</td>
               </tr>
             </table>
-              <div class="goods-add-card__order-wrapper goods-add-card__order-wrapper--two">
+              <div class="goods-add-card__order-wrapper goods-add-card__order-wrapper">
                 <a class="goods-add-card__order" href="">Заказать</a>
               </div>
           </div>
 
             <div class="goods-add-card">
-              <h3 class="goods-add-card__title goods-add-card__title--three">Молоко</h3>
-            <table class="goods-add-card__table goods-add-card__table-three">
+              <h3 class="goods-add-card__title goods-add-card__title-wrapper">Молоко</h3>
+            <table class="goods-add-card__table goods-add-card__table-wrapper">
               <tr class="goods-add-card__row">
-                <td class="goods-add-card__table goods-add-card__table--front-column">1&nbsp;литр</td>
+                <td class="goods-add-card__table goods-add-card__table--front-column-three">1&nbsp;литр</td>
                 <td class="goods-add-card__table goods-add-card__table--second-column-three">100 Р.</td>
               </tr>
             </table>
-              <div class="goods-add-card__order-wrapper goods-add-card__order-wrapper--three">
+              <div class="goods-add-card__order-wrapper goods-add-card__order-wrapper">
                 <a class="goods-add-card__order" href="">Заказать</a>
               </div>
             </div>
 
           <div class="goods-add-card goods-add-card--four">
-            <h3 class="goods-add-card__title goods-add-card__title--four">Витамины</h3>
-            <table class="goods-add-card__table goods-add-card__table-four">
+            <h3 class="goods-add-card__title goods-add-card__title-wrapper">Витамины</h3>
+            <table class="goods-add-card__table goods-add-card__table-wrapper">
               <tr class="goods-add-card__row">
-                <td class="goods-add-card__table goods-add-card__table--front-column">1 упаковка (30 г)</td>
+                <td class="goods-add-card__table goods-add-card__table--front-column-four">1 упаковка (30 г)</td>
                 <td class="goods-add-card__table goods-add-card__table--second-column-four">300 Р.</td>
               </tr>
             </table>
-              <div class="goods-add-card__order-wrapper goods-add-card__order-wrapper--four">
+              <div class="goods-add-card__order-wrapper goods-add-card__order-wrapper">
                 <a class="goods-add-card__order" href="">Заказать</a>
               </div>
           </div>
@@ -298,7 +295,7 @@
     <section class="map-contacts">
       <h2 class="visually-hidden">Адрес</h2>
       <div class="map-contacts__wrapper">
-        <p class="map-contacts__invitation map-contacts__invitation--wrapper">Приглашаем<br>к&nbsp;сотрудничеству дилеров!</p>
+        <p class="map-contacts__invitation map-contacts__invitation--wrapper">Приглашаем<br>к&nbsp;сотрудничеству<br>дилеров!</p>
         <p class="map-contacts__address map-contacts__address--wrapper">ул. Большая<br>Конюшенная, д. 19/8</p>
         <p class="map-contacts__address map-contacts__address--wrapper-two">Санкт-Петербург</p>
       </div>
