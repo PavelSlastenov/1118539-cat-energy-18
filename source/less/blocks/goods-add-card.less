@@ -17,23 +17,8 @@
   text-transform: uppercase;
 }
 
-.goods-add-card__title--one {
+.goods-add-card__title-wrapper {
   margin-top: 14px;
-  margin-bottom: 0;
-}
-
-.goods-add-card__title--two {
-  margin-top: 14px;
-  margin-bottom: 0;
-}
-
-.goods-add-card__title--three {
-  margin-top: 15px;
-  margin-bottom: 0;
-}
-
-.goods-add-card__title--four {
-  margin-top: 15px;
   margin-bottom: 0;
 }
 
@@ -44,9 +29,10 @@
   font-weight: 400;
   line-height: 14px;
   text-transform: none;
+}
 
+.goods-add-card__table-wrapper {
   margin-top: 10px;
-  margin-bottom: 14px;
   margin-left: -4px;
 }
 
@@ -80,19 +66,7 @@
   padding-left: 111px;
 }
 
-.goods-add-card__order-wrapper--one {
-  margin-top: 22px;
-}
-
-.goods-add-card__order-wrapper--two {
-  margin-top: 23px;
-}
-
-.goods-add-card__order-wrapper--three {
-  margin-top: 22px;
-}
-
-.goods-add-card__order-wrapper--four {
+.goods-add-card__order-wrapper {
   margin-top: 22px;
 }
 
@@ -124,50 +98,31 @@
     line-height: 16px;
   }
 
-  .goods-add-card__title--one {
+  .goods-add-card__title-wrapper {
     margin-top: 28px;
-    margin-bottom: 0;
     margin-left: 38px;
   }
 
-  .goods-add-card__title--two {
-    margin-top: 28px;
-    margin-bottom: 0;
-    margin-left: 38px;
-  }
+  .goods-add-card__table-wrapper {
+    margin-top: 30px;
+    margin-left: 241px;
 
-  .goods-add-card__title--three {
-    margin-top: 28px;
-    margin-bottom: 0;
-    margin-left: 38px;
-  }
-
-  .goods-add-card__title--four {
-    margin-top: 29px;
-    margin-bottom: 0;
-    margin-left: 38px;
   }
 
   .goods-add-card__table {
-    padding-top: 10px;
-    padding-left: 123px;
-
     font-size: 16px;
   }
 
-  .goods-add-card__table-two {
-    padding-top: 11px;
-    padding-left: 223px;
+  .goods-add-card__table--front-column-two {
+    padding-left: 102px;
   }
 
-  .goods-add-card__table-three {
-    padding-top: 11px;
-    padding-left: 301px;
+  .goods-add-card__table--front-column-three {
+    padding-left: 179px;
   }
 
-  .goods-add-card__table-four {
-    padding-top: 11px;
-    padding-left: 203px;
+  .goods-add-card__table--front-column-four {
+    padding-left: 81px;
   }
 
   .goods-add-card__table--second-column-one {
@@ -186,26 +141,8 @@
     padding-left: 49px;
   }
 
-  .goods-add-card__order-wrapper--one {
-    margin-top: 19px;
-    margin-bottom: 35px;
-    margin-left: 37px;
-  }
-
-  .goods-add-card__order-wrapper--two {
-    margin-top: 19px;
-    margin-bottom: 35px;
-    margin-left: 37px;
-  }
-
-  .goods-add-card__order-wrapper--three {
-    margin-top: 19px;
-    margin-bottom: 35px;
-    margin-left: 37px;
-  }
-
-  .goods-add-card__order-wrapper--four {
-    margin-top: 19px;
+  .goods-add-card__order-wrapper {
+    margin-top: 32px;
     margin-bottom: 35px;
     margin-left: 37px;
   }
@@ -219,6 +156,12 @@
 }
 
 @media (min-width: @desktop-width) {
+  .goods-add-card-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
   .goods-add-card-wrapper {
     margin-top: 80px;
   }
@@ -234,52 +177,13 @@
     margin-left: 109px;
   }
 
-  .goods-add-card__title--one {
-    margin-top: 28px;
-    margin-bottom: 0;
-    margin-left: 2px;
-  }
-
-  .goods-add-card__title--two {
-    margin-top: 28px;
-    margin-bottom: 0;
-    margin-left: 2px;
-  }
-
-  .goods-add-card__title--three {
-    margin-top: 27px;
-    margin-bottom: 0;
-    margin-left: 2px;
-  }
-
-  .goods-add-card__title--four {
-    margin-top: 27px;
-    margin-bottom: 0;
-    margin-left: 2px;
-  }
-
   .goods-add-card__table {
     padding-top: 10px;
     padding-left: 83px;
 
     font-size: 16px;
   }
-
-  .goods-add-card__table-two {
-    padding-top: 10px;
-    padding-left: 116px;
-  }
-
-  .goods-add-card__table-three {
-    padding-top: 10px;
-    padding-left: 177px;
-  }
-
-  .goods-add-card__table-four {
-    padding-top: 10px;
-    padding-left: 154px;
-  }
-
+/*
   .goods-add-card__table--second-column-one {
     padding-left: 108px;
   }
@@ -295,7 +199,7 @@
   .goods-add-card__table--second-column-four {
     padding-left: 117px;
   }
-
+*/
   .goods-add-card__order {
     padding-top: 8px;
     padding-right: 91px;
