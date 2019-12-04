@@ -25,21 +25,14 @@
     flex-direction: row;
   }
 
-  .site-list__item {
+  .site-list__item { //обнулить первый элемент
     padding-top: 24px;
     padding-bottom: 24px;
     text-align: center;
     border: none;
 
-    margin-left: 72px;
-  }
-
-  .site-list__item:nth-child(2n) {
-    margin-left: 34px;
-  }
-
-  .site-list__item:nth-child(3n) {
-    margin-left: 37px;
+    margin-top: 18px;
+    margin-left: 38px;
   }
 
   .site-list__link {
@@ -53,18 +46,16 @@
 }
 
 @media (min-width: @desktop-width) {
+  .site-list {
+    margin-top: 32px;
+    margin-left: 60px;
+  }
+
   .site-list__item {
     padding-top: 24px;
     padding-bottom: 24px;
     text-align: center;
     border: none;
-
-    margin-top: 50px;
-    margin-left: 132px;
-  }
-
-  .site-list__item:nth-child(3n) {
-    margin-left: 34px;
   }
 
   .site-list__link {
