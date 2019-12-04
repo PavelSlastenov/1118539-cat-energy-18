@@ -3,3 +3,20 @@
   padding: 0;
   list-style: none;
 }
+
+.container () {
+  @media (min-width: @mobile-width) {
+    max-width: @mobile-width;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: @tablet-width) {
+    max-width: @tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: @desktop-width;
+  }
+}
+
