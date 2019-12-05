@@ -62,8 +62,10 @@
 }
 
 @media (min-width: @tablet-width) {
-  .map-contacts__invitation--wrapper {
-
+  .map-contacts__wrapper {
+    .container();
+    margin-top: 65px;
+    padding-left: 60px;
   }
 
   .map-contacts__invitation {
@@ -74,32 +76,45 @@
   }
 
   .map-contacts__address--wrapper {
-
+    margin-left: 300px;
   }
 
   .map-contacts__address {
-    width: 155px;
+    width: 170px;
     font-size: 16px;
     line-height: 20px;
     text-align: right;
   }
 
   .map-contacts__address--wrapper-two {
+    margin-top: 60px;
+  }
 
+  .map-contacts__map-img {
+    min-width: 100%;
+    max-height: 400px;
+
+    margin-top: 40px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .map-contacts__invitation--wrapper {
-
+  .map-contacts__invitation--wrapper {  //Уменьшить количество кода, оберткой не подвинешь занята позиционированием белой рамки
+    margin-top: 60px;
+    margin-left: 55px;
   }
 
   .map-contacts__address--wrapper {
-
+    margin-top: 60px;
+    margin-left: 80px;
   }
 
   .map-contacts__address--wrapper-two {
+    margin-top: 120px;
+  }
 
+  .map-contacts__map-img {
+    margin-top: 0;
   }
 
   .map-contacts__address {
@@ -121,12 +136,5 @@
 
   .map-contacts__map-wrapper {
     margin-top: 0;
-  }
-
-  .map-contacts__map {
-    position: relative;
-
-    width: 1440px;
-    height: 400px;
   }
 }

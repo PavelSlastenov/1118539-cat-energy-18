@@ -171,11 +171,13 @@
   max-height: 232px;
 }
 
-.slider__bar {
-  .container ();
+.slider__bar-wrapper {
+  .container();
   display: flex;
   flex-direction: row;
+}
 
+.slider__bar {
   margin-bottom: 36px;
 }
 
@@ -231,16 +233,18 @@
   }
 
   .slider__title--top {
+    .container ();
     font-size: 60px;
   }
 
   .slider__title {
-    margin-top: 83px;
+    margin-top: 110px;
     margin-bottom: 0;
-    margin-left: 30px;
+    margin-left: 10px;
   }
 
   .slider__description-wrapper {
+    .container ();
     margin-top: 64px;
     margin-left: 31px;
   }
@@ -268,14 +272,13 @@
     height: 72px;
   }
 
-  .slider__item--left {
+  .slider__item {
     margin-top: 21px;
-    margin-left: 30px;
+    margin-left: 0;
   }
 
-  .slider__item--right {
-    margin-top: 21px;
-    margin-left: 42px;
+  .slider__item:nth-child(1n+1) {
+    margin-left: 30px;
   }
 
   .slider__item-weight {
@@ -339,11 +342,16 @@
     width: 174px;
     font-size: 20px;
     line-height: 30px;
+    padding-left: 0;
+  }
+
+  .slider__image-1-wrapper {
+    .container();
   }
 
   .slider__image-1 {
     width: 677px;
-    height: 499px;
+    min-height: 499px;
 
     margin-top: 50px;
     margin-left: 50px;
@@ -363,12 +371,12 @@
   }
 
   .slider__bar-btn--before {
-    margin-top: 292px;
+    margin-top: 360px;
     margin-left: 92px;
   }
 
   .slider__bar-btn--after {
-    margin-top: 292px;
+    margin-top: 360px;
     margin-left: 211px;
   }
 
@@ -424,7 +432,7 @@
   }
 
   .slider__bar-background-one {
-    width: 384px;
+    width: 100%;
     height: 462px;
     background-color: @gray94;
   }
@@ -432,9 +440,9 @@
 
 @media (min-width: @desktop-width) {
   .slider__title {
-    margin-top: 63px;
+    margin-top: 35px;
     margin-bottom: 0;
-    margin-left: 111px;
+    margin-left: 90px;
   }
 
   .slider__description-wrapper {
@@ -444,15 +452,15 @@
     padding-top: 71px;
   }
 
-  .slider__item--left {
-    margin-top: 36px;
-    margin-left: 111px;
+  .slider__list {
+    margin-left: 80px;
   }
 
-  .slider__item--right {
+  .slider__item {
     margin-top: 36px;
-    margin-left: 42px;
+    margin-right: 12px;
   }
+
 
   .slider__wrapper {
     display: flex;

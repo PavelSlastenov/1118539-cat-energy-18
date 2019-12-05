@@ -58,7 +58,7 @@
   .features__title-wrapper {
     margin-top: 45px;
     margin-bottom: 0;
-    margin-left: 30px;
+    margin-left: 25px;
   }
 
   .features__title {
@@ -71,6 +71,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
+    margin-left: 30px;
   }
 
   .features__description {
@@ -87,33 +89,21 @@
     height: 80px;
   }
 
-  .features__item--useful {
+  .features__item {
     width: 201px;
 
     margin-top: 153px;
-    margin-left: 29px;
+    margin-right: 160px;
+    margin-bottom: 60px;
+    margin-left: 0;
   }
 
-  .features__item--powder {
-    width: 222px;
-
-    margin-top: 153px;
-    margin-left: 183px;
+  .features__item:nth-child(3n),
+  .features__item:nth-child(4n) {
+    margin-bottom: 0;
   }
 
-  .features__item--meal {
-    width: 205px;
 
-    margin-top: 187px;
-    margin-left: 29px;
-  }
-
-  .features__item--time { //Не соответствует макету последнее слово
-    width: 230px;
-
-    margin-top: 187px;
-    margin-left: 179px;
-  }
 }
 
 @media (min-width: @desktop-width) {
@@ -127,31 +117,19 @@
     left: 0;
   }
 
-  .features__item--useful {
-    width: 201px;
-
-    margin-top: 153px;
+  .features__list {
     margin-left: 110px;
   }
 
-  .features__item--powder {
-    width: 222px;
+  .features__item {
+    width: 201px;
 
     margin-top: 153px;
-    margin-left: 124px;
+    margin-right: 120px;
   }
 
-  .features__item--meal {
-    width: 205px;
-
-    margin-top: 153px;
-    margin-left: 103px;
+  .features__item:nth-child(4n) {
+    margin-right: 0;
   }
 
-  .features__item--time { //Не соответствует макету последнее слово
-    width: 245px;
-
-    margin-top: 153px;
-    margin-left: 120px;
-  }
 }
