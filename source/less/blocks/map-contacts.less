@@ -1,5 +1,4 @@
 .map-contacts {
-  .container ();
   background-color: @gray95;
 }
 
@@ -9,10 +8,6 @@
 
 .map-contacts__invitation--wrapper {
   margin-top: 0;
-}
-
-.map-contacts__invitation--wrapper-form {
-  margin-top: 20px;
 }
 
 .map-contacts__invitation {
@@ -27,20 +22,12 @@
 
 .map-contacts__address--wrapper {
   margin-top: 0;
-  margin-left: 18px;
-}
-
-.map-contacts__adress--wrapper-form {
-  margin-top: 30px;
-  margin-left: 18px;
+  padding-left: 17px;
 }
 
 .map-contacts__address--wrapper-two {
   margin-right: 0;
-}
-
-.map-contacts__address--wrapper-two-form {
-  padding-top: 30px;
+  padding-left: 12px;
 }
 
 .map-contacts__address {
@@ -54,21 +41,12 @@
 }
 
 .map-contacts__wrapper {
+  .container ();
   display: flex;
   flex-direction: row;
 
   margin-top: 29px;
-  margin-bottom: 8px;
-  margin-left: 19px;
-}
-
-.map-contacts__wrapper--form {
-  display: flex;
-  flex-direction: row;
-
-  padding-top: 29px;
-  margin-bottom: 24px;
-  margin-left: 19px;
+  padding-left: 20px;
 }
 
 .map-contacts__address--wrapper-two {
@@ -76,10 +54,16 @@
   margin-left: -155px;
 }
 
+.map-contacts__map-img {
+  min-width: 100vw;
+  max-height: 360px;
+
+  margin-top: 12px;
+}
+
 @media (min-width: @tablet-width) {
   .map-contacts__invitation--wrapper {
-    margin-top: 36px;
-    margin-left: 50px;
+
   }
 
   .map-contacts__invitation {
@@ -90,8 +74,7 @@
   }
 
   .map-contacts__address--wrapper {
-    margin-top: 35px;
-    margin-left: 318px;
+
   }
 
   .map-contacts__address {
@@ -102,30 +85,21 @@
   }
 
   .map-contacts__address--wrapper-two {
-    margin-top: 95px;
-  }
 
-  .map-contacts__map {
-    width: 768px;
-    height: 396px;
-
-    margin-top: 33px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .map-contacts__invitation--wrapper {
-    margin-top: 66px;
-    margin-left: 77px;
+
   }
 
   .map-contacts__address--wrapper {
-    margin-top: 64px;
-    margin-left: 95px;
+
   }
 
   .map-contacts__address--wrapper-two {
-    margin-top: 123px;
+
   }
 
   .map-contacts__address {
