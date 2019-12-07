@@ -1,12 +1,20 @@
+.form-program__title-wrapper {
+  margin-top: 15px;
+  margin-bottom: 0;
+  margin-left: 20px;
+}
+
 .form-program__title {
   color: @light-black;
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
   text-transform: none;
+}
 
-  margin-top: 15px;
-  margin-bottom: 0;
+.form-program__description-wrapper {
+  margin-top: 26px;
+  margin-bottom: 39px;
   margin-left: 20px;
 }
 
@@ -16,10 +24,6 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-
-  margin-top: 26px;
-  margin-bottom: 39px;
-  margin-left: 20px;
 }
 
 .form-program__input {
@@ -101,6 +105,12 @@
   margin-left: 19px;
 }
 
+.form-program__title-contacts-wrapper {
+  margin-top: 28px;
+  margin-bottom: 30px;
+  margin-left: 19px;
+}
+
 .form-program__title-contacts {
   position: relative;
 
@@ -109,10 +119,11 @@
   font-weight: 400;
   line-height: 24px;
   text-transform: none;
+}
 
-  margin-top: 28px;
-  margin-bottom: 30px;
-  margin-left: 19px;
+.form-program__title-add-top-wrapper {
+  margin-top: 27px;
+  margin-bottom: 0;
 }
 
 .form-program__title-add-top {
@@ -123,9 +134,10 @@
   font-weight: 400;
   line-height: 24px;
   text-transform: none;
+}
 
-  margin-top: 27px;
-  margin-bottom: 0;
+.form-program__title-add-bottom-wrapper {
+  margin-top: 25px;
 }
 
 .form-program__title-add-bottom {
@@ -136,8 +148,10 @@
   font-weight: 400;
   line-height: 24px;
   text-transform: none;
+}
 
-  margin-top: 25px;
+.form-program__textarea-wrapper {
+  margin-top: 35px;
 }
 
 .form-program__textarea {
@@ -150,7 +164,6 @@
   line-height: 18px;
   text-transform: uppercase;
 
-  margin-top: 35px;
   padding-top: 13px;
   padding-left: 15px;
 }
@@ -305,4 +318,30 @@
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+@media (min-width: @tablet-width) {
+  .form-program__title-wrapper {
+    .container();
+    margin-top: 35px;
+  }
+
+  .form-program__title {
+    font-size: 60px;
+
+    padding-left: 30px;
+  }
+
+  .form-program__description-wrapper {
+    .container();
+    margin-top: 55px;
+    margin-bottom: 39px;
+  }
+
+  .form-program__description {
+    font-size: 20px;
+    line-height: 30px;
+
+    padding-left: 70px;
+  }
 }
