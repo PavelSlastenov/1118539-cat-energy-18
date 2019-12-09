@@ -1,14 +1,21 @@
-.nutrition-promo {
-  .container();
+.nutrition-promo__wrapper-background {
+  width: 100%;
+  min-height: 319px;
+  background-color: @green-dark;
+}
+
+.nutrition-promo__wrapper-container {
+  .container ();
 }
 
 .nutrition-promo__wrapper {
   position: absolute;
 
-  width: 320px;
-  height: 305px;
+  width: @mobile-width;
+  min-height: 305px;
 
   margin-top: 14px;
+
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
 }
@@ -16,8 +23,7 @@
 .nutrition-promo__image {
   position: relative;
 
-  margin-top: 181px;
-  margin-right: 20px;
+  margin-top: 14px;
   margin-left: 20px;
 }
 
@@ -27,6 +33,7 @@
 }
 
 .nutrition-promo__slogan {
+  min-width: 245px;
   color: @white;
   font-size: 36px;
   font-weight: 400;
@@ -50,7 +57,7 @@
 
 .nutrition-promo__link-wrapper {
   margin-top: 11px;
-  margin-left: 20px;
+  padding-left: 20px;
 }
 
 .nutrition-promo__link {
@@ -76,8 +83,9 @@
   .nutrition-promo__slogan-wrapper {
     width: 414px;
     text-align: left;
+
     margin-top: 38px;
-    margin-left: 110px;
+    margin-left: 116px;
   }
 
   .nutrition-promo__slogan {
@@ -89,9 +97,9 @@
   }
 
   .nutrition-promo__intro-wrapper {
-    margin-top: 38px;
+    margin-top: 39px;
     margin-right: 62px;
-    margin-left: 110px;
+    margin-left: 117px;
   }
 
   .nutrition-promo__intro {
@@ -106,9 +114,9 @@
     position: relative;
 
     width: 709px;
-    height: 609px; //Временно
+    height: 609px;
 
-    margin-top: 250px;
+    margin-top: 0;
     margin-right: 20px;
     margin-left: 150px;
 
@@ -116,8 +124,9 @@
   }
 
   .nutrition-promo__link-wrapper {
-    margin-top: -580px;
-    margin-left: 112px;
+    position: relative;
+    margin-top: -583px; //очень отрицательное значение, но как по другому ссылку поднять, не придумал.
+    margin-left: 100px;
   }
 
   .nutrition-promo__link {
