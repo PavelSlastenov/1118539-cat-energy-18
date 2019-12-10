@@ -1,5 +1,5 @@
 .page-header {
-  .container();
+  .container ();
 }
 
 .page-header__logo {
@@ -56,5 +56,23 @@
   .page-header__logo {
     margin-top: 74px;
     padding-left: 105px;
+  }
+
+  .page-header__background {
+    .container ();
+    min-width: 1440px;
+    display: flex;
+    flex-direction: column;
+
+    min-height: 696px;
+
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-position: 720px;
+    background-repeat: no-repeat;
+  }
+
+  .page-header__container-viewport {
+    display: flex;
+    flex-direction: row;
   }
 }
