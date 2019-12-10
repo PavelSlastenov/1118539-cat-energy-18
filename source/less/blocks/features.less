@@ -120,28 +120,32 @@
 }
 
 @media (min-width: @desktop-width) {
+  .features {
+    margin-left: 80px;
+  }
+
+  .features__wrapper {
+    .container ();
+  }
+
   .features__title-wrapper {
     margin-top: 73px;
     margin-bottom: 0;
-    margin-left: 110px;
   }
 
   .features__description::before {
     left: 0;
   }
 
-  .features__list {
-    margin-left: 110px;
-  }
-
   .features__item {
     width: 201px;
 
     margin-top: 153px;
-    margin-right: 120px;
+    margin-right: 124px;
   }
 
-  .features__item:nth-child(4n) {
-    margin-right: 0;
+  .features__item:nth-child(2),
+  .features__item:nth-child(3) {
+    margin-right: 124px;
   }
 }
