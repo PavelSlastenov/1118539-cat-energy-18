@@ -318,9 +318,8 @@
 
 @media (min-width: @desktop-width) {
   .goods {
-    min-width: 1440px;
+    width: @desktop-width;
   }
-
   .goods__card {
     border: none;
     width: 245px;
@@ -329,10 +328,6 @@
 
     margin-top: 165px;
     margin-right: 80px;
-  }
-
-  .goods__card:nth-child(1) {
-    margin-left: 0;
   }
 
   .goods__card:nth-child(3),
@@ -356,19 +351,16 @@
   }
 
   .goods__card-wrapper {
+    min-width: @desktop-width;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-
-    margin-left: 110px;
-    margin-right: 110px;
   }
 
   .goods__title-wrapper {
     margin-top: 74px;
     margin-bottom: 0;
-    margin-left: 110px;
   }
 
   .goods__card-title-wrapper {
