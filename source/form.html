@@ -37,6 +37,8 @@
         <h2 class="form-program__title form-program__title-wrapper">Подбор программы</h2>
         <p class="form-program__description form-program__description-wrapper">Заполните анкету и мы подберем<br>программу питания для вашего кота</p>
 
+        <div class="form-program__container">
+         <div class="form-program__data">
           <div class="form-program__wrapper">
             <label class="form-program__label form-program__label--first" for="name">Имя:*</label>
             <input class="form-program__input form-program__input--first" type="text" placeholder="Барсик" aria-label="Имя">
@@ -46,8 +48,9 @@
             <input class="form-program__input form-program__input--second" type="text" placeholder="7" aria-label="Вес">
           </div>
           <div class="form-program__wrapper">
-            <label class="form-program__label form-program__label--third" for="name">Возраст (лет):</label>
+            <label class="form-program__label form-program__label--third" for="name">Возраст&nbsp(лет):</label>
             <input class="form-program__input form-program__input--third" id="name" type="text" placeholder="7" aria-label="Возраст">
+          </div>
           </div>
 
           <div class="form-program__radio-wrapper">
@@ -67,14 +70,18 @@
             </fieldset>
           </div>
 
-        <h2 class="form-program__title-contacts form-program__title-contacts-wrapper">Контактные данные<br>(владельца кота)</h2>
+          </div>
+
+        <h2 class="form-program__title-contacts form-program__title-contacts-wrapper">Контактные данные (владельца кота)</h2>
+        <div class="form-program__conteiner-two">
         <div class="form-program__wrapper form-program__wrapper--e-mail">
-          <label class="form-program__label form-program__label--fourth" for="e-mail">E-mail:*</label>
+          <label class="form-program__label form-program__label--fourth" for="e-mail">E-&nbspmail:*</label>
           <input class="form-program__input form-program__input--fourth" id="e-mail" type="tel" placeholder="kuklachev@gmail.com" aria-label="Телефон">
         </div>
         <div class="form-program__wrapper form-program__wrapper--tel">
           <label class="form-program__label form-program__label--fifth" for="tel">Телефон:*</label>
           <input class="form-program__input form-program__input--fifth" id="tel" type="tel" placeholder="8 (960) 900-60-90" aria-label="Телефон">
+        </div>
         </div>
         <div class="form-program__wrapper form-program__wrapper--comments">
 
@@ -107,33 +114,35 @@
 
             <div class="form-program__legend-wrapper">
               <small class="form-program__legend">
-              <sup>*</sup> — Обязательные поля
+              <sup>*</sup>&nbsp—&nbspОбязательные&nbspполя
               </small>
             </div>
             </div>
         </div>
         </form>
 
-      <section class="map-contacts">
-            <h2 class="visually-hidden">Адрес</h2>
-            <div class="map-contacts__wrapper">
-              <p class="map-contacts__invitation map-contacts__invitation--wrapper">Приглашаем<br>к&nbsp;сотрудничеству<br>дилеров!</p>
-              <p class="map-contacts__address map-contacts__address--wrapper">ул. Большая<br>Конюшенная, д. 19/8</p>
-              <p class="map-contacts__address map-contacts__address--wrapper-two">Санкт-Петербург</p>
-            </div>
-            <div class="map-contacts__map map-contacts__map--form">
-              <img class="map-contacts__map map-contacts__map-wrapper" src="https://via.placeholder.com/320x365" width="320" height="365" alt="Карта">
-            </div>
-          </section>
+      <section class="map-contacts map-contacts--index">
+              <h2 class="visually-hidden">Адрес</h2>
+              <div class="map-contacts__container">
+              <div class="map-contacts__wrapper">
+                <p class="map-contacts__invitation map-contacts__invitation--wrapper">Приглашаем<br>к&nbsp;сотрудничеству дилеров!</p>
+                <p class="map-contacts__address map-contacts__address--wrapper">ул. Большая<br>Конюшенная,&nbsp;д.&nbsp;19/8</p>
+                <p class="map-contacts__address map-contacts__address--wrapper-two">Санкт-Петербург</p>
+              </div>
+              </div>
+              <div>
+              <img class="map-contacts__map-img" src="https://via.placeholder.com/320x365" width="320" height="365" alt="Карта">
+              </div>
+            </section>
 
     </main>
 
-    <footer class="page-footer">
-    <div class="page-footer__logo-link-wrapper">
-      <a class="page-footer__logo-link">
-        <img class="page-footer__logo-image" src="https://via.placeholder.com/128x24" width="128" height="24" alt="Логотип">
-      </a>
-    </div>
+    <footer class="page-footer page-footer__wrapper">
+      <div class="page-footer__logo-link-wrapper">
+        <a class="page-footer__logo-link">
+          <img class="page-footer__logo-image" src="https://via.placeholder.com/128x24" width="128" height="24" alt="Логотип">
+        </a>
+      </div>
 
       <section class="social-network">
         <h2 class="visually-hidden">Социальные сети</h2>
@@ -145,16 +154,16 @@
       </section>
 
       <section class="developers">
-        <h2 class="visually-hidden">Разработчики</h2>
-        <a class="developers__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <div class="developers__description-wrapper">
-            <p class="developers__description">HTML&nbsp;Academy</p>
-          </div>
-          <div class="developers__link-icon-wrapper">
-            <img class="developers__link-icon" src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип Академии">
-          </div>
-        </a>
-      </section>
+            <h2 class="visually-hidden">Разработчики</h2>
+            <a class="developers__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <div class="developers__description-wrapper developers__description-wrapper">
+                <p class="developers__description">HTML&nbsp;Academy</p>
+              </div>
+              <div class="developers__link-icon-wrapper developers__link-icon-wrapper">
+                <img class="developers__link-icon" src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип Академии">
+              </div>
+            </a>
+          </section>
 
     </footer>
   </body>
