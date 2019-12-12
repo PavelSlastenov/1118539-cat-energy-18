@@ -4,51 +4,8 @@
 
 .page-header__logo {
   margin-top: 11px;
-}
-
-.page-header__menu {
-  position: relative;
-
-  width: 24px;
-  height: 18px;
-  bottom: 10px;
-  margin-left: 62px;
-  cursor: pointer;
-  background: transparent;
-}
-
-.page-header__menu::before,
-.page-header__menu::after {
-  position: absolute;
-
-  content: "";
-  top: 0;
-  height: 18px;
-  width: 2px;
-  background-color: @black;
-}
-
-.page-header__menu::before {
-  transform: rotate(45deg);
-}
-
-.page-header__menu::after {
-  transform: rotate(-45deg);
-}
-
-@media (min-width: @tablet-width) {
-  .page-header {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .page-header__logo {
-    margin-top: 44px;
-  }
-
-  .page-header__menu {
-    display: none;
-  }
+  margin-bottom: 16px;
+  padding-left: 20px;
 }
 
 @media (min-width: @desktop-width) {
