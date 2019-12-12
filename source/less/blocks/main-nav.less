@@ -4,6 +4,24 @@
 }
 
 .main-nav__list {
-  list-style: none;
-  padding: 0;
+  .list-reset ();
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    margin-left: 48px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav--catalog {
+    background-image: none;
+    height: 0;
+  }
+
+  .main-nav {
+    margin-left: 368px;
+  }
 }

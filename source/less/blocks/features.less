@@ -1,6 +1,13 @@
 .features {
+  .container ();
   display: flex;
   flex-direction: column;
+  padding-left: 10px;
+}
+
+.features__title-wrapper {
+  margin-top: 18px;
+  margin-bottom: 0;
 }
 
 .features__title {
@@ -9,35 +16,33 @@
   line-height: 60px;
   font-weight: 400;
   text-transform: none;
-
-  margin-top: 17px;
-  margin-bottom: 0;
-  margin-left: 20px;
 }
 
 .features__list {
   list-style: none;
-  margin-top: 30px;
   padding: 0;
+  margin-bottom: 0;
 }
 
 .features__item {
   margin-bottom: 26px;
+  margin-left: 82px;
+}
+
+.features__item:nth-child(4) {
+  margin-bottom: 0;
 }
 
 .features__description {
   position: relative;
 
-  min-width: 176px;
+  width: 200px;
   color: @grey-dark;
   font-family: @font-family-secondary;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   text-transform: none;
-
-  margin-top: 0;
-  margin-left: 100px;
 }
 
 .features__description::before {
@@ -55,6 +60,92 @@
   background-position: 0 0;
 }
 
-.features__item--powder--time {
-  margin-bottom: 30px;
+@media (min-width: @tablet-width) {
+  .features {
+    padding-left: 0;
+  }
+
+  .features__title-wrapper {
+    margin-top: 45px;
+    margin-bottom: 0;
+    margin-left: 30px;
+  }
+
+  .features__title {
+    font-size: 60px;
+    line-height: 60px;
+    text-transform: none;
+  }
+
+  .features__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin-left: 30px;
+  }
+
+  .features__description {
+    width: 250px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .features__description::before {
+    top: -113px;
+    left: 1px;
+
+    width: 80px;
+    height: 80px;
+  }
+
+  .features__item {
+    width: 201px;
+
+    margin-top: 153px;
+    margin-right: 182px;
+    margin-bottom: 60px;
+    margin-left: 0;
+  }
+
+  .features__item:nth-child(3n),
+  .features__item:nth-child(4n) {
+    margin-bottom: 0;
+  }
+
+  .features__item:nth-child(2),
+  .features__item:nth-child(4) {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features {
+    //margin-left: 80px;
+  }
+
+  .features__wrapper {
+    .container ();
+  }
+
+  .features__title-wrapper {
+    margin-top: 73px;
+    margin-bottom: 0;
+  }
+
+  .features__description::before {
+    left: 0;
+  }
+
+  .features__item {
+    width: 201px;
+
+    margin-top: 153px;
+    margin-right: 124px;
+  }
+
+  .features__item:nth-child(2),
+  .features__item:nth-child(3) {
+    margin-right: 124px;
+  }
 }

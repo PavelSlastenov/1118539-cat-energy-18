@@ -2,12 +2,31 @@
   background-color: @gray95;
 }
 
-.page-footer__logo-image {
-  margin-top: 35px;
-  margin-left: 95px;
+.page-footer__logo-link-wrapper {
+  .container ();
 }
 
-.page-footer__logo-image--form {
-  margin-top: 20px;
-  margin-left: 95px;
+.page-footer__logo-image {
+  margin-top: 40px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .page-footer__logo-image {
+    margin-top: 70px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__wrapper-catalog {
+    padding-top: 34px;
+  }
+
+  .page-footer__logo-image {
+    margin-top: 61px;
+  }
 }

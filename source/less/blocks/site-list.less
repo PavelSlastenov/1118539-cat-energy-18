@@ -1,6 +1,5 @@
 .site-list__link {
   color: @light-black;
-  font-family: @font-family-secondary;
   font-size: 20px;
   font-weight: 500;
   line-height: 20px;
@@ -13,11 +12,63 @@
   text-align: center;
 
   border: 1px solid @gray93;
-  border-right: none; /* под вопросом*/
-  border-left: none; /*под вопросом*/
 }
 
 .site-list__item:nth-child(2n),
 .site-list__item:nth-child(3n) {
   border-top: none;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .site-list__item {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    text-align: center;
+    border: none;
+
+    margin-top: 18px;
+    margin-left: 38px;
+  }
+
+  .site-list__link {
+    position: relative;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.86px;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    margin-top: 32px;
+    margin-left: 60px;
+  }
+
+  .site-list__item {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    text-align: center;
+    border: none;
+  }
+
+  .site-list__link {
+    position: relative;
+
+    color: @white;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.86px;
+    text-transform: uppercase;
+  }
+
+  .site-list__link--catalog {
+    color: @light-black;
+  }
 }
