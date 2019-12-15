@@ -5,7 +5,6 @@
   position: relative;
 
   width: 320px;
-  min-height: 65px;
   margin: 0 auto;
 }
 
@@ -70,21 +69,28 @@
   }
 }
 
+
 @media (max-width: @mobile-width-only) {
   .main-nav--closed .site-list__item {
     display: none;
 /*
-    &--active {
+    &--active {  //Отображение текущего пункта на странце, судя по макет эта реализация не требуется, взял из демки
       display: block;
     }
 */
   }
 }
+
+
 @media (min-width: @tablet-width) {
   .main-nav {
     display: flex;
     flex-direction: row;
     margin-left: 48px;
+  }
+
+  .main-nav__toggle {
+    display: none;
   }
 }
 
@@ -96,5 +102,9 @@
 
   .main-nav {
     margin-left: 368px;
+  }
+
+  .main-nav__toggle {
+    display: none;
   }
 }
