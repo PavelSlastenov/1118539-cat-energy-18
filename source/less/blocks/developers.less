@@ -13,6 +13,8 @@
 }
 
 .developers__description {
+  position: relative;
+
   color: @grey-dark;
   width: 112px;
   font-family: @font-family-secondary;
@@ -43,6 +45,15 @@
     margin-top: 56px;
     margin-bottom: 31px;
     flex-grow: 1;
+  }
+
+  .developers__link-icon {
+    width: 27px;
+    height: 34px;
+
+    polygon {
+      fill: @black;  // Не работает, поменять цвет и размер
+    }
   }
 }
 

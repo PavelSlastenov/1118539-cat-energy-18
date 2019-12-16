@@ -1,22 +1,28 @@
 .social-network {
+  position: relative;
+
   min-height: 64px;
-  border: 1px solid @black;
-}
-/*
-.social-network::before {
-  content: "";
 
-  position: absolute;
-  top: 0px;
-  left: 0px;
+  &::after {
+    content: "";
 
-  border: 1px solid @black;
-  background-position: 0 0;
+    position: absolute;
+
+    right: 0;
+    bottom: 0;
+    left: 80px;
+
+    width: 280px;
+    height: 1px;
+
+    background: @black;
+    opacity: 0.1;
+  }
 }
-*/
+
 .social-network__wrapper {
   margin-top: 29px;
-  margin-left: 20px;
+  margin-left: -62px; //Временное решение, при центровке всего page-footer сильно сдвигается в право.
 }
 
 .social-network__list {
@@ -24,48 +30,60 @@
 }
 
 .social-network__vk {
-  content: "";
+  position: relative;
 
-  position: absolute;
-  top: 2869px;
-  left: 175px;
+  &::after {
+    content: "";
 
-  width: 22px;
-  height: 22px;
+    position: absolute;
+    top: 27px;
+    left: 115px;
 
-  background-image: url("../img/icon-vk.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+    width: 34px;
+    height: 34px;
+
+    background-image: url("../img/icon-vk.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
 }
 
 .social-network__insta {
-  content: "";
+  position: relative;
 
-  position: absolute;
-  top: 2867px;
-  left: 234px;
+  &::after {
+    content: "";
 
-  width: 22px;
-  height: 22px;
+    position: absolute;
+    top: 25px;
+    left: 174px;
 
-  background-image: url("../img/icon-insta.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+    width: 22px;
+    height: 22px;
+
+    background-image: url("../img/icon-insta.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
 }
 
 .social-network__fb {
-  content: "";
+  position: relative;
 
-  position: absolute;
-  top: 2865px;
-  left: 290px;
+  &::after {
+    content: "";
 
-  width: 22px;
-  height: 22px;
+    position: absolute;
+    top: 23px;
+    left: 230px;
 
-  background-image: url("../img/icon-fb.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+    width: 22px;
+    height: 22px;
+
+    background-image: url("../img/icon-fb.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
 }
 
 @media (min-width: @tablet-width) {

@@ -1,12 +1,18 @@
 .page-header {
   .container ();
-  //height: 65px;  //временно
 }
 
 .page-header__logo {
   padding-top: 11px;
   margin-bottom: 16px;
   padding-left: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 @media (min-width: @desktop-width) {

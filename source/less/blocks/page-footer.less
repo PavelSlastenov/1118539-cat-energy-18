@@ -1,14 +1,32 @@
 .page-footer {
-  background-color: @gray95;
-}
-
-.page-footer__logo-link-wrapper {
   .container ();
+
+  background-color: @gray95;
 }
 
 .page-footer__logo-image {
   margin-top: 35px;
   margin-left: 95px;
+}
+
+.page-footer__logo-link-wrapper {
+  position: relative;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+
+    right: 0;
+    bottom: -30px;
+    left: 20px;
+
+    width: 280px;
+    height: 1px;
+
+    background: @black;
+    opacity: 0.1;
+  }
 }
 
 @media (min-width: @tablet-width) {
