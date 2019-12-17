@@ -30,13 +30,52 @@
   flex-grow: 1;
 }
 
+.developers__link {
+  position: relative;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 22px;
+    left: 253px;
+
+    width: 27px;
+    height: 34px;
+
+    background-image: url("../img/htmlacademy-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.6;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .developers__link {
     width: 170px;
+    margin-left: 375px;
+
+    position: relative;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 53px;
+      left: 135px;
+
+      width: 27px;
+      height: 34px;
+
+      background-image: url("../img/htmlacademy-tablet.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      opacity: 0.6;
+    }
   }
 
   .developers__description-wrapper {
-    margin-top: 58px;
+    margin-top: 46px;
     margin-bottom: 31px;
     flex-grow: 1;
   }
@@ -46,20 +85,12 @@
     margin-bottom: 31px;
     flex-grow: 1;
   }
-
-  .developers__link-icon {
-    width: 27px;
-    height: 34px;
-
-    polygon {
-      fill: @black;  // Не работает, поменять цвет и размер
-    }
-  }
 }
 
 @media (min-width: @desktop-width) {
   .developers {
     margin-bottom: 20px;
+    margin-left: 255px;
   }
 
   .developers__link {
@@ -67,10 +98,7 @@
   }
 
   .developers__description-wrapper {
-    margin-top: 19px;
+    margin-top: 44px;
   }
 
-  .developers__link-icon-wrapper {
-    margin-top: 26px;
-  }
 }
