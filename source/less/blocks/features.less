@@ -26,7 +26,7 @@
 
 .features__item {
   margin-bottom: 26px;
-  margin-left: 82px;
+  padding-left: 82px;
 }
 
 .features__item:nth-child(4) {
@@ -60,7 +60,7 @@
   background-position: 0 0;
 }
 
-.features__item--leaf {
+.features__description--leaf {
   position: relative;
 
   &::after {
@@ -81,7 +81,7 @@
   }
 }
 
-.features__item--powder {
+.features__description--powder {
   position: relative;
 
   &::after {
@@ -103,7 +103,7 @@
   }
 }
 
-.features__item--dinin {
+.features__description--dinin {
   position: relative;
 
   &::after {
@@ -125,7 +125,7 @@
   }
 }
 
-.features__item--clock {
+.features__description--clock {
   position: relative;
 
   &::after {
@@ -189,9 +189,11 @@
     width: 201px;
 
     margin-top: 153px;
-    margin-right: 182px;
     margin-bottom: 60px;
     margin-left: 0;
+
+    padding-right: 383px;
+    padding-left: 0;
   }
 
   .features__item:nth-child(3n),
@@ -201,7 +203,57 @@
 
   .features__item:nth-child(2),
   .features__item:nth-child(4) {
-    margin-right: 0;
+    padding-right: 0;
+  }
+
+  .features__description--leaf {
+    position: relative;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: -97px;
+      left: 15px;
+    }
+  }
+
+  .features__description--powder {
+    position: relative;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+
+      top: -97px;
+      left: 15px;
+    }
+  }
+
+  .features__description--dinin {
+    position: relative;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+
+      top: -97px;
+      left: 15px;
+    }
+  }
+
+  .features__description--clock {
+    position: relative;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: -97px;
+      left: 15px;
+    }
   }
 }
 
@@ -227,12 +279,12 @@
     width: 201px;
 
     margin-top: 153px;
-    margin-right: 124px;
+    padding-right: 325px;
   }
 
   .features__item:nth-child(2),
   .features__item:nth-child(3) {
-    margin-right: 124px;
+    padding-right: 325px;
   }
 
 
