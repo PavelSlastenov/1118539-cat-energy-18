@@ -11,23 +11,34 @@
   margin-left: 95px;
 }
 
-.page-footer__logo-link-wrapper {
-  position: relative;
+.page-footer__logo-link:hover,
+.page-footer__logo-link:focus {
+  opacity: 0.8;
+}
 
-  &::after {
-    content: "";
+.page-footer__logo-link:active {
+  opacity: 0.6;
+}
 
-    position: absolute;
+@media (max-width: @mobile-width-only) {
+  .page-footer__logo-link-wrapper {
+    position: relative;
 
-    right: 0;
-    bottom: -30px;
-    left: 20px;
+    &::after {
+      content: "";
 
-    width: 280px;
-    height: 1px;
+      position: absolute;
 
-    background: @black;
-    opacity: 0.1;
+      right: 0;
+      bottom: -30px;
+      left: 20px;
+
+      width: 280px;
+      height: 1px;
+
+      background: @black;
+      opacity: 0.1;
+    }
   }
 }
 

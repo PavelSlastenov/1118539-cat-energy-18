@@ -6,6 +6,15 @@
   text-transform: uppercase;
 }
 
+.site-list__link:hover,
+.site-list__link:focus {
+  opacity: 0.6;
+}
+
+.site-list__link:active {
+  opacity: 0.3;
+}
+
 .site-list__item {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -82,7 +91,25 @@
     margin-left: 35px;
     text-align: center;
     border: none;
+
+    &--active-desctop {
+      position: relative;
+
+      &::after {
+        content: "";
+
+        position: absolute;
+        right: 0;
+        bottom: 14px;
+        left: 0;
+
+        height: 2px;
+
+        background: @white;
+      }
+    }
   }
+
 
   .site-list__link {
     position: relative;

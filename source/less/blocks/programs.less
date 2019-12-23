@@ -108,6 +108,40 @@
   }
 }
 
+.programs__link--slim:hover,
+.programs__link--slim:focus {
+  position: relative;
+
+  &::after {
+
+    content: "";
+
+    position: absolute;
+    top: 6px;
+    left: 98px;
+
+    width: 24px;
+    height: 24px;
+
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.7;
+  }
+}
+
+.programs__link--slim:active {
+  position: relative;
+
+  opacity: 0.3;
+
+  &::after {
+    position: absolute;
+
+    opacity: 0.3;
+  }
+}
+
 .programs__link--pro {
   position: relative;
 
@@ -128,50 +162,77 @@
   }
 }
 
+.programs__link--pro:hover,
+.programs__link--pro:focus {
+  position: relative;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 7px;
+    left: 96px;
+
+    width: 24px;
+    height: 24px;
+
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.7;
+  }
+}
+
+.programs__link--pro:active {
+  position: relative;
+  opacity: 0.3;
+
+  &::after {
+    position: absolute;
+
+    opacity: 0.3;
+  }
+}
+
+.programs__title--slim {
+  position: relative;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: -9px;
+    left: -61px;
+
+    width: 50px;
+    height: 50px;
+
+    background-image: url("../img/vector-slim.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+.programs__title--pro {
+  position: relative;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 4px;
+    left: -79px;
+
+    width: 70px;
+    height: 50px;
+
+    background-image: url("../img/vector-pro.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
 @media (max-width: @mobile-width-only) {
-
-  .programs__title--slim {
-    position: relative;
-
-    &::after {
-      content: "";
-
-      position: absolute;
-      top: -9px;
-      left: -61px;
-
-      width: 50px;
-      height: 50px;
-
-      background-image: url("../img/vector-slim.svg");
-      background-repeat: no-repeat;
-      background-position: 0 0;
-
-      z-index: 1;
-    }
-  }
-
-  .programs__title--pro {
-    position: relative;
-
-    &::after {
-      content: "";
-
-      position: absolute;
-      top: 4px;
-      left: -79px;
-
-      width: 70px;
-      height: 50px;
-
-      background-image: url("../img/vector-pro.svg");
-      background-repeat: no-repeat;
-      background-position: 0 0;
-
-      z-index: 4;
-    }
-  }
-
   .programs__description--slim {
     position: relative;
 
@@ -298,6 +359,16 @@
     }
   }
 
+  .programs__link--slim:hover,
+  .programs__link--slim:focus {
+    position: relative;
+
+    &::after {
+      top: 10px;
+      left: 131px;
+    }
+  }
+
   .programs__link--pro {
     position: relative;
 
@@ -306,49 +377,55 @@
       left: 125px;
     }
   }
-}
 
-@media (max-width: @tablet-width-only) {
-  .programs__title--slim {
+  .programs__link--pro:hover,
+  .programs__link--pro:focus {
     position: relative;
 
     &::after {
-      content: "";
-
-      position: absolute;
-      top: 4px;
-      left: 423px;
-
-      width: 140px;
-      height: 194px;
-
-      background-image: url("../img/vector-slim-tablet.svg");
-      background-repeat: no-repeat;
-      background-position: 0 0;
-
-      z-index: 1;
+      top: 10px;
+      left: 125px;
     }
   }
 
-  .programs__title--pro {
-    position: relative;
 
-    &::after {
-      content: "";
+}
 
-      position: absolute;
-      top: 59px;
-      left: 359px;
+.programs__title--slim {
+  position: relative;
 
-      width: 268px;
-      height: 112px;
+  &::after {
+    content: "";
 
-      background-image: url("../img/vector-pro-tablet.svg");
-      background-repeat: no-repeat;
-      background-position: 0 0;
+    position: absolute;
+    top: 4px;
+    left: 423px;
 
-      z-index: 4;
-    }
+    width: 140px;
+    height: 194px;
+
+    background-image: url("../img/vector-slim-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+.programs__title--pro {
+  position: relative;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 59px;
+    left: 359px;
+
+    width: 268px;
+    height: 112px;
+
+    background-image: url("../img/vector-pro-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
   }
 }
 
@@ -387,8 +464,6 @@
       background-image: url("../img/vector-slim-desktop.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
-
-      z-index: 1;
     }
   }
 
@@ -408,8 +483,6 @@
       background-image: url("../img/vector-pro-desctop.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
-
-      z-index: 3;
     }
   }
 

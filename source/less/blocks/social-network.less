@@ -1,28 +1,6 @@
-.social-network {
-  position: relative;
-
-  min-height: 64px;
-
-  &::after {
-    content: "";
-
-    position: absolute;
-
-    right: 0;
-    bottom: 0;
-    left: 80px;
-
-    width: 280px;
-    height: 1px;
-
-    background: @black;
-    opacity: 0.1;
-  }
-}
-
 .social-network__wrapper {
   margin-top: 29px;
-  margin-left: -62px; //Временное решение, при центровке всего page-footer сильно сдвигается в право.
+  margin-left: -62px;
 }
 
 .social-network__list {
@@ -86,6 +64,30 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     opacity: 0.5;
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .social-network {
+    position: relative;
+
+    min-height: 64px;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+
+      right: 0;
+      bottom: 0;
+      left: 80px;
+
+      width: 280px;
+      height: 1px;
+
+      background: @black;
+      opacity: 0.1;
+    }
   }
 }
 

@@ -37,6 +37,16 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
+  outline: none;
+}
+
+.form-program__input:hover,
+.form-program__input:focus {
+  border: 1px solid @grey72;
+}
+
+.form-program__input:active {
+  border: 1px solid @grey-dark;
 }
 
 .form-program__input--first {
@@ -73,6 +83,12 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+.form-program__label--slim:active,
+.form-program__label--pro:active,
+.form-program__label--unknown:active {
+  opacity: 0.3;
 }
 
 .form-program__label--first {
@@ -337,6 +353,21 @@
   }
 }
 
+.form-program__input--radio:hover,
+.form-program__input--radio:focus {
+  position: relative;
+
+  &::before {
+    position: absolute;
+
+    border: 1px solid @grey73;
+  }
+}
+
+.form-program__input--radio:active {
+  opacity: 0.3;
+}
+
 /*-----------Чекбокс---------------*/
 .form-program__wrapper--checkbox {
   margin-top: 39px;
@@ -391,6 +422,25 @@
     border: 1px solid @grey80;
     background-color: @white;
   }
+}
+
+.form-program__input--checkbox:hover,
+.form-program__input--checkbox:focus {
+  position: relative;
+
+  &::before {
+    position: absolute;
+
+    border: 1px solid @grey73;
+  }
+}
+
+.form-program__input--checkbox:active {
+  opacity: 0.3;
+}
+
+.form-program__wrapper--checkbox:active {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
@@ -473,7 +523,6 @@
     margin-top: 73px;
     margin-left: 68px;
     padding-left: 20px;
-
   }
 
   .form-program__input--radio {
@@ -979,6 +1028,4 @@
   .form-program__legend-wrapper {
     margin-left: 650px;
   }
-
-
 }
