@@ -337,14 +337,17 @@
     border: 1px solid @grey80;
     background-color: @white;
   }
+}
 
+.form-program__radio:nth-child(1) {
+  position: relative;
   &::after {
     position: absolute;
 
     content: "";
 
-    top: 30px;
-    left: -33px;
+    top: 29px;
+    left: 6px;
 
     width: 12px;
     height: 12px;
@@ -538,16 +541,22 @@
       width: 40px;
       height: 40px;
     }
+  }
 
+  .form-program__radio:nth-child(1) {
+    position: relative;
     &::after {
       position: absolute;
+
       content: "";
 
-      top: 34px;
-      left: -44px;
+      top: 35px;
+      left: 19px;
 
       width: 18px;
       height: 18px;
+      border-radius: 50%;
+      background-color: @green;
     }
   }
 
