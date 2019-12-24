@@ -46,10 +46,6 @@
   .page-footer__wrapper {
     display: flex;
     flex-direction: row;
-  }
-
-  .page-footer--catalog,
-  .page-footer--form {
     padding-top: 35px;
   }
 
@@ -63,6 +59,12 @@
 }
 
 @media (min-width: @desktop-width) {
+  .page-footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    padding-top: 0;
+  }
+
   .page-footer__wrapper-catalog {
     padding-top: 34px;
   }
