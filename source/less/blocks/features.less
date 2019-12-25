@@ -122,7 +122,7 @@
     background-repeat: no-repeat;
     background-position: 0 0;
 
-    z-index: 2;
+    z-index: 10;
   }
 }
 
@@ -195,6 +195,94 @@
 
     padding-right: 383px;
     padding-left: 0;
+  }
+
+  .features__item--one {
+    position: relative;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+
+      top: -96px;
+      left: 126px;
+
+      width: 71px;
+      height: 228px;
+
+      background-image: url("../img/1-tablet.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+
+      z-index: -1;
+    }
+  }
+
+  .features__item--two {
+    position: relative;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+
+      top: -98px;
+      left: 123px;
+
+      width: 114px;
+      height: 230px;
+
+      background-image: url("../img/2-tablet.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+
+      z-index: -1;
+    }
+  }
+
+  .features__item--three {
+    position: relative;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+
+      top: -98px;
+      left: 123px;
+
+      width: 113px;
+      height: 250px;
+
+      background-image: url("../img/3-tablet.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+
+      z-index: -1;
+    }
+  }
+
+  .features__item--four {
+    position: relative;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+
+      top: -98px;
+      left: 123px;
+
+      width: 121px;
+      height: 228px;
+
+      background-image: url("../img/4-tablet.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+
+      z-index: -1;
+    }
   }
 
   .features__item:nth-child(3n),
@@ -288,5 +376,84 @@
     padding-right: 325px;
   }
 
+  .features__item--one {
+    position: relative;
 
+    &::after {
+      content: "";
+
+      position: absolute;
+
+      top: -96px;
+      left: 126px;
+
+      width: 71px;
+      height: 228px;
+
+      background-image: url("../img/1-desctop.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+
+      z-index: -1;
+    }
+  }
+
+  .features__item--two {
+    position: relative;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+
+      top: -98px;
+      left: 123px;
+
+      width: 114px;
+      height: 230px;
+
+      background-image: url("../img/2-desctop.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+
+      z-index: -1;
+    }
+  }
+
+  .features__item--three {
+    position: relative;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+
+      top: -98px;
+      left: 123px;
+
+      width: 113px;
+      height: 250px;
+
+      background-image: url("../img/3-desctop.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+
+      z-index: -1;
+    }
+  }
+
+  .features__item--four {
+    position: relative;
+
+    &::after {
+
+      top: -98px;
+      left: 123px;
+
+      width: 121px;
+      height: 228px;
+
+      background-image: url("../img/4-desctop.png");
+    }
+  }
 }
