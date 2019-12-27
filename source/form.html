@@ -7,10 +7,16 @@
   </head>
   <body>
 
-  <header class="page-header">
-    <div class="page-header__logo">
-      <a><img class="page-header__logo-image" src="../img/logo-mobile.svg" width="191" height="38" alt="Кот"></a>
-    </div>
+ <header class="page-header">
+     <div class="page-header__logo">
+       <a class="page-header__logo-link">
+         <picture>
+           <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+           <img class="page-header__logo-image" src="../img/logo-mobile.svg" width="191" height="38" alt="Кот">
+         </picture>
+       </a>
+     </div>
 
       <nav class="main-nav main-nav--closed main-nav--nojs"> <!--opened-->  <!--closed-->
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
