@@ -38,11 +38,13 @@
 
 .goods-add-card__table--front-column {
   text-align: left;
+  flex-grow: 1;
 }
 
 .goods-add-card__table--second-column {
   min-width: 40px;
-  text-align: left;
+  text-align: right;
+  flex-grow: 1;
 }
 
 .goods-add-card__order {
@@ -59,13 +61,29 @@
   padding-left: 111px;
 }
 
+.goods-add-card__order:hover,
+.goods-add-card__order:focus {
+  background-color: @green-dark-dark;
+}
+
+.goods-add-card__order:active {
+  color: @green-dark-link;
+}
+
 .goods-add-card__order-wrapper {
   margin-top: 22px;
+}
+
+.goods-add-card__row {
+  display: flex;
+  flex-direction: row;
+  min-width: 285px;
 }
 
 @media (min-width: @tablet-width) {
   .goods-add__card-wrapper {
     margin-top: 80px;
+    padding-left: 10px;
   }
 
   .goods-add-card {
@@ -87,24 +105,32 @@
   .goods-add-card__title {
     font-size: 20px;
     line-height: 16px;
+    flex-grow: 1;
   }
 
   .goods-add-card__title-wrapper {
     margin-top: 28px;
+    padding-left: 38px;
   }
 
   .goods-add-card__table-wrapper {
     margin-top: 30px;
     margin-left: 240px;
+    flex-grow: 1;
   }
 
   .goods-add-card__table {
-    max-width: 240px;
+    max-width: 130px;
     font-size: 16px;
   }
 
+  .goods-add-card__table--front-column {
+    text-align: right;
+  }
+
   .goods-add-card__table--second-column {
-    min-width: 50px;
+    text-align: center;
+    padding-left: 10px;
   }
 
   .goods-add-card__order-wrapper {
@@ -119,6 +145,12 @@
     padding-bottom: 7px;
     padding-left: 285px;
   }
+
+  .goods-add-card__row {
+    display: flex;
+    flex-direction: row;
+    min-width: 260px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -128,6 +160,7 @@
     flex-wrap: nowrap;
 
     margin-top: 80px;
+    padding-left: 44px;
   }
 
   .goods-add-card {
@@ -157,7 +190,7 @@
 
   .goods-add-card__table--second-column {
     min-width: 50px;
-    text-align: left;
+    text-align: right;
   }
 
   .goods-add-card__order {
@@ -171,4 +204,18 @@
     margin-top: 25px;
     margin-left: 43px;
   }
+
+  .goods-add-card__title-wrapper {
+    margin-top: 28px;
+    padding-left: 0;
+  }
+  .goods-add-card__row {
+    min-width: 285px;
+  }
+
+  .goods-add-card__table {
+    max-width: 150px;
+    font-size: 16px;
+  }
+
 }

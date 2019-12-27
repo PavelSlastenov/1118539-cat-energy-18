@@ -3,7 +3,7 @@
 }
 
 .goods__title-wrapper {
-  margin-top: 30px;
+  margin-top: 14px;
   margin-bottom: 28px;
   margin-left: 20px;
 }
@@ -97,6 +97,15 @@
   padding-left: 111px;
 }
 
+.goods__order:hover,
+.goods__order:focus {
+  background-color: @green-dark-dark;
+}
+
+.goods__order:active {
+  color: @green-dark-link;
+}
+
 .goods__image {
   margin-top: 1px;
   margin-left: 20px;
@@ -109,11 +118,29 @@
   width: 320px;
   border: 1px solid @gray93;
   border-top: none;
+
+  position: relative;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 26px;
+    left: 144px;
+
+    width: 30px;
+    height: 30px;
+
+    background-image: url("../img/icon-plus.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    z-index: 2;
+  }
 }
 
 .goods__all-description-wrapper {
   margin-top: 80px;
-
   padding-left: 60px;
 }
 
@@ -133,7 +160,6 @@
 .goods__all-intro {
   color: @grey-dark;
   font-size: 12px;
-  font-weight: 400;
   line-height: 16px;
   text-transform: none;
   font-family: @font-family-secondary;
@@ -142,20 +168,51 @@
 .goods__all-show-wrapper {
   margin-top: 8px;
   margin-bottom: 24px;
+  margin-left: 19px;
 }
 
 .goods__all-show {
+  width: 280px;
   color: @grey-dark;
   background-color: @gray95;
   font-size: 16px;
-  font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
 
   padding-top: 11px;
-  padding-right: 83px;
+  padding-right: 90px;
   padding-bottom: 9px;
-  padding-left: 86px;
+  padding-left: 97px;
+}
+
+.goods__all-show:hover,
+.goods__all-show:focus {
+  background-color: @gray92;
+}
+
+.goods__all-show:active {
+  color: @grey80;
+}
+
+@media (max-width: @mobile-width-only) {
+  .goods__title {
+    position: relative;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      right: 0;
+      bottom: 75px;
+      left: -20px;
+
+      width: 320px;
+      height: 1px;
+
+      background: @black;
+      opacity: 0.1;
+    }
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -163,6 +220,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
+    padding-left: 20px;
   }
 
   .goods__card-wrapper {
@@ -182,7 +241,7 @@
   .goods__title-wrapper {
     margin-top: 51px;
     margin-bottom: 28px;
-    margin-left: 30px;
+    margin-left: 10px;
   }
 
   .goods__title {
@@ -273,15 +332,32 @@
     width: 324px;
     min-height: 432px;
     border: 1px solid #cdcdcd;
+
+    position: relative;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 53px;
+      left: 132px;
+
+      width: 60px;
+      height: 60px;
+
+      background-image: url("../img/icon-plus-tablet.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
   }
 
   .goods__all-description-wrapper {
-    margin-top: 174px;
-    padding-left: 90px;
+    margin-top: 162px;
+    padding-left: 92px;
   }
 
   .goods__all-description {
-    width: 200px;
+    width: 230px;
     font-size: 20px;
     text-align: center;
   }
@@ -299,11 +375,13 @@
   }
 
   .goods__all-show-wrapper {
-    margin-top: 68px;
+    margin-top: 69px;
     margin-bottom: 24px;
+    margin-left: 37px;
   }
 
   .goods__all-show {
+    width: 249px;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
@@ -319,6 +397,8 @@
 @media (min-width: @desktop-width) {
   .goods {
     width: @desktop-width;
+
+    padding-left: 35px;
   }
   .goods__card {
     border: none;
@@ -359,8 +439,9 @@
   }
 
   .goods__title-wrapper {
-    margin-top: 74px;
+    margin-top: 63px;
     margin-bottom: 0;
+    margin-left: 10px;
   }
 
   .goods__card-title-wrapper {
@@ -395,6 +476,7 @@
   }
 
   .goods__all-show {
+    width: 169px;
     padding-top: 10px;
     padding-right: 40px;
     padding-bottom: 10px;
@@ -404,5 +486,45 @@
   .goods__all {
     width: 245px;
     min-height: 432px;
+
+    position: relative;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 56px;
+      left: 92px;
+
+      width: 60px;
+      height: 60px;
+
+      background-image: url("../img/icon-plus-tablet.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+
+    .goods__all-description-wrapper {
+      margin-top: 165px;
+      padding-left: 40px;
+    }
+
+    .goods__all-description {
+      width: 200px;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .goods__all-intro-wrapper {
+      margin-top: 25px;
+      padding-left: 19px;
+    }
+
+    .goods__all-intro {
+      width: 220px;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+    }
   }
 }

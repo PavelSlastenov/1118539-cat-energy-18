@@ -1,6 +1,23 @@
 .goods-promo {
   margin-top: 68px;
   margin-bottom: 35px;
+
+  position: relative;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 65px;
+    left: 112px;
+
+    width: 60px;
+    height: 60px;
+
+    background-image: url("../img/icon-gift.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
 }
 
 .goods-promo__description {
@@ -38,6 +55,12 @@
   .goods-promo {
     margin-top: 73px;
     margin-bottom: 76px;
+
+    position: relative;
+
+    &::after {
+      left: 90px;
+    }
   }
 
   .goods-promo__wrapper {
@@ -68,6 +91,12 @@
     margin-top: 0;
     margin-bottom: 76px;
     margin-left: 81px;
+
+    position: relative;
+
+    &::after {
+      left: 95px;
+    }
   }
 
   .goods-promo__wrapper {

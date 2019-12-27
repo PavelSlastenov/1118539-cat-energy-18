@@ -1,6 +1,6 @@
 .nutrition-promo__wrapper-background {
   width: 100%;
-  min-height: 319px;
+  height: 305px;
   background-color: @green-dark;
 }
 
@@ -14,7 +14,7 @@
   width: @mobile-width;
   min-height: 305px;
 
-  margin-top: 14px;
+  margin-top: 0;
 
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -74,6 +74,15 @@
   padding-left: 73px;
 }
 
+.nutrition-promo__link:hover,
+.nutrition-promo__link:focus {
+  background-color: @green-dark-dark;
+}
+
+.nutrition-promo__link:active {
+  color: @green-dark-link;
+}
+
 @media (min-width: @tablet-width) {
   .nutrition-promo__wrapper-background {
     width: 1px;
@@ -94,7 +103,7 @@
     width: 414px;
     text-align: left;
 
-    margin-top: 38px;
+    margin-top: 49px;
     margin-left: 116px;
   }
 
@@ -107,7 +116,7 @@
   }
 
   .nutrition-promo__intro-wrapper {
-    margin-top: 39px;
+    margin-top: 42px;
     margin-right: 62px;
     margin-left: 117px;
   }
@@ -160,14 +169,15 @@
 
 @media (min-width: @desktop-width) {
   .nutrition-promo {
-    margin-left: 10px;
+    margin-top: 0;
+    padding-left: 9px;
   }
 
   .nutrition-promo__slogan-wrapper {
     width: 414px;
     text-align: left;
 
-    margin-top: 85px;
+    margin-top: 97px;
   }
 
   .nutrition-promo__slogan {
@@ -199,7 +209,8 @@
   }
 
   .nutrition-promo__link-wrapper {
-    margin-top: 53px;
+    margin-top: 52px;
+    padding-left: 17px;
   }
 
   .nutrition-promo__link {

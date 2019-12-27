@@ -1,18 +1,38 @@
 .developers__link {
   .container ();
-  display: flex;
-  flex-direction: row;
 
   width: 279px;
   text-align: right;
 }
 
 .developers__description-wrapper {
-  margin-top: 14px;
-  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 35px;
+}
+
+.developers__description-wrapper svg {
+  fill: @gray40;
+
+  width: 40px;
+  height: 50px;
+
+  margin-left: 155px;
+}
+
+.developers__description-wrapper svg:hover,
+.developers__description-wrapper svg:focus {
+  fill: @green
+}
+
+.developers__description-wrapper svg:active {
+  opacity: 0.3;
 }
 
 .developers__description {
+  position: relative;
+
   color: @grey-dark;
   width: 112px;
   font-family: @font-family-secondary;
@@ -20,23 +40,34 @@
   font-weight: 400;
   line-height: 16px;
   text-transform: none;
+
+  padding-left: 20px;
+}
+
+.developers__description:active {
+  opacity: 0.3;
 }
 
 .developers__link-icon-wrapper {
   margin-top: 22px;
   margin-bottom: 31px;
-  flex-grow: 1;
 }
 
 @media (min-width: @tablet-width) {
   .developers__link {
     width: 170px;
+    margin-left: 0;
   }
 
   .developers__description-wrapper {
-    margin-top: 58px;
+    margin-top: 10px;
     margin-bottom: 31px;
+    margin-left: 136px;
     flex-grow: 1;
+  }
+
+  .developers__description-wrapper svg {
+    margin-left: 18px;
   }
 
   .developers__link-icon-wrapper {
@@ -44,11 +75,16 @@
     margin-bottom: 31px;
     flex-grow: 1;
   }
+
+  .developers__description {
+    padding-left: 0;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .developers {
     margin-bottom: 20px;
+    margin-left: 255px;
   }
 
   .developers__link {
@@ -56,10 +92,7 @@
   }
 
   .developers__description-wrapper {
-    margin-top: 19px;
+    margin-top: 48px;
   }
 
-  .developers__link-icon-wrapper {
-    margin-top: 26px;
-  }
 }
