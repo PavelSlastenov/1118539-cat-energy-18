@@ -69,8 +69,38 @@
   }
 }
 
+.main-nav__link {
+  color: @light-black;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.main-nav__item:hover,
+.main-nav__iten:focus {
+  opacity: 0.6;
+}
+
+.main-nav__item:active {
+  opacity: 0.3;
+}
+
+.main-nav__item {
+  text-align: center;
+  border: 1px solid @gray93;
+
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.main-nav__item:nth-child(2n),
+.main-nav__item:nth-child(3n) {
+  border-top: none;
+}
+
 @media (max-width: @mobile-width-only) {
-  .main-nav--closed .site-list__item {
+  .main-nav--closed .main-nav__item {
     display: none;
   }
 }
@@ -87,6 +117,53 @@
   .main-nav__toggle {
     display: none;
   }
+
+  .main-nav__internal {
+    min-width: 450px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main-nav__item {
+    text-align: center;
+    border: none;
+
+    margin-top: 18px;
+
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-left: 34px;
+
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+
+        position: absolute;
+        right: 0;
+        bottom: 14px;
+        left: 0;
+
+        height: 2px;
+
+        background: @green;
+      }
+    }
+  }
+
+  .main-nav__item:nth-child(1) {
+    margin-left: 0;
+  }
+
+  .main-nav__link {
+    position: relative;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.86px;
+    text-transform: uppercase;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -101,5 +178,55 @@
 
   .main-nav__toggle {
     display: none;
+  }
+
+  .main-nav__internal {
+    margin-top: 32px;
+    margin-left: 65px;
+    min-width: 490px;
+  }
+
+  .main-nav__item {
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    margin-left: 35px;
+    text-align: center;
+    border: none;
+
+    &--active-desctop {
+      position: relative;
+
+      &::after {
+        content: "";
+
+        position: absolute;
+        right: 0;
+        bottom: 14px;
+        left: 0;
+
+        height: 2px;
+
+        background: @white;
+      }
+    }
+  }
+
+  .main-nav__link {
+    position: relative;
+
+    color: @white;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.86px;
+    text-transform: uppercase;
+  }
+
+  .main-nav__link--catalog {
+    color: @black;
+  }
+
+  .main-nav__link--form {
+    color: @black;
   }
 }
