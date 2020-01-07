@@ -115,44 +115,42 @@
   position: relative;
 
   padding-top: 5px;
+}
 
-  &::after {
-    position: absolute;
+.form-program__image--e-mail {
+  position: absolute;
 
-    content: "";
+  content: "";
 
-    top: 20px;
-    left: 248px;
+  width: 18px;
+  height: 14px;
 
-    width: 17px;
-    height: 13px;
-
-    background-image: url("../img/icon-mail.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
+  top: 20px;
+  right: 35px;
 }
 
 .form-program__wrapper--tel {
   position: relative;
 
   padding-top: 0;
+}
 
-  &::after {
-    position: absolute;
+.form-program__image--tel {
+  position: absolute;
 
-    content: "";
+  content: "";
 
-    top: 12px;
-    left: 248px;
+  width: 21px;
+  height: 21px;
 
-    width: 20px;
-    height: 20px;
+  margin-top: 11px;
+  right: 32px;
 
-    background-image: url("../img/icon-phone.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
+}
+
+.form-program__image--e-mail:active,
+.form-program__image--tel:active {
+  fill: @green;;
 }
 
 .form-program__wrapper {
@@ -622,22 +620,22 @@
     position: relative;
 
     padding-top: 45px;
+  }
 
-    &::after {
-      top: 66px;
-      left: 594px;
-    }
+  .form-program__image--e-mail {
+    top: 66px;
+    right: 85px;
   }
 
   .form-program__wrapper--tel {
     position: relative;
 
     padding-top: 6px;
+  }
 
-    &::after {
-      top: 24px;
-      left: 594px;
-    }
+  .form-program__image--tel {
+    margin-top: 18px;
+    right: 82px;
   }
 
   .form-program__title-add-top-wrapper {
@@ -931,26 +929,22 @@
   }
 
   .form-program__wrapper--e-mail {
-    position: relative;
-
     padding-top: 45px;
+  }
 
-    &::after {
-      top: 66px;
-      left: 534px;
-    }
+  .form-program__image--e-mail {
+    top: 65px;
+    right: 19px;
   }
 
   .form-program__wrapper--tel {
-    position: relative;
-
     padding-top: 48px;
     margin-left: 82px;
+  }
 
-    &::after {
-      top: 63px;
-      left: 530px;
-    }
+  .form-program__image--tel {
+    margin-top: 13px;
+    right: 18px;
   }
 
   .form-program__title-add-top-wrapper {
