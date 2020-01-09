@@ -6,6 +6,28 @@
 
 .nutrition-promo__wrapper-container {
   .container ();
+
+  position: relative;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 165px;
+    left: 20px;
+
+    width: 280px;
+    height: 270px;
+
+    background-image: url("../img/index-can-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/index-can-mobile@2x.png");
+      background-size: 280px auto;
+    }
+  }
 }
 
 .nutrition-promo__wrapper {
@@ -18,13 +40,11 @@
 
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-}
 
-.nutrition-promo__image {
-  position: relative;
-
-  margin-top: 14px;
-  margin-left: 20px;
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: contain;
+  }
 }
 
 .nutrition-promo__slogan-wrapper {
@@ -56,7 +76,7 @@
 }
 
 .nutrition-promo__link-wrapper {
-  margin-top: 11px;
+  margin-top: 310px;
   padding-left: 20px;
 }
 
@@ -84,6 +104,30 @@
 }
 
 @media (min-width: @tablet-width) {
+  .nutrition-promo__wrapper-container {
+
+    position: relative;
+
+    &::after {
+
+      position: absolute;
+      top: 238px;
+      left: 29px;
+
+      width: 709px;
+      height: 609px;
+
+      background-image: url("../img/index-can-tablet@1x.jpg");
+
+      z-index: -1;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/index-can-tablet@2x.jpg");
+        background-size: 709px auto;
+      }
+    }
+  }
+
   .nutrition-promo__wrapper-background {
     width: 1px;
     min-height: 319px;
@@ -103,7 +147,7 @@
     width: 414px;
     text-align: left;
 
-    margin-top: 49px;
+    margin-top: 38px;
     margin-left: 116px;
   }
 
@@ -144,7 +188,7 @@
 
   .nutrition-promo__link-wrapper {
     position: relative;
-    margin-top: -583px;
+    margin-top: 46px;
     margin-left: 100px;
   }
 
@@ -177,7 +221,7 @@
     width: 414px;
     text-align: left;
 
-    margin-top: 97px;
+    margin-top: 90px;
   }
 
   .nutrition-promo__slogan {
@@ -225,5 +269,27 @@
     padding-right: 29px;
     padding-bottom: 16px;
     padding-left: 25px;
+  }
+
+  .nutrition-promo__wrapper-container {
+
+    position: relative;
+
+    &::after {
+
+      position: absolute;
+      top: 11px;
+      left: 486px;
+
+      width: 552px;
+      height: 499px;
+
+      background-image: url("../img/index-can-desktop@1x.png");
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/index-can-desktop@2x.png");
+        background-size: 550px auto;
+      }
+    }
   }
 }

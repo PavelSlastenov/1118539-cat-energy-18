@@ -1,19 +1,22 @@
 @media (min-width: @desktop-width) {
-
   .wrapper-background::before {
     content: "";
     position: absolute;
     top: 0;
     left: 50%;
+    right: 0;
     z-index: -1;
-    width: 50%;
     height: 696px;
     background-color: @green-darker;
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: 0;
 
     margin-left: 12px;
-  }
 
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+      background-size: cover;
+    }
+  }
 }
