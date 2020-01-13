@@ -253,9 +253,11 @@
     padding: 0 0 0;
     margin: 0;
 
-    background-color: @gray95;
+    //background-color: @gray95;
 
     overflow: visible;
+
+    background: linear-gradient(to right, @gray95 60%, @gray94 40%);
   }
 
   .slider__title-wrapper {
@@ -263,7 +265,7 @@
 
     padding-top: 50px;
     padding-bottom: 74px;
-    padding-left: 4px;
+    //padding-left: 4px;
 
     background-color: @white;
   }
@@ -286,7 +288,7 @@
     justify-content: space-between;
     align-items: flex-start;
     width: 1300px;
-    padding: 0 40px;
+    padding: 0; //правый отступ был 40px
     margin: 0 auto;
 
     &::after {
@@ -329,6 +331,19 @@
 
   .slider__price-title {
     padding: 0;
+  }
+
+  .slider__image-item {
+    width: 690px;
+    height: 517px;
+
+    &--before {
+      left: -50%;
+    }
+
+    &--after {
+      left: 50%;
+    }
   }
 }
 
@@ -564,8 +579,8 @@
 
 @media (min-width: @desktop-width) {
   .slider__container {
-    margin: -189px -215px 0 0;
-
+    margin: -189px 0 0 0; //правый отступ был -215px
+    padding-left: 0;
     overflow: hidden;
 
     &::before {
@@ -577,8 +592,8 @@
 
     &::after {
       top: 189px;
-
-      width: 690px;
+      left: 50%;
+      width: 345px; //было 690px
       height: 462px;
     }
   }
