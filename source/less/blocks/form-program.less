@@ -1,11 +1,11 @@
 .form-program {
   .container ();
-  //padding-left: 20px;
 }
 
 .form-program__title-wrapper {
   margin-top: 15px;
   margin-bottom: 0;
+  padding-left: 20px;
 }
 
 .form-program__title {
@@ -19,6 +19,7 @@
 .form-program__description-wrapper {
   margin-top: 26px;
   margin-bottom: 39px;
+  padding-left: 20px;
 }
 
 .form-program__description {
@@ -27,6 +28,10 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+.form-program__data {
+  padding-left: 20px;
 }
 
 .form-program__input {
@@ -165,13 +170,14 @@
 
   margin-top: 28px;
   margin-bottom: 30px;
+  padding-left: 20px;
 
   &::after {
     position: absolute;
 
     content: "";
     top: 14px;
-    left: 202px;
+    left: 221px;
 
     width: 99px;
     height: 3px;
@@ -193,6 +199,7 @@
 
   margin-top: 27px;
   margin-bottom: 0;
+  padding-left: 20px;
 
   &::after {
     position: absolute;
@@ -200,12 +207,16 @@
     content: "";
 
     top: 14px;
-    left: 143px;
+    left: 162px;
 
     width: 158px;
     height: 3px;
     background-color: @green;
   }
+}
+
+.form-program__conteiner-two {
+  padding-left: 20px;
 }
 
 .form-program__title-add-top {
@@ -222,6 +233,7 @@
   position: relative;
 
   margin-top: 25px;
+  padding-left: 20px;
 
   &::after {
     position: absolute;
@@ -229,7 +241,7 @@
     content: "";
 
     top: 15px;
-    left: 165px;
+    left: 184px;
 
     width: 136px;
     height: 3px;
@@ -249,6 +261,7 @@
 
 .form-program__textarea-wrapper {
   margin-top: 35px;
+  margin-left: 20px;
 }
 
 .form-program__textarea {
@@ -283,6 +296,10 @@
   padding-right: 76px;
   padding-bottom: 9px;
   padding-left: 79px;
+}
+
+.form-program__checkbox-wrap {
+  padding-left: 20px;
 }
 
 .form-program__button:hover,
@@ -324,16 +341,20 @@
   border: none;
 }
 
-.form-program__input--radio {
+.form-program__input--radio-wrapper {
   position: relative;
   height: 42px;
+
+  padding-top: 27px;
+  padding-left: 22px;
+
 
   &::before {
     position: absolute;
     content: "";
 
     top: 21px;
-    left: -42px;
+    left: -25px;
 
     width: 30px;
     height: 30px;
@@ -351,8 +372,8 @@
 
     content: "";
 
-    top: 29px;
-    left: -35px;
+    top: 30px;
+    left: -16px;
 
     width: 12px;
     height: 12px;
@@ -384,19 +405,39 @@
   padding-left: 43px;
 }
 
+.form-program__wrapper--checkbox {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+
+    top: -3px;
+    right: 270px;
+
+    width: 30px;
+    height: 30px;
+    border: 1px solid @grey80;
+    background-color: @white;
+  }
+}
+
 .form-program__wrapper--checkbox:nth-child(1) {
   position: relative;
+
+  padding-top: 2px;
+  padding-left: 45px;
 
   &::after {
     position: absolute;
 
     content: "";
 
+    width: 30px;
+    height: 30px;
+
     top: 4px;
     left: 5px;
-
-    width: 21px;
-    height: 16px;
 
     background-image: url("../img/icon-tick.png");
     background-repeat: no-repeat;
@@ -405,33 +446,17 @@
 }
 
 .form-program__wrapper--checkbox:nth-child(2n) {
-  margin-top: 21px;
+  margin-top: 25px;
+  padding-left: 45px;
 }
 
 .form-program__wrapper--checkbox:nth-child(3n) {
-  margin-top: 21px;
+  margin-top: 25px;
+  padding-left: 45px;
 }
 
 .form-program__wrapper--checkbox:nth-child(4n) {
-  margin-top: 19px;
-}
-
-.form-program__input--checkbox {
-  position: relative;
-  height: 20px;
-
-  &::before {
-    position: absolute;
-    content: "";
-
-    top: 0;
-    left: -42px;
-
-    width: 30px;
-    height: 30px;
-    border: 1px solid @grey80;
-    background-color: @white;
-  }
+  margin-top: 24px;
 }
 
 .form-program__input--checkbox:hover,
@@ -475,6 +500,10 @@
     line-height: 30px;
 
     padding-left: 67px;
+  }
+
+  .form-program__data {
+    padding-left: 0;
   }
 
   .form-program__input {
@@ -531,8 +560,12 @@
     padding-left: 20px;
   }
 
-  .form-program__input--radio {
+  .form-program__input--radio-wrapper {
     position: relative;
+    height: 52px;
+
+    padding-top: 32px;
+    padding-left: 5px;
 
     &::before {
       position: absolute;
@@ -582,7 +615,7 @@
 
     margin-top: 75px;
     margin-bottom: 30px;
-    padding-left: 66px;
+    padding-left: 68px;
 
     &::after {
       position: absolute;
@@ -591,7 +624,7 @@
       top: 22px;
       left: 0;
 
-      width: 27px;
+      width: 30px;
       height: 3px;
       background-color: @green;
     }
@@ -601,12 +634,16 @@
 
       content: "";
       top: 22px;
-      left: 620px;
+      left: 623px;
 
-      width: 131px;
+      width: 128px;
       height: 3px;
       background-color: @green;
     }
+  }
+
+  .form-program__conteiner-two {
+    padding-left: 0;
   }
 
   .form-program__title-contacts {
@@ -642,6 +679,7 @@
 
     margin-top: 66px;
     margin-bottom: 0;
+    padding-left: 0;
 
     &::after {
       position: absolute;
@@ -651,7 +689,7 @@
       top: 22px;
       left: -69px;
 
-      width: 29px;
+      width: 30px;
       height: 3px;
       background-color: @green;
     }
@@ -662,9 +700,9 @@
       content: "";
 
       top: 22px;
-      left: 218px;
+      left: 220px;
 
-      width: 463px;
+      width: 462px;
       height: 3px;
       background-color: @green;
     }
@@ -677,6 +715,7 @@
 
   .form-program__textarea-wrapper {
     margin-top: 75px;
+    margin-left: 0;
   }
 
   .form-program__textarea {
@@ -694,6 +733,7 @@
     position: relative;
 
     margin-top: 65px;
+    padding-left: 0;
 
     &::after {
       position: absolute;
@@ -732,49 +772,51 @@
     flex-direction: row;
     flex-wrap: wrap;
 
-    width: 535px;
+    width: 550px;
   }
 
   .form-program__wrapper--checkbox:nth-child(1) {
     position: relative;
 
-    margin-top: 4px;
-    margin-left: 10px;
+    margin-top: 34px;
+    margin-left: 0;
+    padding-left: 39px;
 
     &::after {
       position: absolute;
 
       content: "";
 
-      top: 34px;
-      left: 0;
+      top: 4px;
+      left: -9px;
     }
   }
 
   .form-program__wrapper--checkbox:nth-child(2n) {
-    margin-top: 4px;
+    margin-top: 35px;
     margin-left: 138px;
   }
 
   .form-program__wrapper--checkbox:nth-child(3n) {
-    margin-top: 4px;
-    margin-left: 10px;
+    margin-top: 37px;
+    margin-left: 0;
+    padding-left: 39px;
   }
 
   .form-program__wrapper--checkbox:nth-child(4n) {
-    margin-top: 4px;
-    margin-left: 230px;
+    margin-top: 37px;
+    margin-left: 231px;
   }
 
-  .form-program__input--checkbox {
+  .form-program__wrapper--checkbox {
     position: relative;
 
     &::before {
       position: absolute;
       content: "";
 
-      top: 23px;
-      left: -54px;
+      top: -8px;
+      left: -19px;
 
       width: 40px;
       height: 40px;
@@ -783,7 +825,7 @@
 
   .form-program__button-wrapper {
     margin-top: 43px;
-    margin-left: 0;
+    margin-left: -18px;
   }
 
   .form-program__button {
@@ -800,7 +842,7 @@
     margin-top: -39px;
     margin-right: 70px;
     margin-bottom: 63px;
-    margin-left: 345px;
+    margin-left: 326px;
   }
 
   .form-program__legend {
@@ -810,20 +852,16 @@
 }
 
 @media (min-width: @desktop-width) {
-  .form-program {
-    //padding-left: 45px;
-  }
-
   .form-program__title-wrapper {
-    margin-top: 58px;
-    padding-left: 0;
+    margin-top: 56px;
+    padding-left: 45px;
   }
 
   .form-program__description-wrapper {
     margin-top: 55px;
     margin-bottom: 39px;
 
-    padding-left: 0;
+    padding-left: 45px;
   }
 
   .form-program__container {
@@ -835,6 +873,7 @@
     display: flex;
     flex-direction: row;
     margin-left: 0;
+    padding-left: 45px;
   }
 
   .form-program__label--first {
@@ -905,18 +944,18 @@
 
     margin-top: 49px;
     margin-bottom: 30px;
-    padding-left: 0;
+    padding-left: 44px;
 
     &::after {
       top: 21px;
-      left: -45px;
+      left: 0;
 
       width: 5px;
     }
 
     &::before {
       top: 22px;
-      left: 553px;
+      left: 598px;
 
       width: 685px;
     }
@@ -995,14 +1034,13 @@
 
     width: 1130px;
 
-    margin-top: 150px;
+    margin-top: 116px;
     margin-left: -205px;
+    padding-left: 13px;
   }
 
   .form-program__wrapper--checkbox:nth-child(1n) {
     position: relative;
-
-    padding-left: 43px;
 
     &::after {
       position: absolute;
@@ -1013,11 +1051,18 @@
   }
 
   .form-program__wrapper--checkbox:nth-child(2n) {
-    padding-left: 28px;
+    padding-left: 38px;
+    margin-left: 125px;
   }
 
   .form-program__wrapper--checkbox:nth-child(3n) {
-    padding-left: 187px;
+    padding-left: 38px;
+    margin-left: 159px;
+  }
+
+  .form-program__wrapper--checkbox:nth-child(4n) {
+    padding-left: 38px;
+    margin-left: 220px;
   }
 
   .form-program__input--checkbox {
@@ -1033,8 +1078,8 @@
   }
 
   .form-program__button-wrapper {
-    margin-top: 20px;
-    margin-left: -5px;
+    margin-top: 51px;
+    margin-left: -18px;
   }
 
   .form-program__button {
@@ -1043,7 +1088,7 @@
   }
 
   .form-program__legend-wrapper {
-    margin-left: 650px;
+    margin-left: 634px;
     padding-bottom: 24px;
   }
 }
