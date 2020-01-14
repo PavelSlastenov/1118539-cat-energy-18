@@ -85,18 +85,12 @@ gulp.task("refresh", function (done) {
   server.reload();
   done();
 });
-gulp.task("compress", function () {
-  return gulp.src("source/js/*.js")
-    .pipe(uglify())
-    .pipe(gulp.dest("build/js"));
-});
 gulp.task("build", gulp.series(
   "clean",
   "copy",
   "css",
   "sprite",
-  "html",
-  "compress"
+  "html"
 ));
 
 gulp.task("build", gulp.series("css", "sprite", "html"));
