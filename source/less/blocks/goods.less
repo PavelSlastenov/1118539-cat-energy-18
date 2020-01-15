@@ -403,7 +403,6 @@
   .goods {
     width: @desktop-width;
     padding-left: 0;
-    //padding-left: 35px;
   }
 
   .goods__card {
@@ -436,6 +435,11 @@
     margin-right: 0;
   }
 
+  .goods__card:nth-child(1),
+  .goods__card:nth-child(5) {
+    margin-left: 45px;
+  }
+
   .goods__card-wrapper {
     min-width: @desktop-width;
     display: flex;
@@ -446,9 +450,9 @@
   }
 
   .goods__title-wrapper {
-    margin-top: 58px;
+    margin-top: 56px;
     margin-bottom: 0;
-    margin-left: 10px;
+    margin-left: 45px;
   }
 
   .goods__card-title-wrapper {
