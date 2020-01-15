@@ -91,7 +91,7 @@ gulp.task("js", function () {
     .pipe(uglify())
     .pipe(rename("script.min.js"))
     .pipe(gulp.dest("build/js"));
-})
+});
 
 gulp.task("build", gulp.series(
   "clean",
