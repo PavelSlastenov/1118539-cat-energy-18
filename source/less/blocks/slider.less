@@ -578,19 +578,18 @@
   .slider__container {
     margin: -189px 0 0 0;
     padding-left: 0;
-    overflow: hidden;
 
     &::before {
       top: 189px;
 
-      width: 800px;  //было 690px
+      width: 800px;
       height: 462px;
     }
 
     &::after {
       top: 189px;
       left: 66%;
-      width: 345px; //было 690px
+      width: 345px;
       height: 462px;
     }
   }
@@ -618,4 +617,8 @@
   .slider__price-title {
     padding-left: 5px;
   }
+}
+
+.slider__title-bottom {
+ z-index: 100;
 }
