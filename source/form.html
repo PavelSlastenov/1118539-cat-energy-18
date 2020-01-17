@@ -60,31 +60,31 @@
           <div class="form-program__data">
             <div class="form-program__wrapper">
               <label class="form-program__label form-program__label--first" for="name">Имя:*</label>
-              <input class="form-program__input form-program__input--first" type="text" placeholder="Барсик" aria-label="Имя">
+              <input class="form-program__input form-program__input--first" type="text" id="name" placeholder="Барсик" aria-label="Имя">
             </div>
             <div class="form-program__wrapper">
-              <label class="form-program__label form-program__label--second" for="name">Вес (кг):*</label>
-              <input class="form-program__input form-program__input--second" type="number" placeholder="7" aria-label="Вес">
+              <label class="form-program__label form-program__label--second" for="wt">Вес (кг):*</label>
+              <input class="form-program__input form-program__input--second" type="number" id="wt" placeholder="7" aria-label="Вес">
             </div>
             <div class="form-program__wrapper">
-              <label class="form-program__label form-program__label--third" for="name">Возраст&nbsp(лет):</label>
-              <input class="form-program__input form-program__input--third" type="number" placeholder="7" aria-label="Возраст">
+              <label class="form-program__label form-program__label--third" for="age">Возраст&nbsp(лет):</label>
+              <input class="form-program__input form-program__input--third" type="number" id="age" placeholder="7" aria-label="Возраст">
             </div>
           </div>
 
           <div class="form-program__radio-wrapper">
             <fieldset class="form-program__radio">
               <div class="form-program__input-wrap">
-                <input class="visually-hidden form-program__input--radio" type="radio" name="program" id="slim" value="1" checked>
-                <label for="slim" class="form-program__label--radio">Похудение</label>
+                <input class="visually-hidden form-program__input form-program__input--radio" type="radio" name="program" id="slim" value="1" checked>
+                <label for="slim" class="form-program__label form-program__label--radio">Похудение</label>
               </div>
               <div class="form-program__input-wrap">
-                <input class="visually-hidden form-program__input--radio" type="radio" name="program" id="pro" value="2">
-                <label for="pro" class="form-program__label--radio">Набор массы</label>
+                <input class="visually-hidden form-program__input form-program__input--radio" type="radio" name="program" id="pro" value="2">
+                <label for="pro" class="form-program__label form-program__label--radio">Набор массы</label>
               </div>
               <div class="form-program__input-wrap">
-                <input class="visually-hidden form-program__input--radio" type="radio" name="program" id="unknown" value="3">
-                <label for="unknown" class="form-program__label--radio">Не знаю (нужен ваш совет)</label>
+                <input class="visually-hidden form-program__input form-program__input--radio" type="radio" name="program" id="unknown" value="3">
+                <label for="unknown" class="form-program__label form-program__label--radio">Не знаю (нужен ваш совет)</label>
               </div>
             </fieldset>
           </div>
@@ -95,12 +95,12 @@
           <div class="form-program__wrapper form-program__wrapper--e-mail">
             <label class="form-program__label form-program__label--fourth" for="e-mail">E-&nbspmail:*</label>
             <input class="form-program__input form-program__input--fourth" id="e-mail" type="email" placeholder="kuklachev@gmail.com" aria-label="Телефон">
-            <svg class="form-program__image--e-mail"><use xlink:href="#icon-mail"></use></svg>
+            <svg class="form-program__image form-program__image--e-mail"><use xlink:href="#icon-mail"></use></svg>
           </div>
           <div class="form-program__wrapper form-program__wrapper--tel">
             <label class="form-program__label form-program__label--fifth" for="tel">Телефон:*</label>
             <input class="form-program__input form-program__input--fifth" id="tel" type="number" placeholder="8 (960) 900-60-90" aria-label="Телефон">
-            <svg class="form-program__image--tel"><use xlink:href="#icon-phone"></use></svg>
+            <svg class="form-program__image form-program__image--tel"><use xlink:href="#icon-phone"></use></svg>
           </div>
         </div>
         <div class="form-program__wrapper form-program__wrapper--comments">
@@ -110,21 +110,21 @@
         <div class="form-program__wrapper">
           <h2 class="form-program__title-add-bottom form-program__title-add-bottom-wrapper">Дополнительно</h2>
           <div class="form-program__checkbox-wrap">
-            <div class="form-program__wrapper--checkbox">
-              <input class="visually-hidden form-program__input--checkbox" id="sweetener" type="checkbox" name="sweetener" checked="">
-              <label class="form-program__label--checkbox" for="sweetener">Сахарозаменитель</label>
+            <div class="form-program__wrapper form-program__wrapper--checkbox">
+              <input class="visually-hidden form-program__input form-program__input--checkbox" id="sweetener" type="checkbox" name="sweetener" checked="">
+              <label class="form-program__label form-program__label--checkbox" for="sweetener">Сахарозаменитель</label>
             </div>
-            <div class="form-program__wrapper--checkbox">
-              <input class="visually-hidden form-program__input--checkbox" id="water" type="checkbox" name="water">
-              <label class="form-program__label--checkbox" for="water">Питьевая вода</label>
+            <div class="form-program__wrapper form-program__wrapper--checkbox">
+              <input class="visually-hidden form-program__input form-program__input--checkbox" id="water" type="checkbox" name="water">
+              <label class="form-program__label form-program__label--checkbox" for="water">Питьевая вода</label>
             </div>
-            <div class="form-program__wrapper--checkbox">
-              <input class="visually-hidden form-program__input--checkbox" id="milk" type="checkbox" name="milk">
-              <label class="form-program__label--checkbox" for="milk">Молоко</label>
+            <div class="form-program__wrapper form-program__wrapper--checkbox">
+              <input class="visually-hidden form-program__input form-program__input--checkbox" id="milk" type="checkbox" name="milk">
+              <label class="form-program__label form-program__label--checkbox" for="milk">Молоко</label>
             </div>
-            <div class="form-program__wrapper--checkbox">
-              <input class="visually-hidden form-program__input--checkbox" id="vitamins" type="checkbox" name="vitamins">
-              <label class="form-program__label--checkbox" for="vitamins">Витамины</label>
+            <div class="form-program__wrapper form-program__wrapper--checkbox">
+              <input class="visually-hidden form-program__input form-program__input--checkbox" id="vitamins" type="checkbox" name="vitamins">
+              <label class="form-program__label form-program__label--checkbox" for="vitamins">Витамины</label>
             </div>
             <div class="form-program__button-wrapper">
               <button class="form-program__button" type="button">Отправить заявку</button>
@@ -175,7 +175,7 @@
             <div class="developers__description-wrapper">
               <p class="developers__description">HTML&nbsp;Academy</p>
               <svg><use xlink:href="#icon-htmlacademy"></use></svg>
-           </div>
+            </div>
           </a>
         </section>
       </div>
