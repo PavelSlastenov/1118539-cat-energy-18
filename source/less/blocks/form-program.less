@@ -54,6 +54,10 @@
   border: 1px solid @grey-dark;
 }
 
+.form-program__input:invalid {
+  border: solid 2px @peachy-pink;
+}
+
 .form-program__input--first {
   width: 229px;
   padding-left: 15px;
@@ -88,12 +92,6 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-}
-
-.form-program__label--slim:active,
-.form-program__label--pro:active,
-.form-program__label--unknown:active {
-  opacity: 0.3;
 }
 
 .form-program__label--first {
@@ -353,7 +351,7 @@
 
   content: "";
 
-  top: 5px;
+  top: 6px;
   left: -37px;
   width: 12px;
   height: 12px;
@@ -574,7 +572,7 @@
   }
 
   .form-program__input--radio:checked + .form-program__label--radio:after {
-    top: 47px;
+    top: 46px;
     left: -44px;
 
     width: 18px;
