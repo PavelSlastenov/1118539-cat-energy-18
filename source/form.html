@@ -7,6 +7,12 @@
     <link href="fonts/oswaldregular.woff2" rel="preload" as="font" crossorigin="anonymous">
     <link href="fonts/oswaldmedium.woff2" rel="preload" as="font" crossorigin="anonymous">
     <link href="css/style.min.css" rel="stylesheet">
+    <script>
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
   </head>
   <body>
 
@@ -62,11 +68,11 @@
             </div>
             <div class="form-program__wrapper">
               <label class="form-program__label form-program__label--second" for="name">Вес (кг):*</label>
-              <input class="form-program__input form-program__input--second" type="text" placeholder="7" aria-label="Вес">
+              <input class="form-program__input form-program__input--second" type="number" placeholder="7" aria-label="Вес">
             </div>
             <div class="form-program__wrapper">
               <label class="form-program__label form-program__label--third" for="name">Возраст&nbsp(лет):</label>
-              <input class="form-program__input form-program__input--third" id="name" type="text" placeholder="7" aria-label="Возраст">
+              <input class="form-program__input form-program__input--third" type="number" placeholder="7" aria-label="Возраст">
             </div>
           </div>
 
@@ -92,12 +98,12 @@
         <div class="form-program__conteiner-two">
           <div class="form-program__wrapper form-program__wrapper--e-mail">
             <label class="form-program__label form-program__label--fourth" for="e-mail">E-&nbspmail:*</label>
-            <input class="form-program__input form-program__input--fourth" id="e-mail" type="tel" placeholder="kuklachev@gmail.com" aria-label="Телефон">
+            <input class="form-program__input form-program__input--fourth" id="e-mail" type="email" placeholder="kuklachev@gmail.com" aria-label="Телефон">
             <svg class="form-program__image--e-mail"><use xlink:href="#icon-mail"></use></svg>
           </div>
           <div class="form-program__wrapper form-program__wrapper--tel">
             <label class="form-program__label form-program__label--fifth" for="tel">Телефон:*</label>
-            <input class="form-program__input form-program__input--fifth" id="tel" type="tel" placeholder="8 (960) 900-60-90" aria-label="Телефон">
+            <input class="form-program__input form-program__input--fifth" id="tel" type="number" placeholder="8 (960) 900-60-90" aria-label="Телефон">
             <svg class="form-program__image--tel"><use xlink:href="#icon-phone"></use></svg>
           </div>
         </div>
@@ -178,6 +184,6 @@
         </section>
       </div>
     </footer>
-    <script src="js/app.min.js"></script>
+    <script src="js/menu.min.js"></script>
   </body>
 </html>
