@@ -51,11 +51,19 @@
 
 .form-program__input:focus,
 .form-program__input:active {
-  border: 1px solid @grey-dark;
+  border: 2px solid @grey-dark;
 }
 
 .form-program__input:invalid {
   border: solid 2px @peachy-pink;
+}
+
+.form-program__input:focus + svg {
+  fill: @green;
+}
+
+.form-program__input:focus:invalid + svg {
+  fill: @peachy-pink;
 }
 
 .form-program__input--first {
@@ -148,18 +156,6 @@
 
   margin-top: 11px;
   right: 32px;
-}
-
-.form-program__image--e-mail:focus,
-.form-program__image--tel:focus,
-.form-program__image--e-mail:active,
-.form-program__image--tel:active {
-  fill: @green;
-}
-
-.form-program__image--e-mail:invalid,
-.form-program__image--tel:invalid {
-  fill: @peachy-pink;
 }
 
 .form-program__wrapper {
