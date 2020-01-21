@@ -14,7 +14,7 @@
 .slider__title {
   width: 320px;
   margin: 0 auto;
-  padding: 32px 0 23px 21px;
+  padding: 32px 0 23px 0;
 
   font-family: @font-family-prime;
   font-size: 36px;
@@ -30,9 +30,9 @@
 
 .slider__text {
   margin: 0 auto;
-  padding: 0 5% 24px 20px;
+  padding: 0 5% 24px 0;
 
-  width: 320px;
+  width: 280px;
 
   font-family: @font-family-secondary;
   font-size: 14px;
@@ -91,7 +91,7 @@
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 282px;
+  width: 278px;
 }
 
 .slider__text-item {
@@ -202,7 +202,7 @@
   }
 
   .slider__text-item {
-    padding: 16px 0;
+    padding: 15px 0;
 
     width: 162px;
     font-size: 30px;
@@ -386,7 +386,7 @@
 
   &--before {
     top: 0;
-    left: 0;
+    right: 17px;
 
     background-color: transparent;
   }
@@ -433,18 +433,19 @@
 .slider__scale {
   position: relative;
 
-  width: 82px;
+  width: 86px;
   height: 14px;
 
   background-color: @white;
   border: 1px solid @grey80;
   border-radius: 6px;
+  margin-left: 6px;
 }
 
 .slider__scale-btn {
   position: absolute;
-  top: 4px;
-  left: 4px;
+  top: 3px;
+  left: 7px;
 
   width: 35px;
   height: 6px;
@@ -498,7 +499,6 @@
     width: 690px;
     height: 517px;
     padding: 0 0 21px 0;
-    margin-left: 8px;
   }
 
   .slider__image-item {
@@ -584,7 +584,7 @@
     &::after {
       top: 189px;
       left: 66%;
-      width: 345px;
+      width: 320px;
       height: 462px;
     }
   }
@@ -600,16 +600,23 @@
   }
 
   .slider__btn-wrapper {
-    margin: 0 0 0 165px;
+    margin: 0 0 0 163px;
     padding: 36.5px 0 70px;
   }
 
   .slider__text {
-    min-width: 440px;
-    padding-left: 6px;
+    min-width: 435px;
   }
 
   .slider__price-title {
-    padding-left: 5px;
+    padding: 5px 0 0 0;
+  }
+
+  .slider__price-cost {
+    padding: 5px 0 0 0;
+  }
+
+  .slider__title-item {
+    padding: 3px 0 0 0;
   }
 }
