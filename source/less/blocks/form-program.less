@@ -380,15 +380,10 @@
   }
 }
 
-.form-program__label--radio:hover,
-.form-program__label--radio:focus {
-  position: relative;
-
-  &::before {
-    position: absolute;
-
-    border: 1px solid @grey73;
-  }
+.form-program__input--radio:focus + label::before,
+.form-program__input--radio:hover + label::before {
+  border: 1px solid @grey73;
+  outline: rgb(59, 153, 252) auto 5px;
 }
 
 .form-program__label--radio:active {
@@ -432,12 +427,10 @@
   }
 }
 
-.form-program__label--checkbox:checked:hover,
-.form-program__label-checkbox:checked:focus {
-  &::before {
-    position: absolute;
-    border: 1px solid @grey73;
-  }
+.form-program__input--checkbox:focus + label::before,
+.form-program__input--checkbox:hover + label::before {
+  border: 1px solid @grey73;
+  outline: rgb(59, 153, 252) auto 5px;
 }
 
 .form-program__label--checkbox:active {
