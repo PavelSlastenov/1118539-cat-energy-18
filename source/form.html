@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+
     <link href="fonts/oswaldregular.woff2" rel="preload" as="font" crossorigin="anonymous">
     <link href="fonts/oswaldmedium.woff2" rel="preload" as="font" crossorigin="anonymous">
     <link href="css/style.min.css" rel="stylesheet">
+
     <script>
       document.createElement( "picture" );
     </script>
     <script src="js/picturefill.min.js" async></script>
     <script src="js/svg4everybody.min.js"></script>
     <script>svg4everybody();</script>
+
   </head>
   <body>
 
@@ -22,7 +26,7 @@
 
     <header class="page-header">
       <div class="page-header__logo">
-        <a class="page-header__logo-link">
+        <a href="index.html" class="page-header__logo-link">
           <picture>
             <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -31,7 +35,7 @@
         </a>
       </div>
 
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav main-nav--opened">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list main-nav__internal">
@@ -67,7 +71,7 @@
               <input class="form-program__input form-program__input--second" type="number" id="wt" placeholder="7" aria-label="Вес">
             </div>
             <div class="form-program__wrapper">
-              <label class="form-program__label form-program__label--third" for="age">Возраст&nbsp(лет):</label>
+              <label class="form-program__label form-program__label--third" for="age">Возраст&nbsp;(лет):</label>
               <input class="form-program__input form-program__input--third" type="number" id="age" placeholder="7" aria-label="Возраст">
             </div>
           </div>
@@ -75,32 +79,32 @@
           <div class="form-program__radio-wrapper">
             <fieldset class="form-program__radio">
               <div class="form-program__input-wrap">
-                <input class="visually-hidden form-program__input form-program__input--radio" type="radio" name="program" id="slim" value="1" checked>
+                <input class="visually-hidden form-program__input form-program__input--radio" type="radio" name="program" id="slim" value="1" aria-label="Похудение" checked>
                 <label for="slim" class="form-program__label form-program__label--radio">Похудение</label>
               </div>
               <div class="form-program__input-wrap">
-                <input class="visually-hidden form-program__input form-program__input--radio" type="radio" name="program" id="pro" value="2">
+                <input class="visually-hidden form-program__input form-program__input--radio" type="radio" name="program" id="pro" value="2" aria-label="Набор массы">
                 <label for="pro" class="form-program__label form-program__label--radio">Набор массы</label>
               </div>
               <div class="form-program__input-wrap">
-                <input class="visually-hidden form-program__input form-program__input--radio" type="radio" name="program" id="unknown" value="3">
+                <input class="visually-hidden form-program__input form-program__input--radio" type="radio" name="program" id="unknown" value="3" aria-label="Не знаю (нужен ваш совет)">
                 <label for="unknown" class="form-program__label form-program__label--radio">Не знаю (нужен ваш совет)</label>
               </div>
             </fieldset>
           </div>
         </div>
 
-        <h2 class="form-program__title-contacts form-program__title-contacts-wrapper">Контактные&nbspданные (владельца кота)</h2>
-        <div class="form-program__conteiner-two">
+        <h2 class="form-program__title-contacts form-program__title-contacts-wrapper">Контактные&nbsp;данные (владельца кота)</h2>
+        <div class="form-program__container-two">
           <div class="form-program__wrapper form-program__wrapper--e-mail">
-            <label class="form-program__label form-program__label--fourth" for="e-mail">E-&nbspmail:*</label>
-            <input class="form-program__input form-program__input--fourth" id="e-mail" type="email" placeholder="kuklachev@gmail.com" aria-label="Телефон">
-            <svg class="form-program__image form-program__image--e-mail"><use xlink:href="#icon-mail"></use></svg>
+            <label class="form-program__label form-program__label--fourth" for="e-mail">E-&nbsp;mail:*</label>
+            <input class="form-program__input form-program__input--fourth" id="e-mail" type="email" placeholder="kuklachev@gmail.com" aria-label="Почта">
+            <svg class="form-program__image form-program__image--e-mail" width="18" height="14"><use xlink:href="#icon-mail"></use></svg>
           </div>
           <div class="form-program__wrapper form-program__wrapper--tel">
             <label class="form-program__label form-program__label--fifth" for="tel">Телефон:*</label>
             <input class="form-program__input form-program__input--fifth" id="tel" type="number" placeholder="8 (960) 900-60-90" aria-label="Телефон">
-            <svg class="form-program__image form-program__image--tel"><use xlink:href="#icon-phone"></use></svg>
+            <svg class="form-program__image form-program__image--tel" width="21" height="21"><use xlink:href="#icon-phone"></use></svg>
           </div>
         </div>
         <div class="form-program__wrapper form-program__wrapper--comments">
@@ -111,28 +115,27 @@
           <h2 class="form-program__title-add-bottom form-program__title-add-bottom-wrapper">Дополнительно</h2>
           <div class="form-program__checkbox-wrap">
             <div class="form-program__wrapper form-program__wrapper--checkbox">
-              <input class="visually-hidden form-program__input form-program__input--checkbox" id="sweetener" type="checkbox" name="sweetener" checked="">
+              <input class="visually-hidden form-program__input form-program__input--checkbox" id="sweetener" type="checkbox" name="sweetener" aria-label="Сахарозаменитель" checked="">
               <label class="form-program__label form-program__label--checkbox" for="sweetener">Сахарозаменитель</label>
             </div>
             <div class="form-program__wrapper form-program__wrapper--checkbox">
-              <input class="visually-hidden form-program__input form-program__input--checkbox" id="water" type="checkbox" name="water">
+              <input class="visually-hidden form-program__input form-program__input--checkbox" id="water" type="checkbox" name="water" aria-label="Питьевая вода">
               <label class="form-program__label form-program__label--checkbox" for="water">Питьевая вода</label>
             </div>
             <div class="form-program__wrapper form-program__wrapper--checkbox">
-              <input class="visually-hidden form-program__input form-program__input--checkbox" id="milk" type="checkbox" name="milk">
+              <input class="visually-hidden form-program__input form-program__input--checkbox" id="milk" type="checkbox" name="milk" aria-label="Молоко">
               <label class="form-program__label form-program__label--checkbox" for="milk">Молоко</label>
             </div>
             <div class="form-program__wrapper form-program__wrapper--checkbox">
-              <input class="visually-hidden form-program__input form-program__input--checkbox" id="vitamins" type="checkbox" name="vitamins">
+              <input class="visually-hidden form-program__input form-program__input--checkbox" id="vitamins" type="checkbox" name="vitamins" aria-label="Витамины">
               <label class="form-program__label form-program__label--checkbox" for="vitamins">Витамины</label>
             </div>
             <div class="form-program__button-wrapper">
-              <button class="form-program__button" type="button">Отправить заявку</button>
+              <button class="form-program__button" type="submit">Отправить заявку</button>
             </div>
-
             <div class="form-program__legend-wrapper">
               <small class="form-program__legend">
-              <sup>*</sup>&nbsp—&nbspОбязательные&nbspполя
+              <sup>*&nbsp;</sup>&mdash;&nbsp;Обязательные&nbsp;поля
               </small>
             </div>
             </div>
@@ -148,7 +151,7 @@
             <p class="map-contacts__address map-contacts__address--wrapper-two map-contacts__address--wrapper-two-form">Санкт-Петербург</p>
           </div>
         </div>
-        <iframe class="map-contacts__map-image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123688!2d30.320894615651014!3d59.93879686904841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1523735281602" allowfullscreen=""></iframe>
+        <iframe class="map-contacts__map-image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123688!2d30.320894615651014!3d59.93879686904841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1523735281602" allowfullscreen="" aria-label="Карта"></iframe>
       </section>
     </main>
 
@@ -163,9 +166,9 @@
         <section class="social-network social-network__wrapper">
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="social-network__list">
-            <li><a href=""><svg class="social-network__vk"><use xlink:href="#icon-vk"></use></svg></a></li>
-            <li><a href=""><svg class="social-network__insta"><use xlink:href="#icon-insta"></use></svg></a></li>
-            <li><a href=""><svg class="social-network__fb"><use xlink:href="#icon-fb"></use></svg></a></li>
+            <li><a href=""><svg class="social-network__vk" width="22" height="12" aria-label="Вконтакте"><use xlink:href="#icon-vk"></use></svg></a></li>
+            <li><a href=""><svg class="social-network__insta" width="23" height="23" aria-label="Инстаграмм"><use xlink:href="#icon-insta"></use></svg></a></li>
+            <li><a href=""><svg class="social-network__fb" width="10" height="19" aria-label="Фуйсбук"><use xlink:href="#icon-fb"></use></svg></a></li>
           </ul>
         </section>
 
@@ -174,12 +177,14 @@
           <a class="developers__link" href="https://htmlacademy.ru/intensive/adaptive">
             <div class="developers__description-wrapper">
               <p class="developers__description">HTML&nbsp;Academy</p>
-              <svg><use xlink:href="#icon-htmlacademy"></use></svg>
+              <svg width="27" height="34" aria-label="Логотип Академии"><use xlink:href="#icon-htmlacademy"></use></svg>
             </div>
           </a>
         </section>
       </div>
     </footer>
+
     <script src="js/menu.min.js"></script>
+
   </body>
 </html>
