@@ -73,7 +73,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 54px;
+  width: 84px;
   margin: -10px 0 0 0;
 
   font-family: @font-family-secondary;
@@ -84,6 +84,15 @@
   text-transform: lowercase;
 
   background-color: @gray95;
+
+  &--weight {
+    margin-left: -14px;
+  }
+
+  &--time {
+    margin-right: -10px;
+  }
+
 }
 
 .slider__table-text {
@@ -189,10 +198,14 @@
 
     &--weight {
       width: 114px;
+      margin-left: 0;
+      padding-left: 5px;
     }
 
     &--time {
       width: 142px;
+      margin-right: 0;
+      padding-left: 5px;
     }
   }
 
@@ -626,6 +639,17 @@
   }
 
   .slider__title-item {
-    padding: 3px 0 0 0;
+
+    &--weight {
+      width: 114px;
+      margin-left: 0;
+      padding-left: 5px;
+    }
+
+    &--time {
+      width: 142px;
+      margin-right: 0;
+      padding-left: 5px;
+    }
   }
 }
