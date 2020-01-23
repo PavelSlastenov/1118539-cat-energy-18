@@ -1,4 +1,7 @@
 .map-contacts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   position: relative;
 
   background-color: @gray95;
@@ -18,7 +21,7 @@
     background-image: url("../img/map-mobile.png");
     background-repeat: no-repeat;
     background-position: bottom center;
-    z-index: 1;
+    z-index: 0;
   }
 
   &::before {
