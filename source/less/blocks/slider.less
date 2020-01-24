@@ -8,7 +8,7 @@
   background-color: @gray95;
   overflow: hidden;
 
-  z-index: -2;
+  z-index: 0;
 }
 
 .slider__title {
@@ -92,7 +92,6 @@
   &--time {
     margin-right: -10px;
   }
-
 }
 
 .slider__table-text {
@@ -247,6 +246,20 @@
   .slider__btn-wrapper button {
     border-bottom: 1px dotted @grey82;
     padding-bottom: 5px;
+  }
+
+  .slider__btn-wrapper button {
+    border-bottom: 1px dotted @grey82;
+    padding-bottom: 5px;
+  }
+
+  .slider__btn-wrapper button:hover,
+  .slider__btn-wrapper button:focus {
+    border-bottom: 1px solid @grey82;
+  }
+
+  .slider__btn-wrapper button:active {
+    border-bottom: none;
   }
 
   .slider__image-item--before {
