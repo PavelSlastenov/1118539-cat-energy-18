@@ -94,6 +94,19 @@
   padding-left: 15px;
 }
 
+.form-program__input--first:focus,
+.form-program__input--first:active,
+.form-program__input--second:focus,
+.form-program__input--second:active,
+.form-program__input--third:focus,
+.form-program__input--third:active,
+.form-program__input--fourth:focus,
+.form-program__input--fourth:active,
+.form-program__input--fifth:focus,
+.form-program__input--fifth:active {
+  padding-left: 14px;
+}
+
 .form-program__label {
   color: @graphite;
   font-size: 16px;
@@ -137,7 +150,7 @@
   height: 14px;
 
   top: 20px;
-  right: 35px;
+  right: 15px;
 }
 
 .form-program__wrapper--tel {
@@ -155,7 +168,7 @@
   height: 21px;
 
   margin-top: 11px;
-  right: 32px;
+  right: 13px;
 }
 
 .form-program__wrapper {
@@ -198,7 +211,7 @@
 .form-program__title-add-top-wrapper {
   position: relative;
 
-  margin-top: 27px;
+  margin-top: 11px;
   margin-bottom: 0;
   padding-left: 20px;
 
@@ -218,6 +231,9 @@
 
 .form-program__container-two {
   padding-left: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .form-program__title-add-top {
@@ -333,20 +349,21 @@
 .form-program__radio-wrapper {
   border: 1px solid @gray93;
   width: 320px;
-  min-height: 158px;
 }
 
 .form-program__radio {
-  padding-top: 0;
+  padding-top: 26px;
   padding-left: 41px;
   border: none;
 }
 
 .form-program__input-wrap {
-  height: 42px;
-
-  padding-top: 27px;
+  padding-bottom: 25px;
   padding-left: 22px;
+}
+
+.form-program__input-wrap:nth-child(3) {
+  padding-bottom: 15px;
 }
 
 .form-program__input--radio:checked + .form-program__label--radio::after {
@@ -544,6 +561,19 @@
     margin-left: 2px;
   }
 
+  .form-program__input--first:focus,
+  .form-program__input--first:active,
+  .form-program__input--second:focus,
+  .form-program__input--second:active,
+  .form-program__input--third:focus,
+  .form-program__input--third:active,
+  .form-program__input--fourth:focus,
+  .form-program__input--fourth:active,
+  .form-program__input--fifth:focus,
+  .form-program__input--fifth:active {
+    padding-left: 19px;
+  }
+
   /*------------Радио кнопки-------------*/
 
   .form-program__label--radio,
@@ -554,11 +584,25 @@
 
   .form-program__radio-wrapper {
     width: 630px;
-    height: 196px;
 
     margin-top: 73px;
     margin-left: 68px;
     padding-left: 20px;
+  }
+
+  .form-program__radio {
+    padding-top: 35px;
+    padding-left: 41px;
+    border: none;
+  }
+
+  .form-program__input-wrap {
+    padding-bottom: 30px;
+    padding-left: 22px;
+  }
+
+  .form-program__input-wrap:nth-child(3) {
+    padding-bottom: 22px;
   }
 
   .form-program__input--radio:checked + .form-program__label--radio::after {
@@ -580,12 +624,6 @@
       width: 40px;
       height: 40px;
     }
-  }
-
-  .form-program__input-wrap {
-    height: 52px;
-
-    padding-top: 33px;
   }
 
   /*-----------Чекбокс---------------*/
@@ -641,7 +679,7 @@
   .form-program__title-contacts-wrapper {
     position: relative;
 
-    margin-top: 74px;
+    margin-top: 75px;
     margin-bottom: 30px;
     padding-left: 69px;
 
@@ -696,7 +734,7 @@
 
   .form-program__image--e-mail {
     top: 66px;
-    right: 85px;
+    right: 20px;
   }
 
   .form-program__wrapper--tel {
@@ -707,13 +745,13 @@
 
   .form-program__image--tel {
     margin-top: 18px;
-    right: 82px;
+    right: 18px;
   }
 
   .form-program__title-add-top-wrapper {
     position: relative;
 
-    margin-top: 65px;
+    margin-top: 51px;
     margin-bottom: 0;
     padding-left: 0;
 
@@ -806,6 +844,7 @@
   .form-program__button-wrapper {
     margin-top: 43px;
     margin-left: 2px;
+    margin-bottom: 16px;
   }
 
   .form-program__button {
@@ -819,9 +858,9 @@
   }
 
   .form-program__legend-wrapper {
-    margin-top: -39px;
+    margin-top: -55px;
     margin-right: 70px;
-    margin-bottom: 63px;
+    margin-bottom: 77px;
     margin-left: 347px;
   }
 
@@ -915,10 +954,20 @@
     margin-left: 8px;
   }
 
+  .form-program__input--fifth:focus,
+  .form-program__input--fifth:active {
+    padding-left: 16px;
+  }
+
   .form-program__radio-wrapper {
     width: 570px;
-    margin-top: 28px;
+    margin-top: 30px;
+    margin-bottom: 20px;
     margin-left: 77px;
+  }
+
+  .form-program__radio {
+    padding-bottom: 0;
   }
 
   .form-program__label--radio::before {
@@ -1083,6 +1132,6 @@
 
   .form-program__legend-wrapper {
     margin-left: 634px;
-    padding-bottom: 24px;
+    padding-bottom: 10px;
   }
 }
