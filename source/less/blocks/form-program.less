@@ -352,17 +352,18 @@
 }
 
 .form-program__radio {
-  padding-top: 0;
-  padding-bottom: 30px;
+  padding-top: 26px;
   padding-left: 41px;
   border: none;
 }
 
 .form-program__input-wrap {
-  height: 42px;
-
-  padding-top: 27px;
+  padding-bottom: 25px;
   padding-left: 22px;
+}
+
+.form-program__input-wrap:nth-child(3) {
+  padding-bottom: 15px;
 }
 
 .form-program__input--radio:checked + .form-program__label--radio::after {
@@ -590,7 +591,18 @@
   }
 
   .form-program__radio {
-    padding-bottom: 35px;
+    padding-top: 35px;
+    padding-left: 41px;
+    border: none;
+  }
+
+  .form-program__input-wrap {
+    padding-bottom: 30px;
+    padding-left: 22px;
+  }
+
+  .form-program__input-wrap:nth-child(3) {
+    padding-bottom: 22px;
   }
 
   .form-program__input--radio:checked + .form-program__label--radio::after {
@@ -612,12 +624,6 @@
       width: 40px;
       height: 40px;
     }
-  }
-
-  .form-program__input-wrap {
-    height: 52px;
-
-    padding-top: 33px;
   }
 
   /*-----------Чекбокс---------------*/
@@ -1126,6 +1132,6 @@
 
   .form-program__legend-wrapper {
     margin-left: 634px;
-    padding-bottom: 24px;
+    padding-bottom: 10px;
   }
 }
